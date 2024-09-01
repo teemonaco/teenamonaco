@@ -1,0 +1,87 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #F5E5C1; /* Light tan background */
+    color: #2B1D0E; /* Dark brown text */
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: #FAF3E0; /* Very light tan for header */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.header .logo img {
+    max-height: 50px;
+}
+
+.header-icons  {
+    color: #2B1D0E;
+    margin-left: 15px;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: row;
+    gap: 6px;
+}
+
+a.contact-icon {
+    text-decoration: none!important;
+}
+
+.main {
+    padding: 20px;
+}
+
+.bottom-nav {
+    background-color: #231d1d; /* Dark brown for bottom nav */
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+}
+
+.bottom-nav a {
+    color: #B4A79E; /* Sand tan for nav links */
+    text-decoration: none;
+    font-size: .85rem;
+    margin-bottom: 2px;
+    font-weight: 600;
+}
+
+.bottom-nav a:hover {
+    color: #8B5E3C; /* Mid-tone brown for hover effect */
+}
+
+.about-me {
+    padding-top: 40px;
+    text-align: left;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.about-me img {
+    width: 200px;
+}
+
+.featured-projects {
+    background-color: #E6DCD3; /* A light tan background */
+    padding: 20px;
+    border-radius: 8px; /* Optional: adds a soft rounded effect */
+}
+
+.btn-primary {
+    color: #E6DCD3!important;
+    background-color: #7A6759!important;
+    border: none!important;
+}
+
+p.card-text {
+    margin-bottom: auto!important;
+    height: 100%!important;
+}
