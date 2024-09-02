@@ -4,16 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Teena Monaco Portfolio</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
      <!-- Bootstrap CSS -->
      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-    <header class="container header">
-            <div class="logo">
-                <img src="images/logo.svg" width="150px" alt="Teena Monaco Logo">
-            </div>
+    <header class="tm-bg-color header">
+        <div class="container d-flex justify-content-between">
+            <img src="images/logo.svg" width="150px" alt="Teena Monaco Logo">
             <div class="header-icons d-flex">
                 <a href="https://linkedin.com/in/teemonaco" target="_blank" class="contact-icon">
                     <img src="images/linkedin.svg" width="36px">
@@ -25,24 +23,27 @@
                     <img src="images/phone.svg" width="36px">
                 </a>
             </div>
+        </div>
     </header>
-    
 
-    <main class="container">
-        <section class="about-me row">
-                <div class="col-md-4">
+
+    <section class="about-me">
+        <div class="row align-items-center justify-content-center">
+                <div class="d-flex justify-content-center col-md-4">
                     <img src="images/about-me.png" alt="Teena Monaco" class="img-fluid rounded-circle" width="100%" height="auto">
                 </div>
-                <div class="col-md-6">
+                <div class="about-col col-md-6">
                     <h1>About Me</h1>
                     <p class="about-me-text">
                         Hi, I'm Teena Monaco, a passionate UI/UX designer and developer with over a decade of experience. I thrive on creating intuitive, user-friendly designs that bridge the gap between creativity and functionality. I have worked on a wide range of projects, from e-commerce to mobile apps, and I'm always eager to tackle new challenges. When I'm not designing, you can find me exploring the latest trends in technology and improving my coding skills.
                     </p>
+                    <a href="projects/project1.html" class="btn btn-primary btn-outline-red about-btn">View Project</a>
                 </div>
-        </section>      
-    </main>
-    <section class="featured-projects mt-4">
-        <div class="container">
+        </div>
+
+    </section>      
+    <section class="featured-projects">
+        <div class="projects-container container">
             <h2>Featured Projects</h2>
             <p>Take a look at some of the work I've done, from mobile app designs to complete redesigns of e-commerce systems.</p>
             <div class="row">
@@ -52,7 +53,7 @@
                         <div class="card-body">
                             <h5 class="card-title">Checkout Redesign</h5>
                             <p class="card-text">A comprehensive redesign of an e-commerce checkout process, improving user experience and conversion rates.</p>
-                            <a href="projects/project1.html" class="btn btn-primary">View Project</a>
+                            <a href="projects/project1.html" class="btn btn-primary btn-outline-red">View Project</a>
                         </div>
                     </div>
                 </div>
@@ -62,7 +63,7 @@
                         <div class="card-body">
                             <h5 class="card-title">Mobile App Design</h5>
                             <p class="card-text">Designing a mobile application that brings seamless user experience and innovative features to life.</p>
-                            <a href="projects/project2.html" class="btn btn-primary">View Project</a>
+                            <a href="projects/project2.html" class="btn btn-primary btn-outline-red">View Project</a>
                         </div>
                     </div>
                 </div>
@@ -72,34 +73,36 @@
                         <div class="card-body">
                             <h5 class="card-title">Design System</h5>
                             <p class="card-text">Creation of a scalable and consistent design system to streamline product development.</p>
-                            <a href="projects/project3.html" class="btn btn-primary">View Project</a>
+                            <a href="projects/project3.html" class="btn btn-primary btn-outline-red">View Project</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <nav class="container bottom-nav d-flex justify-content-around">
-        <a href="index.html" class="nav-item text-center">
-            <img src="images/home.svg" style="width: 28px;" alt="Debug Icon">
-            <span class="d-block small">About</span>
-        </a>
-        <a href="projects/project1.html" class="nav-item text-center">
-            <img src="images/checkout.svg" style="width: 28px;" alt="Checkout Redesign Icon">
-            <span class="d-block small">Redesign</span>
-        </a>
-        <a href="projects/project2.html" class="nav-item text-center">
-            <img src="images/mobile-app.svg" style="width: 28px;" alt="Mobile App Icon">
-            <span class="d-block small">Mobile App</span>
-        </a>
-        <a href="projects/project2.html" class="nav-item text-center">
-            <img src="images/design-system.svg" style="width: 28px;" alt="Design System Icon">
-            <span class="d-block small">Design System</span>
-        </a>
-        <a href="projects/project3.html" class="nav-item text-center">
-            <img src="images/debug.svg" style="width: 28px;" alt="Debug Icon">
-            <span class="d-block small">Debug</span>
-        </a>
+    <nav class="tm-bg-color bottom-nav">
+        <div class=" container d-flex justify-content-between">
+            <a href="index.html" class="nav-item text-center">
+                <img src="images/home.svg" style="width: 28px;" alt="Debug Icon">
+                <span class="d-block small">Home</span>
+            </a>
+            <a href="projects/project1.html" class="nav-item text-center">
+                <img src="images/checkout.svg" style="width: 28px;" alt="Checkout Redesign Icon">
+                <span class="d-block small">Redesign</span>
+            </a>
+            <a href="projects/project2.html" class="nav-item text-center">
+                <img src="images/mobile-app.svg" style="width: 28px;" alt="Mobile App Icon">
+                <span class="d-block small">Mobile App</span>
+            </a>
+            <a href="projects/project3.html" class="nav-item text-center">
+                <img src="images/design-system.svg" style="width: 28px;" alt="Design System Icon">
+                <span class="d-block small">Design System</span>
+            </a>
+            <a href="projects/project4.html" class="nav-item text-center">
+                <img src="images/debug.svg" style="width: 28px;" alt="Debug Icon">
+                <span class="d-block small">Debug</span>
+            </a>
+        </div>
     </nav>
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
