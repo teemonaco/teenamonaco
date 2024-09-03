@@ -45,7 +45,7 @@ a.contact-icon {
 }
 
 .featured-projects {
-    background-color: #f3eede; 
+    background-color: #fff; 
     padding-bottom: 130px;
     padding-top: 60px;  
     
@@ -86,7 +86,10 @@ a.contact-icon {
     display: flex;
     justify-content: space-around;
     padding: 10px 0;
+    left: 0;
     align-items: center;
+    z-index: 1000;
+    box-sizing: border-box;
 }
 
 .bottom-nav a {
@@ -108,9 +111,9 @@ a.contact-icon {
 
 
 .btn-outline-red {
-    border: 1px solid #E74C3C!important;
-    color: #E74C3C!important;
-    background-color: #FAF3E0!important;
+    border: .75px solid #E74C3C!important;
+    color: #000!important;
+    background-color: #fff!important;
     font-weight: 500!important;
     margin-top: 20px;
 }
