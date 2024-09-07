@@ -1,4 +1,5 @@
 body {
+    margin-top: 40px; /* Adjust this value to push the content further down */
     font-family: 'Arial', sans-serif;
     background-color: #F5E5C1; 
     color: #2B1D0E; /* Dark brown text */
@@ -6,23 +7,39 @@ body {
     padding: 0;
 }
 
-.header {
+header {
     background-color: #FAF3E0; 
+    padding-top: 20px; /* Adds padding inside the header to prevent the logo from being too close to the top */
+    position: fixed;
     width: 100%;
     top: 0;
+    z-index: 1000;
+    border-bottom: 2px solid #EFE8D8;
+}
+
+section.header-container {
+    padding-top: 80px;
+}
+
+main.container {
+    padding-bottom: 80px; /* Adjust this value to push the content further down */
+
+}
+
+.header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 12px 0px;
-    position: fixed;
-    z-index: 1000;
 }
 
+.header-icons img {
+    width: 36px;
+}
 
 a.contact-icon {
     text-decoration: none!important;
 }
-
 
 .about-me, .featured-projects {
     margin: 0px!important;
@@ -48,7 +65,6 @@ a.contact-icon {
     background-color: #fff; 
     padding-bottom: 130px;
     padding-top: 60px;  
-    
 }
 
 .featured-projects > .container {
@@ -77,7 +93,6 @@ a.contact-icon {
     font-weight: 600;
 }
 
-
 .bottom-nav {
     background-color: #000; /* Dark brown for bottom nav */
     position: fixed;
@@ -103,17 +118,14 @@ a.contact-icon {
     color: #8B5E3C; /* Mid-tone brown for hover effect */
 }
 
-
-
 .about-me img {
     width: 300px;
 }
 
-
 .btn-outline-red {
     border: .75px solid #E74C3C!important;
     color: #000!important;
-    background-color: #fff!important;
+    background-color: #FAF3E0!important;
     font-weight: 500!important;
     margin-top: 20px;
 }
@@ -130,7 +142,23 @@ a.contact-icon {
 }
 
 .card {
+    background-color: #FAF3E0; /* Tan background for cards */
     height: 100%!important;
+    border: 1px solid #eeeae1!important; /* Softer tan for the border */
+
+}
+
+.card-header {
+    color: #000!important;
+    background-color: #e7e2d8 !important;
+    text-align: center;
+    font-size: 1.2rem;
+    border-color:#F5EEDC!important;
+}
+
+.card-header.before {
+    background-color: #faf7ed!important; /* Mid-tone brown for header */
+    color: #000000!important ;
 }
 
 .card-body {
@@ -145,3 +173,124 @@ a.contact-icon {
 .card-img-top {
     width: 100%;
 }
+
+/* Additional layout customization for better aesthetics */
+.project-card {
+    margin-bottom: 30px; /* Adds space between cards */
+}
+
+.card-body p {
+    margin-bottom: 16px;
+}
+
+.card-body h2 {
+    font-size: 1.5rem;
+    margin-bottom: 16px;
+}
+
+.btn-outline-red {
+    margin-top: 10px;
+    padding: 10px 20px;
+}
+
+
+
+.card-header h5 {
+    color: #000000 !important; /* Black text for card headers */
+}
+
+
+
+.card-body p {
+    margin-bottom: auto!important;
+}
+
+.badge.bg-secondary {
+    background-color: #eeeae1!important; /* Your custom secondary color (light tan) */
+    font-weight: 500!important;
+    color: #292929
+}
+
+/* Adding a comparison-box style for structured layout */
+.comparison-box {
+    border: 1px solid #D6BFAF; /* Add border to differentiate sections */
+    padding: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for better distinction */
+    background-color: #FAF3E0; /* Optional background to make boxes pop */
+}
+
+/* Improve image size consistency */
+.comparison-img {
+    max-width: 100%; 
+    height: auto;
+    margin-bottom: 10px;
+}
+
+/* Padding for text alignment */
+.comparison-description {
+    margin-top: 10px;
+}
+
+/* Increase spacing between Before and After */
+.card-body .row {
+    margin-bottom: 30px; /* More space between comparisons */
+}
+
+.user-journey-section {
+    background-color: #fcf8ee; /* Or whichever you choose */
+    padding: 50px 0; /* Adjust padding as needed */
+}
+
+
+#design-iterations .card {
+    border: 1px solid #F5EEDC; /* Softer tan for the border */
+    border-radius: 8px;
+    background-color: #fefcf7 !important; 
+    box-sizing: border-box;
+    margin-bottom: 30px; 
+}
+
+#design-iterations div.card-body {
+    margin-top: auto;
+    margin-bottom: 0px!important;
+    padding: 20px;;
+
+}
+
+#design-iterations div.card-body p {
+    margin-bottom: 0px!important;
+
+}
+
+.img-fluid.iteration {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.img-fluid.journey {
+    margin-top: auto;
+    margin-bottom: auto;
+    border: 1px solid #f6edd5;
+    padding: 20px;
+    border-radius: 8px;
+    box-sizing: border-box;
+    background-color: #ffffff; 
+
+}
+
+.research-insights img {
+    border: 1px solid #f6edd5;
+    padding: 20px;
+    border-radius: 8px;
+    box-sizing: border-box;
+
+}
+
+
+
+
+
+
+
+
