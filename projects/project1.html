@@ -12,13 +12,13 @@
 </head>
 <body>
     <header class="tm-bg-color header">
-        <div class="container d-flex justify-content-between">
+        <div class="logo-row container d-flex justify-content-between">
             <img src="../images/logo.svg" width="150px" alt="Teena Monaco Logo">
             <div class="header-icons d-flex">
                 <a href="https://linkedin.com/in/teemonaco" target="_blank" class="contact-icon">
                     <img src="../images/linkedin.svg" width="36px">
                 </a>
-                <a href="mailto:teemonaco@gmail.com" class="contact-icon mx-3">
+                <a href="mailto:teemonaco@gmail.com" class="contact-icon">
                     <img src="../images/email.svg" width="36px">
                 </a>
                 <a href="tel:914-527-3509" class="contact-icon">
@@ -27,29 +27,29 @@
             </div>
         </div>
         <div id="checkout-nav" class="container-fluid nav-row">
-            <nav id="navbar-project-1" class="navbar container d-flex align-items-center justify-content-between">
-                <a href="#research" class="process-item btn btn-nav">RESEARCH
-                    <img src="../images/arrow.svg" alt="arrow" width="20px" height="20px">
-                </a>
-                <a href="#journey" class="process-item btn btn-nav">JOURNEY MAP
-                    <img src="../images/arrow.svg" alt="arrow" width="20px" height="20px">
-                </a>
-                <a href="#design-iterations" class="process-item btn btn-nav">ITERATIONS
-                    <img src="../images/arrow.svg" alt="arrow" width="20px" height="20px">
-                </a>
-                <a href="#before-after" class="process-item btn btn-nav">
-                    BEFORE & AFTER
-                    <img src="../images/arrow.svg" alt="arrow" width="20px" height="20px">
-                </a>
+            <nav id="navbar-project-1" class="container">
+                    <div class="col-m-6 summary"> <img src="../images/cart-nav.svg"  width="18px" height="18px">Checkout Redesign</div>
+                    <div class="col-m-4 toc">
+                    <a href="#research" class="process-item">
+                        <img src="../images/research.svg"  width="18px" height="18px">Research
+                    </a>
+                    <a href="#journey" class="process-item">
+                        <img src="../images/mappings.svg"  width="18px" height="18px">Mapping
+                    </a>
+                    <a href="#design-iterations" class="process-item">
+                        <img src="../images/iterations.svg"  width="18px" height="18px">Iterations
+                    </a>
+                    <a href="#before-after" class="process-item">
+                        <img src="../images/results.svg"  width="18px" height="18px">Results
+                    </a>
+                </div>
             </nav>
         </div> 
     </header>
-<!-- 
-    <section class="container header-container">  
+ 
            
-            <p class="lead text-center">Showcasing the improvements made to the e-commerce checkout process, focusing on user experience, accessibility, and performance.</p>             
-    </section> -->
     <div id="main-content">
+
 <!--research-->   
     <section id="research" class="container-fluid research-insights">
         <div class="container">
@@ -127,7 +127,7 @@
             <p class="text-center mb-4">
                 User journey mapping is a vital part of understanding how users interact with the checkout flow. By mapping out every touchpoint and potential obstacle, we were able to visualize the user's path through the checkout process. This helped highlight friction areas, confusion points, and opportunities for optimization, ultimately leading to a smoother and more intuitive checkout experience.
             </p>
-                <div class="process-item col-md-12 mb-4">
+                <div class="col-md-12 mb-4">
                     <h4 class="mb-2">Mobile User Experience</h4>
                     <img src="../images/user_mapping_image.png" alt="User Journey Mapping" class="img-fluid journey">
                 </div>
@@ -167,6 +167,7 @@
         </div>
     </section>
 <!--before after-->
+<div class="container-fluid user-journey-section">
     <section id="before-after" class="container">
     <!--heading--> 
         <h2 class="text-center mb-2">Before and After: Checkout Flow Redesign</h2>
@@ -366,6 +367,7 @@
         </div>
     <!--end page examples-->
     </section>
+</div>
 </div>
 <!--nav-->
     <nav class="tm-bg-color bottom-nav">

@@ -1,6 +1,6 @@
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #F5E5C1; 
+    font-family: 'Inter', sans-serif;
+    background-color: #FFFFFF; 
     color: #2B1D0E; /* Dark brown text */
     margin: 0;
     padding: 0;
@@ -20,8 +20,8 @@ html {
 
 
 #research, #journey, #design-iterations, #before-after  {
-    padding-top: 40px; /* Adjust this based on your fixed header/nav height */
-    padding-bottom: 40px;
+    padding-top: 30px; /* Adjust this based on your fixed header/nav height */
+    padding-bottom: 30px;
  }
  
 
@@ -68,9 +68,6 @@ h1 {
     padding: 12px 0px;
 }
 
-.header-icons img {
-    width: 36px;
-}
 
 a.contact-icon {
     text-decoration: none!important;
@@ -179,20 +176,21 @@ a.contact-icon {
 .card {
     background-color: #FAF3E0; /* Tan background for cards */
     height: 100%!important;
-    border: 1px solid #eeeae1!important; /* Softer tan for the border */
+    border: 1px solid #e9e9e9!important; /* Softer tan for the border */
 
 }
 
 .card-header {
-    color: #000!important;
-    background-color: #e7e2d8 !important;
+    font-size: .95rem;
+    text-decoration: none!important;
+    color: #000000;
+    font-weight: 600;
     text-align: center;
-    font-size: 1.2rem;
     border-color:#F5EEDC!important;
 }
 
 .card-header.before {
-    background-color: #faf7ed!important; /* Mid-tone brown for header */
+    background-color: #ededed!important; /* Mid-tone brown for header */
     color: #000000!important ;
 }
 
@@ -274,17 +272,12 @@ a.contact-icon {
 }
 
 .user-journey-section {
-    background-color: #fcf8ee; /* Or whichever you choose */
+    background-color: #fefbf4; /* Or whichever you choose */
 }
 
 section#heading-toc {
     margin: 0px!important;
     padding: 0px!important;;
-
-}
-
- #journey {
-    background-color: #fcf8ee; /* Or whichever you choose */
 
 }
 
@@ -369,52 +362,120 @@ header {
     height: 60px; /* Set a fixed height for the header */
 }
 
-.nav-row {
-    height: 44px; /* Control height for the navigation row */
+/* .nav-row {
+    height: 50px; 
+} */
+
+hr {
+    margin: 3px!important;
 }
 
-#navbar-project-1 {
+div.process-item {
+    font-size: .875rem;
+    text-decoration: none!important;
+    color: #000000;
+    font-weight: 600;
+text-align: center;
+padding: 4px 0px!important;
+width: 100%;
+background-color:#f5f2eb!important;
+}
+
+.summary {
+    font-size: .95rem;
+    text-decoration: none!important;
+    color: #000000;
+    font-weight: 600;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 10px; /* Reduce the gap between navigation items */
+    gap: 4px;
+    padding: 6px 0px!important;
+    flex: 2;
+    justify-content: flex-start;
+    align-items: center;
+    white-space: nowrap;
+    line-height: 100%;
 }
 
-a.process-item.btn.btn-nav {
+.toc {
+    font-size: .95rem;
+    text-decoration: none!important;
+    color: #000000;
+    font-weight: 600;
     display: flex;
-    flex-direction: row;
     align-items: center;
     justify-content: center;
-    /* border: 1px solid #f6edd5; */
-    gap: 6px;
-    padding: 0px!important;
-    border-radius: 6px;
-    box-sizing: border-box;
-    /* background-color:#fcf9f3!important; */
-    font-size: .75rem;
-    font-weight: 500;
-margin: 0px!important;
-color: #E74C3C; 
+    gap: 16px;
+    padding: 6px 0px!important;
     flex: 1;
+    justify-content: flex-start;
+    align-items: center;
 }
 
-a.process-item.btn.btn-nav:hover    {
-    border: none!important;
+a.process-item {
+    font-size: .7rem;
+    text-decoration: none!important;
+    color: #000000;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    padding: 4px!important;
 }
+
 
 .checkout-header h1 {
     font-size: 1rem!important;
 }
 
 #checkout-nav {
-    padding: 10px!important;
+    padding: 0px!important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column!important;
+    width: 100%;
+    background-color:#f5f2eb!important
+}
+
+#navbar-project-1, .logo-row {
+    padding: 0px 4px!important;
 }
 
 #navbar-project-1 {
-    padding: 0px!important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color:#f5f2eb!important
+}
+
+.header-icons {
+    gap: 4px;
 }
 
 
+@media only screen and (max-width: 470px) {
 
+
+    .summary, .toc {
+        justify-content: center!important;
+    }
+
+    #navbar-project-1 {
+        flex-direction: column!important;
+    }
+    
+    .summary {
+        padding-top: 10px!important;
+    }
+
+    .toc {
+        padding-top: 0px!important;
+        gap: 8px!important;
+    }
+}
 
 
