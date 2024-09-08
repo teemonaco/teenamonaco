@@ -186,11 +186,12 @@ a.contact-icon {
     color: #000000;
     font-weight: 600;
     text-align: center;
-    border-color:#F5EEDC!important;
+    background-color:#f5f2eb!important;
+    border-color: #f5f2eb!important;
 }
 
 .card-header.before {
-    background-color: #ededed!important; /* Mid-tone brown for header */
+    background-color:#e9e6de!important;
     color: #000000!important ;
 }
 
@@ -475,6 +476,11 @@ a.process-item {
     .toc {
         padding-top: 0px!important;
         gap: 8px!important;
+    }
+
+    #research, #journey, #design-iterations, #before-after {
+        padding-top: 10px!important;
+        padding-bottom: 10px!important;;
     }
 }
 
