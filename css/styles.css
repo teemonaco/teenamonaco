@@ -1,11 +1,29 @@
 body {
-    margin-top: 40px; /* Adjust this value to push the content further down */
     font-family: 'Arial', sans-serif;
     background-color: #F5E5C1; 
     color: #2B1D0E; /* Dark brown text */
     margin: 0;
     padding: 0;
+
 }
+
+div#main-content {
+    top: 100px!important;
+    position: relative!important;
+    padding-bottom: 80px;
+
+}
+
+html {
+    scroll-padding-top: 100px; /* Adjust according to your header and nav height */
+}
+
+
+#research, #journey, #design-iterations, #before-after  {
+    padding-top: 40px; /* Adjust this based on your fixed header/nav height */
+    padding-bottom: 40px;
+ }
+ 
 
 header {
     background-color: #FAF3E0; 
@@ -18,11 +36,28 @@ header {
 }
 
 section.header-container {
-    padding-top: 80px;
+    padding-top: 100px;
+    padding-bottom: 20px;
 }
 
-main.container {
+main#checkout {
+    padding-top: 100px;
     padding-bottom: 80px; /* Adjust this value to push the content further down */
+
+}
+
+h1 {
+    color:#D6BFAF !important;
+    font-size: 1.35rem!important;
+    margin-top: 0px!important;   margin-bottom: 0px!important;
+}
+
+.checkout-header {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: flex-start;
+    justify-content: center;
 
 }
 
@@ -176,7 +211,8 @@ a.contact-icon {
 
 /* Additional layout customization for better aesthetics */
 .project-card {
-    margin-bottom: 30px; /* Adds space between cards */
+    margin-top: 20px;
+    margin-bottom: 20px; /* Adds space between cards */
 }
 
 .card-body p {
@@ -239,7 +275,17 @@ a.contact-icon {
 
 .user-journey-section {
     background-color: #fcf8ee; /* Or whichever you choose */
-    padding: 50px 0; /* Adjust padding as needed */
+}
+
+section#heading-toc {
+    margin: 0px!important;
+    padding: 0px!important;;
+
+}
+
+ #journey {
+    background-color: #fcf8ee; /* Or whichever you choose */
+
 }
 
 
@@ -284,11 +330,89 @@ a.contact-icon {
     padding: 20px;
     border-radius: 8px;
     box-sizing: border-box;
-
+    background-color: #ffffff;
+}
+ 
+main#before-after img  {
+    padding: 20px;
 }
 
+ main#before-after p {
+    padding: 0px 20px 20px 20px;
+}
 
+.btn-nav {
+    font-size: 0.85rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    border: none;
+    background-color: transparent;
+    color: #000;
+    margin-right: 15px;
+    font-weight: 600;
+  }
+  
+  .btn-nav:hover, .btn-nav:focus {
+    color: #E74C3C; /* Highlight color */
+  }
+  
+.nav-row {
+    position: fixed;
+    z-index: 999;
+    top: 60px;
+    padding: 10px!important;
+    border-bottom: 1px solid #f6edd5;
+    background-color:#fcfbf8;
+}
 
+header {
+    height: 60px; /* Set a fixed height for the header */
+}
+
+.nav-row {
+    height: 44px; /* Control height for the navigation row */
+}
+
+#navbar-project-1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; /* Reduce the gap between navigation items */
+}
+
+a.process-item.btn.btn-nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid #f6edd5; */
+    gap: 6px;
+    padding: 0px!important;
+    border-radius: 6px;
+    box-sizing: border-box;
+    /* background-color:#fcf9f3!important; */
+    font-size: .75rem;
+    font-weight: 500;
+margin: 0px!important;
+color: #E74C3C; 
+    flex: 1;
+}
+
+a.process-item.btn.btn-nav:hover    {
+    border: none!important;
+}
+
+.checkout-header h1 {
+    font-size: 1rem!important;
+}
+
+#checkout-nav {
+    padding: 10px!important;
+}
+
+#navbar-project-1 {
+    padding: 0px!important;
+}
 
 
 
