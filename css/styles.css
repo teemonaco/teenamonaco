@@ -7,15 +7,14 @@ body {
 
 }
 
-div#main-content {
-    top: 100px!important;
+#main-content {
+    top: 140px!important;
     position: relative!important;
     padding-bottom: 80px;
-
 }
 
 html {
-    scroll-padding-top: 100px!important; /* Adjust according to your header and nav height */
+    scroll-padding-top: 140px!important; /* Adjust according to your header and nav height */
 }
 
 
