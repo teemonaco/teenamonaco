@@ -18,7 +18,7 @@ html {
 }
 
 
-#research, #journey, #design-iterations, #before-after, #concept-evolution, #personas, #final-screens  {
+section  {
     padding-top: 30px; /* Adjust this based on your fixed header/nav height */
     padding-bottom: 30px;
  }
@@ -39,8 +39,8 @@ section.header-container {
     padding-bottom: 20px;
 }
 
-main#checkout {
-    padding-top: 100px;
+main {
+    padding-top: 150px;
     padding-bottom: 80px; /* Adjust this value to push the content further down */
 
 }
@@ -77,13 +77,13 @@ a.contact-icon {
     box-sizing: border-box;
 }
 
-.about-me {
-    padding-top: 120px; 
+section.about-me {
+    padding-top: 100px!important; 
     text-align: left;
     align-items: center;
     justify-content: center;
     gap: 20px;
-    padding-bottom: 60px;  
+    padding-bottom: 40px!important;  
     background-color: #000;
     color: #fff;
 }
@@ -463,7 +463,6 @@ a.process-item {
 
 #navbar-project-1, #navbar-project-video {
     display: flex;
-    align-items: center;
     justify-content: center;
     width: 100%;
     background-color:#f5f2eb!important
@@ -477,24 +476,22 @@ a.process-item {
 @media only screen and (max-width: 470px) {
 
 
-    .summary, .toc {
-        justify-content: center!important;
-    }
-
-    #navbar-project-1 {
+    #navbar-project-1, #navbar-project-video, #navbar-project-2 {
         flex-direction: column!important;
+        justify-content: flex-start!important;
+
     }
     
     .summary {
         padding-top: 10px!important;
     }
 
-    .toc {
-        padding-top: 0px!important;
+    .toc, .summary {
         gap: 8px!important;
+        justify-content: flex-start!important;
     }
 
-    #research, #journey, #design-iterations, #before-after, #concept-evolution, #final-screens, #personas {
+    section {
         padding-top: 10px!important;
         padding-bottom: 10px!important;;
     }
