@@ -3,19 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project 1 - Teena Monaco</title>
-     <!-- Bootstrap CSS -->
-     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">    <link rel="stylesheet" href="/css/styles.css">
+    <title>Video Platform: SBCTV</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Inter Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="tm-bg-color header">
-        <div class="container d-flex justify-content-between">
+        <div class="logo-row container d-flex justify-content-between">
             <img src="../images/logo.svg" width="150px" alt="Teena Monaco Logo">
             <div class="header-icons d-flex">
                 <a href="https://linkedin.com/in/teemonaco" target="_blank" class="contact-icon">
                     <img src="../images/linkedin.svg" width="36px">
                 </a>
-                <a href="mailto:teemonaco@gmail.com" class="contact-icon mx-3">
+                <a href="mailto:teemonaco@gmail.com" class="contact-icon">
                     <img src="../images/email.svg" width="36px">
                 </a>
                 <a href="tel:914-527-3509" class="contact-icon">
@@ -23,21 +26,136 @@
                 </a>
             </div>
         </div>
+        <div id="video-platform-nav" class="container-fluid nav-row">
+            <nav id="navbar-project-video" class="container">
+                <div class="col-m-6 summary"><img src="../images/video-nav.svg" width="18px" height="18px">Video Platform</div>
+                <div class="col-m-4 toc">
+                    <a href="#research" class="process-item">
+                        <img src="../images/research.svg" width="18px" height="18px">Research
+                    </a>
+                    <a href="#iterations" class="process-item">
+                        <img src="../images/iterations.svg" width="18px" height="18px">Iterations
+                    </a>
+                    <a href="#prototypes" class="process-item">
+                        <img src="../images/iterations.svg" width="18px" height="18px">Prototypes
+                    </a>
+                    <a href="#final-product" class="process-item">
+                        <img src="../images/results.svg" width="18px" height="18px">Final
+                    </a>
+                </div>
+            </nav>
+        </div>
     </header>
 
-    <main class="container">
-        <section class="project">
-            <h1>Project 1 Title</h1>
-            <p>[Insert your project content here.]</p>
-            <!-- Example chart -->
-            <div id="chart"></div>
-        </section>
-    </main>
+    <div id="main-content">
 
+        <!-- Research Section -->
+        <section id="research" class="container-fluid research-insights">
+            <div class="container">
+                <h2 class="text-center mb-4">Research Insights for Video Platform</h2>
+                <p class="text-center mb-4">Research uncovered that users frequently left the platform to watch videos on third-party sites. To address this, I designed a user-friendly video platform that retains users and enhances engagement.</p>
+                
+                <!-- Key Tools Used -->
+                <div class="text-center mb-4">
+                    <span class="badge bg-secondary">User Research</span>
+                    <span class="badge bg-secondary">Competitor Analysis</span>
+                    <span class="badge bg-secondary">GA4</span>
+                    <span class="badge bg-secondary">Figma</span>
+                    <span class="badge bg-secondary">WCAG</span>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6 mb-4">
+                        <img src="../images/user-behavior.png" alt="User Behavior Insights" class="img-fluid">
+                        <h5 class="mt-3">User Behavior Insights</h5>
+                        <p>User data revealed a strong preference for drag-and-drop playlists, personalized content, and easy-to-use interfaces.</p>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <img src="../images/competitor-analysis.png" alt="Competitor Analysis" class="img-fluid">
+                        <h5 class="mt-3">Competitor Analysis</h5>
+                        <p>We analyzed competitors like YouTube and Vimeo to identify features that could enhance user engagement on the Scrapbook platform.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Iterations Section -->
+        <section id="iterations" class="container-fluid">
+            <div class="container">
+                <h2 class="text-center mb-4">Design Iterations</h2>
+                <p class="text-center">Several design iterations were made based on feedback from users, internal teams, and research to optimize the user experience.</p>
+                
+                <div class="row">
+                    <div class="col-md-6 mb-4">
+                        <div class="card">
+                            <img src="../images/iteration1.png" class="card-img-top" alt="Iteration 1">
+                            <div class="card-body">
+                                <h5 class="card-title">Initial Playlist Design</h5>
+                                <p class="card-text">The first version focused on drag-and-drop functionality for playlist creation. Users responded positively to the simplicity but wanted more customization options.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <div class="card">
+                            <img src="../images/iteration2.png" class="card-img-top" alt="Iteration 2">
+                            <div class="card-body">
+                                <h5 class="card-title">Refined Playlist Design</h5>
+                                <p class="card-text">The refined version introduced personalized playlist suggestions, making it easier for users to find relevant content and create playlists tailored to their interests.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Prototypes Section -->
+        <section id="prototypes" class="container-fluid">
+            <div class="container">
+                <h2 class="text-center mb-4">Prototypes</h2>
+                <p class="text-center">High-fidelity prototypes were created in Figma to simulate the user experience and were tested with real users for feedback.</p>
+
+                <div class="row">
+                    <div class="col-md-6 mb-4">
+                        <img src="../images/prototype1.png" alt="Prototype 1" class="img-fluid">
+                        <h5 class="mt-3">Mobile Prototype</h5>
+                        <p>The mobile prototype ensured responsiveness and seamless drag-and-drop functionality, optimized for smaller screens.</p>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <img src="../images/prototype2.png" alt="Prototype 2" class="img-fluid">
+                        <h5 class="mt-3">Desktop Prototype</h5>
+                        <p>The desktop version incorporated advanced features like customizable playlists and content suggestions, driving higher user engagement.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final Product Section -->
+        <section id="final-product" class="container-fluid">
+            <div class="container">
+                <h2 class="text-center mb-4">Final Product: SBCTV</h2>
+                <p class="text-center">The final platform features a seamless drag-and-drop playlist functionality, live streaming capabilities, and personalized video recommendations, resulting in significantly improved user retention and engagement.</p>
+
+                <div class="row">
+                    <div class="col-md-6 mb-4">
+                        <img src="../images/final1.png" alt="Final Product 1" class="img-fluid">
+                        <h5 class="mt-3">Live Streaming Integration</h5>
+                        <p>Seamless integration of live streams, allowing users to watch and engage with content directly on the platform.</p>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <img src="../images/final2.png" alt="Final Product 2" class="img-fluid">
+                        <h5 class="mt-3">Personalized Playlists</h5>
+                        <p>The platform allows users to easily create, save, and reorder playlists based on their favorite videos and content categories.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Bottom Navigation -->
     <nav class="tm-bg-color bottom-nav">
-        <div class=" container d-flex justify-content-between">
+        <div class="container d-flex justify-content-between">
             <a href="../index.html" class="nav-item text-center">
-                <img src="../images/home.svg" style="width: 28px;" alt="Debug Icon">
+                <img src="../images/home.svg" style="width: 28px;" alt="Home Icon">
                 <span class="d-block small">Home</span>
             </a>
             <a href="project1.html" class="nav-item text-center">
@@ -58,11 +176,8 @@
             </a>
         </div>
     </nav>
-    
+
+    <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="../js/bootstrap.min.js"></script>
-    <script src="../js/scripts.js"></script>
 </body>
 </html>
-

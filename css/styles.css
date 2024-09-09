@@ -15,7 +15,7 @@ div#main-content {
 }
 
 html {
-    scroll-padding-top: 100px; /* Adjust according to your header and nav height */
+    scroll-padding-top: 100px!important; /* Adjust according to your header and nav height */
 }
 
 
@@ -154,6 +154,12 @@ a.contact-icon {
     width: 300px;
 }
 
+img.infopro {
+    width: 100%;
+    max-width:280px;
+    align-self: center;
+}
+
 .btn-outline-red {
     border: .75px solid #E74C3C!important;
     color: #000!important;
@@ -211,7 +217,7 @@ a.contact-icon {
     padding: 20px 20px 0px 20px;
 }
 
-img.persona-avatar{
+img.persona-avatar {
     width: 200px!important;
     align-self: center;
 }
@@ -442,7 +448,7 @@ a.process-item {
     font-size: 1rem!important;
 }
 
-#checkout-nav {
+#checkout-nav, #video-platform-nav {
     padding: 0px!important;
     display: flex;
     align-items: center;
@@ -456,7 +462,7 @@ a.process-item {
     padding: 0px 4px!important;
 }
 
-#navbar-project-1 {
+#navbar-project-1, #navbar-project-video {
     display: flex;
     align-items: center;
     justify-content: center;
