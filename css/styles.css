@@ -19,7 +19,7 @@ html {
 }
 
 
-#research, #journey, #design-iterations, #before-after  {
+#research, #journey, #design-iterations, #before-after, #concept-evolution, #personas, #final-screens  {
     padding-top: 30px; /* Adjust this based on your fixed header/nav height */
     padding-bottom: 30px;
  }
@@ -478,7 +478,7 @@ a.process-item {
         gap: 8px!important;
     }
 
-    #research, #journey, #design-iterations, #before-after {
+    #research, #journey, #design-iterations, #before-after, #concept-evolution, #final-screens, #personas {
         padding-top: 10px!important;
         padding-bottom: 10px!important;;
     }
