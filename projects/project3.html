@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,6 +11,7 @@
     <!-- Inter Font -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <header class="tm-bg-color header">
         <div class="logo-row container d-flex justify-content-between">
@@ -26,9 +28,9 @@
                 </a>
             </div>
         </div>
-        <div id="video-platform-nav" class="container-fluid nav-row">
+        <div id="checkout-nav" class="container-fluid nav-row">
             <nav id="navbar-project-video" class="container">
-                <div class="col-m-6 summary"><img src="../images/video-nav.svg" width="18px" height="18px">Video Platform</div>
+                <div class="col-m-6 summary"><img src="../images/video-nav.svg" width="24px">Video Platform</div>
                 <div class="col-m-4 toc">
                     <a href="#research" class="process-item">
                         <img src="../images/research.svg" width="18px" height="18px">Research
@@ -48,172 +50,446 @@
     </header>
 
     <div id="main-content">
-
-        <!-- Research Section -->
-        <section id="research" class="container-fluid research-insights">
+        <section id="research" class="container-fluid">
             <div class="container">
-                <h2 class="text-center mb-4">Research Insights for Video Platform</h2>
-                <p class="text-center mb-4">Research uncovered that users frequently left the platform to watch videos on third-party sites. To address this, I designed a user-friendly video platform that retains users and enhances engagement.</p>
-                
-                <!-- Key Tools Used -->
-                <div class="text-center mb-4">
-                    <span class="badge bg-secondary">User Research</span>
-                    <span class="badge bg-secondary">Competitor Analysis</span>
-                    <span class="badge bg-secondary">GA4</span>
-                    <span class="badge bg-secondary">Figma</span>
-                    <span class="badge bg-secondary">WCAG</span>
-                </div>
+                <h2 class="text-center mb-4">Competitor Analysis: YouTube, Vimeo, and Other Platforms</h2>
+                <p class="text-center mb-4">
+                    To ensure Scrapbook.com's internal video platform could compete with third-party services like YouTube
+                    and Vimeo, we conducted an in-depth analysis of these platforms. The goal was to identify their
+                    strengths and weaknesses and incorporate the best features into our platform while maintaining the brand
+                    identity and accessibility for our target users.
+                </p>
+                <div class="row g-4 mb-4">
+                    <div class="col-md-6 d-flex align-items-stretch">
+                        <div class="card w-100">
+                            <img src="../images/youtube-analysis.png" alt="YouTube Competitor Analysis"
+                                class="img-fluid pt-0">
+                            <div class="card-body">
+                                <h5 class="card-title">YouTube Competitor Analysis</h5>
+                                <p class="card-text">This image showcases a typical YouTube interface with a Scrapbook.com
+                                    livestream in progress. The key features and interactions within the platform are
+                                    outlined below.</p>
+                                <div style="width: fit-content!important;"
+                                    class="badge bg-success text-light p-2 mb-2 mt-2">Strengths</div>
+                                <p class="mb-2 text-muted"><span class="comp-label text-dark">Live Chat:</span> The live chat on the right-hand
+                                    side allows for real-time interaction between the host and viewers, a strength in
+                                    building community engagement.</p>
+                                <div style="width: fit-content!important;" class="badge bg-danger text-light p-2 mb-2 mt-2">
+                                    Weaknesses</div>
+                                <p class="mb-2 text-muted"><span class="comp-label text-dark">Distractions:</span> The right-hand column shows
+                                    distracting video recommendations, which could easily pull users away from
+                                    Scrapbook.com's content. This highlights a major weakness—YouTube's algorithms can
+                                    divert attention from brand-specific content, leading to missed opportunities for direct
+                                    engagement and conversions.</p>
+                                <p class="mb-2 text-muted"><span class="comp-label text-dark">The absence of shopping integration</span> is
+                                    another missed opportunity, as users must navigate away from the video to make
+                                    purchases.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 d-flex align-items-stretch">
+                        <div class="card w-100">
+                            <img src="../images/vimeo-analysis.png" alt="YouTube Competitor Analysis"
+                                class="img-fluid pt-0">
+                            <div class="card-body">
+                                <h5 class="card-title ">Vimeo Competitor Analysis</h5>
+                                <p class="card-text ">This image illustrates the standard Vimeo interface with Scrapbook.com
+                                    content playing. The key features and interactions within the platform are outlined
+                                    below.</p>
 
-                <div class="row">
-                    <div class="col-md-6 mb-4">
-                        <img src="../images/user-behavior.png" alt="User Behavior Insights" class="img-fluid">
-                        <h5 class="mt-3">User Behavior Insights</h5>
-                        <p>User data revealed a strong preference for drag-and-drop playlists, personalized content, and easy-to-use interfaces.</p>
+                                <div style="width: fit-content!important;"
+                                    class="badge bg-success text-light p-2 mb-2 mt-2">Strengths</div>
+                                <p class="mb-2 text-muted"><span class="comp-label text-dark">Clean and professional design:</span> The lack of
+                                    distracting ads or recommended videos allows for a seamless, high-quality viewing
+                                    experience.</p>
+                                <p class="mb-2 text-muted"><span class="comp-label text-dark">Customizable controls:</span> Quality settings
+                                    (1080p, 720p), closed captioning, and fullscreen mode show Vimeo's focus on delivering a
+                                    distraction-free, professional viewing environment.</p>
+                                <div style="width: fit-content!important;" class="badge bg-danger text-light p-2 mb-2 mt-2">
+                                    Weaknesses</div>
+                                <p class="mb-2 text-muted"><span class="comp-label text-dark">Visual hierarchy:</span> A pop-up prompting the
+                                    user to create an account could deter casual viewers.</p>
+                                <p class="mb-2 text-muted"><span class="comp-label text-dark">Lacks real-time engagement tools:</span> The
+                                    platform lacks comments or live chat, limiting community interaction during video
+                                    playback.</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-md-6 mb-4">
-                        <img src="../images/competitor-analysis.png" alt="Competitor Analysis" class="img-fluid">
-                        <h5 class="mt-3">Competitor Analysis</h5>
-                        <p>We analyzed competitors like YouTube and Vimeo to identify features that could enhance user engagement on the Scrapbook platform.</p>
+                </div>
+                <div class="row g-4">
+                    <div class="col-md-6 d-flex align-items-stretch">
+                        <div class="card w-100">
+                            <img src="../images/pinterest-analysis.png" alt="YouTube Competitor Analysis"
+                                class="img-fluid p-4 pt-0">
+                            <div class="card-body">
+                                <h5 class="card-title">Pinterest Competitor Analysis</h5>
+                                <p class="card-text">This image features a typical Pinterest interface displaying a user's
+                                    crafting pinboard. The key features and interactions within the platform are outlined
+                                    below.</p>
+                                <div style="width: fit-content!important;"
+                                    class="badge bg-success text-light badge bg-success text-light p-2 mb-2 mt-2">Strengths
+                                </div>
+
+                                <p class="mb-2"><span class="comp-label">Visual Discovery:</span> Pinterest excels in
+                                    visually driven content discovery, allowing crafters to find and save projects easily.
+                                </p>
+                                <p class="mb-2"><span class="comp-label">Content Organization:</span> Users can save, share,
+                                    and organize their favorite crafting projects into pinboards, enhancing user engagement.
+                                </p>
+                                <!-- Weaknesses Badge -->
+                                <div style="width: fit-content!important;" class="badge bg-danger text-light p-2 mb-2 mt-2">
+                                    Weaknesses</div>
+                                <p class="mb-2"><span class="comp-label">Not Video-Centric:</span> Pinterest primarily
+                                    focuses on images and is not optimized for video content, limiting the potential for
+                                    in-depth tutorials and educational content.</p>
+                                <p class="mb-2"><span class="comp-label">No Shopping Integration:</span> While users can
+                                    save ideas, they cannot make purchases directly through the platform.</p>
+                            </div>
+                        </div>
                     </div>
+                    <!--Twitch-->
+                    <div class="col-md-6 d-flex align-items-stretch">
+                        <div class="card w-100">
+                            <img src="../images/twitch-analysis.png" alt="YouTube Competitor Analysis"
+                                class="img-fluid p-4 pt-0">
+                            <div class="card-body">
+                                <h5 class="card-title">Twitch Competitor Analysis</h5>
+                                <p class="card-text">This image illustrates the standard Vimeo interface with Scrapbook.com
+                                    content playing. The key features and interactions within the platform are outlined
+                                    below.</p>
+
+                                <div style="width: fit-content!important;"
+                                    class="badge bg-success text-light p-2 mb-2 mt-3">Strengths</div>
+                                <p class="mb-2"><span class="comp-label">Real-Time Interaction:</span> Twitch's live chat
+                                    feature allows for real-time viewer engagement during streams, making it ideal for
+                                    building active communities.</p>
+                                <p class="mb-2"><span class="comp-label">Monetization Opportunities:</span> Twitch offers
+                                    creators revenue streams through subscriptions, donations, and Twitch Prime.</p>
+                                <!-- Weaknesses Badge -->
+                                <div style="width: fit-content!important;" class="badge bg-danger text-light p-2 mt-3 mb-2">
+                                    Weaknesses</div>
+                                <p class="mb-2"><span class="comp-label">Cluttered Interface:</span> Twitch's interface can
+                                    be overwhelming, especially for older audiences unfamiliar with live streaming, leading
+                                    to potential usability issues.</p>
+                                <p class="mb-2"><span class="comp-label">Gaming-Centric:</span> The platform is heavily
+                                    dominated by gaming content, so educational crafting streams might struggle to gain
+                                    engagement.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12 mt-4">
+                    <h3>Conclusion</h3>
+                    <p>
+                        The insights from these platforms guided our approach to designing an inline video platform for
+                        Scrapbook.com. We combined the best features from each, such as Vimeo's high-quality playback,
+                        YouTube's community interaction, and Twitch's real-time engagement, while focusing on keeping users
+                        on the platform and integrating shopping functionalities to enhance user retention and engagement.
+                    </p>
                 </div>
             </div>
-        </section>     
+        </section>
+
 
         <section id="statistics" class="container-fluid">
             <div class="container">
                 <h2 class="text-center mb-4">Why Integrate an Inline Video Platform?</h2>
-                <p class="text-center mb-4">Key data points supporting the integration of an inline video platform for free education:</p>
-        
-                <div class="row">
+                <p class="text-center text-muted mb-5">Key data points supporting the integration of an inline video
+                    platform for free education:</p>
+
+                <div class="row text-center">
                     <div class="col-md-4 mb-4">
-                        <div class="stat-card p-4">
-                            <h5 class="stat-value">45%</h5>
-                            <p>YouTube takes a 45% revenue share from ads displayed on educational videos.</p>
+                        <div class="stat-card p-4 rounded">
+                            <h5 class="stat-value display-4 fw-bold text-dark">45%</h5>
+                            <p class="text-muted">YouTube takes a 45% revenue share from ads displayed on educational
+                                videos.</p>
                         </div>
                     </div>
-        
+
                     <div class="col-md-4 mb-4">
-                        <div class="stat-card p-4">
-                            <h5 class="stat-value">48%</h5>
-                            <p>Nearly 48% of users who leave to watch videos on YouTube do not immediately return to the original site.</p>
+                        <div class="stat-card p-4 rounded">
+                            <h5 class="stat-value display-4 fw-bold text-dark">48%</h5>
+                            <p class="text-muted">Nearly 48% of users who leave to watch videos on YouTube do not
+                                immediately return to the original site.</p>
                         </div>
                     </div>
-        
+
                     <div class="col-md-4 mb-4">
-                        <div class="stat-card p-4">
-                            <h5 class="stat-value">120%</h5>
-                            <p>Sites integrating video content see a 120% increase in user time spent on the platform.</p>
+                        <div class="stat-card p-4 rounded">
+                            <h5 class="stat-value display-4 fw-bold text-dark">120%</h5>
+                            <p class="text-muted">Sites integrating video content see a 120% increase in user time spent
+                                on the platform.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-
+        <!-- Personas -->
         <section id="personas" class="container-fluid">
             <div class="container">
                 <h2 class="text-center mb-4">Personas for SBCTV Users</h2>
-                
+
                 <div class="row">
                     <!-- Persona 1: Livestream Shopper Crafter -->
                     <div class="col-md-6 mb-4">
-                        <div class="persona-card p-4">
-                            <h5 class="mb-3">Sarah, 35 - Livestream Shopper Crafter</h5>
-                            <img src="../images/persona1.png" alt="Persona 1 Image" class="img-fluid mb-3">
-                            <p><strong>Goals:</strong> Watches live tutorials and wants to purchase supplies directly from the video platform while watching.</p>
-                            <p><strong>Frustrations:</strong> Disrupted flow when switching between video and shopping platforms.</p>
-                            <p><strong>Needs:</strong> Real-time shopping integration with the video stream and notifications for product deals.</p>
+                        <div class="card">
+                            <div class="card-body">
+                                <img src="../images/avatar-1.png" alt="Stakeholder Persona"
+                                    class="img-fluid persona-avatar mb-4">
+                                <h5 class="mb-3">Sarah, 35 - Livestream Shopper Crafter</h5>
+                                <p><span class="comp-label">Goals:</span> Watches live tutorials and wants to purchase
+                                    supplies directly from the video platform while watching.</p>
+                                <p><span class="comp-label">Frustrations:</span> Disrupted flow when switching between
+                                    video and shopping platforms.</p>
+                                <p><span class="comp-label">Needs:</span> Real-time shopping integration with the video
+                                    stream and notifications for product deals.</p>
+                            </div>
                         </div>
                     </div>
-        
+
                     <!-- Persona 2: Organized Crafter (Older User) -->
                     <div class="col-md-6 mb-4">
-                        <div class="persona-card p-4">
-                            <h5 class="mb-3">Evelyn, 62 - Organized Crafter</h5>
-                            <img src="../images/persona2.png" alt="Persona 2 Image" class="img-fluid mb-3">
-                            <p><strong>Goals:</strong> Prefers an all-in-one platform where she can save videos, link projects, and share content.</p>
-                            <p><strong>Frustrations:</strong> Juggling between multiple platforms to find and save content.</p>
-                            <p><strong>Needs:</strong> A platform where she can organize her content and return to it easily.</p>
+                        <div class="card">
+                            <div class="card-body">
+                                <img src="../images/avatar-2.png" alt="Stakeholder Persona"
+                                    class="img-fluid persona-avatar mb-4">
+                                <h5 class="mb-3">Evelyn, 62 - Organized Crafter</h5>
+                                <p><span class="comp-label">Goals:</span> Prefers an all-in-one platform where she can
+                                    save videos, link projects, and share content.</p>
+                                <p><span class="comp-label">Frustrations:</span> Juggling between multiple platforms to
+                                    find and save content.</p>
+                                <p><span class="comp-label">Needs:</span> A platform where she can organize her content
+                                    and return to it easily.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        
 
         <!-- Iterations Section -->
         <section id="iterations" class="container-fluid">
             <div class="container">
-                <h2 class="text-center mb-4">Design Iterations</h2>
-                <p class="text-center">Several design iterations were made based on feedback from users, internal teams, and research to optimize the user experience.</p>
-                
+                <h2 class="text-center mb-4">Design Evolution: From Basic Class Favorites to Intuitive Playlists</h2>
+                <p class="text-center">Several design iterations were made based on feedback from users, internal teams,
+                    and research to optimize the user experience.</p>
+
                 <div class="row">
                     <div class="col-md-6 mb-4">
                         <div class="card">
-                            <img src="../images/iteration1.png" class="card-img-top" alt="Iteration 1">
+                            <img src="../images/sbc-classes.png" class="p-2" alt="Iteration 1">
                             <div class="card-body">
-                                <h5 class="card-title">Initial Playlist Design</h5>
-                                <p class="card-text">The first version focused on drag-and-drop functionality for playlist creation. Users responded positively to the simplicity but wanted more customization options.</p>
+                                <h5 class="mb-3">Initial Playlist Design</h5>
+                                <p><span class="comp-label">User Workaround:</span> Users are attempting to use the
+                                    "Class Favorites" feature as a makeshift playlist, which it wasn't designed for.
+                                    This creates a disjointed user experience.</p>
+                                <p><span class="comp-label">Fragmented Journey:</span> After selecting a class from
+                                    their favorites, users must enter the class itself, making it cumbersome to quickly
+                                    navigate between classes or videos. This disrupts the flow.</p>
+                                <p><span class="comp-label">Outdated Controls:</span>Once inside the class, the video
+                                    controls and interface are outdated, lacking basic modern functionalities such as
+                                    easy forward/reverse buttons or quick class-switching. This results in frustration
+                                    and a non-intuitive experience.</p>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-6 mb-4">
                         <div class="card">
-                            <img src="../images/iteration2.png" class="card-img-top" alt="Iteration 2">
+                            <img src="../images/sbctv.png" class="p-2" alt="Iteration 2">
                             <div class="card-body">
-                                <h5 class="card-title">Refined Playlist Design</h5>
-                                <p class="card-text">The refined version introduced personalized playlist suggestions, making it easier for users to find relevant content and create playlists tailored to their interests.</p>
+                                <h5 class="mb-3">Refining the Playlist Experience</h5>
+                                <p><span class="comp-label">True Playlist Functionality:</span> The new design focuses
+                                    on a dedicated playlist feature, allowing users to seamlessly navigate between
+                                    videos or classes without the need to enter each one individually.</p>
+                                <p><span class="comp-label">Streamlined Navigation:</span>Users can quickly view their
+                                    entire playlist with one click and move between content without the friction of
+                                    re-entering individual class pages.</p>
+                                <p><span class="comp-label">Modern Controls:</span> Updated video controls ensure a
+                                    smoother experience with modern functionalities like skip, playback speed, and
+                                    progress tracking.</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-
-
-        
 
         <!-- Prototypes Section -->
         <section id="prototypes" class="container-fluid">
             <div class="container">
                 <h2 class="text-center mb-4">Prototypes</h2>
-                <p class="text-center">High-fidelity prototypes were created in Figma to simulate the user experience and were tested with real users for feedback.</p>
+                <p class="text-center">High-fidelity prototypes were created in Figma to simulate the user experience
+                    and were tested with real users for feedback.</p>
 
                 <div class="row">
                     <div class="col-md-6 mb-4">
                         <img src="../images/prototype1.png" alt="Prototype 1" class="img-fluid">
                         <h5 class="mt-3">Mobile Prototype</h5>
-                        <p>The mobile prototype ensured responsiveness and seamless drag-and-drop functionality, optimized for smaller screens.</p>
+                        <p>The mobile prototype ensured responsiveness and seamless drag-and-drop functionality,
+                            optimized for smaller screens.</p>
                     </div>
                     <div class="col-md-6 mb-4">
                         <img src="../images/prototype2.png" alt="Prototype 2" class="img-fluid">
                         <h5 class="mt-3">Desktop Prototype</h5>
-                        <p>The desktop version incorporated advanced features like customizable playlists and content suggestions, driving higher user engagement.</p>
+                        <p>The desktop version incorporated advanced features like customizable playlists and content
+                            suggestions, driving higher user engagement.</p>
                     </div>
                 </div>
             </div>
         </section>
 
+        <section id="final-screens" class="container-fluid">
+    <div class="container">
+        <h2 class="text-center mb-4">Final Screens</h2>
+
+        <div class="row mb-4"> 
+            <!-- Screen 1: Recommended for You - Desktop -->
+            <div class="col-md-6 "> 
+                <div class="card">
+                    <div class="card-body">
+                        <img src="../images/recommended-desktop.png" alt="Recommended for You - Desktop" class="img-fluid infopro">
+                        <h5 class="mt-3">Recommended for You - Desktop</h5>
+                        <p>Personalized content suggestions based on user preferences and previous interactions, enhancing engagement with relevant crafting tutorials.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Screen 2: Recommended for You - Mobile -->
+            <div class="col-md-6 "> 
+                <div class="card">
+                    <div class="card-body">
+                        <img src="../images/recommended-mobile.png" alt="Recommended for You - Mobile" class="img-fluid infopro">
+                        <h5 class="mt-3">Recommended for You - Mobile</h5>
+                        <p>A mobile-optimized interface for users to access recommended crafting tutorials and materials, ensuring a seamless experience on smaller devices.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mb-4"> 
+            <!-- Screen 3: Trending Content - Desktop -->
+            <div class="col-md-6 "> 
+                <div class="card">
+                    <div class="card-body">
+                        <img src="../images/trending-desktop.png" alt="Trending Content - Desktop" class="img-fluid infopro">
+                        <h5 class="mt-3">Trending Content - Desktop</h5>
+                        <p>Showcases the most popular crafting trends and tutorials on the platform, helping users discover new and exciting techniques and ideas.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Screen 4: Trending Content - Mobile -->
+            <div class="col-md-6 "> 
+                <div class="card">
+                    <div class="card-body">
+                        <img src="../images/trending-mobile.png" alt="Trending Content - Mobile" class="img-fluid infopro">
+                        <h5 class="mt-3">Trending Content - Mobile</h5>
+                        <p>A mobile view of trending crafting tutorials and materials, allowing users to stay up-to-date with the latest trends on the go.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mb-4"> 
+            <!-- Screen 5: Videos Live Now - Desktop -->
+            <div class="col-md-6 "> 
+                <div class="card">
+                    <div class="card-body">
+                        <img src="../images/videos-live-desktop.png" alt="Videos Live Now - Desktop" class="img-fluid infopro">
+                        <h5 class="mt-3">Videos Live Now - Desktop</h5>
+                        <p>Live crafting tutorials, product showcases, and interactive sessions, providing real-time learning and inspiration for users.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Screen 6: Videos Live Now - Mobile -->
+            <div class="col-md-6 "> 
+                <div class="card">
+                    <div class="card-body">
+                        <img src="../images/videos-live-mobile.png" alt="Videos Live Now - Mobile" class="img-fluid infopro">
+                        <h5 class="mt-3">Videos Live Now - Mobile</h5>
+                        <p>Live streaming capabilities on mobile, enabling users to join real-time crafting sessions from anywhere.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mb-4"> 
+            <!-- Screen 7: Favorites - Desktop -->
+            <div class="col-md-6 "> 
+                <div class="card">
+                    <div class="card-body">
+                        <img src="../images/favorites-desktop.png" alt="Favorites - Desktop" class="img-fluid infopro">
+                        <h5 class="mt-3">Favorites - Desktop</h5>
+                        <p>A personalized collection of favorited classes and tutorials, allowing users to quickly access their preferred content.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Screen 8: Favorites - Mobile -->
+            <div class="col-md-6 "> 
+                <div class="card">
+                    <div class="card-body">
+                        <img src="../images/favorites-mobile.png" alt="Favorites - Mobile" class="img-fluid infopro">
+                        <h5 class="mt-3">Favorites - Mobile</h5>
+                        <p>A mobile-friendly favorites feature, ensuring users can easily access and manage their favorite tutorials and projects on the go.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mb-4"> 
+            <!-- Screen 9: Featured Classes - Desktop -->
+            <div class="col-md-6 "> 
+                <div class="card">
+                    <div class="card-body">
+                        <img src="../images/featured-classes-desktop.png" alt="Featured Classes - Desktop" class="img-fluid infopro">
+                        <h5 class="mt-3">Featured Classes - Desktop</h5>
+                        <p>Highlighted crafting classes, featuring top-rated tutorials and new releases to engage users and offer fresh learning opportunities.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Screen 10: Featured Classes - Mobile -->
+            <div class="col-md-6 "> 
+                <div class="card">
+                    <div class="card-body">
+                        <img src="../images/featured-classes-mobile.png" alt="Featured Classes - Mobile" class="img-fluid infopro">
+                        <h5 class="mt-3">Featured Classes - Mobile</h5>
+                        <p>A mobile view of featured crafting classes, ensuring users can explore new content and learn on the go.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
         <!-- Final Product Section -->
-        <section id="final-product" class="container-fluid">
+        <!-- <section id="final-product" class="container-fluid">
             <div class="container">
                 <h2 class="text-center mb-4">Final Product: SBCTV</h2>
-                <p class="text-center">The final platform features a seamless drag-and-drop playlist functionality, live streaming capabilities, and personalized video recommendations, resulting in significantly improved user retention and engagement.</p>
+                <p class="text-center">The final platform features a seamless drag-and-drop playlist functionality, live
+                    streaming capabilities, and personalized video recommendations, resulting in significantly improved
+                    user retention and engagement.</p>
 
                 <div class="row">
                     <div class="col-md-6 mb-4">
                         <img src="../images/final1.png" alt="Final Product 1" class="img-fluid">
                         <h5 class="mt-3">Live Streaming Integration</h5>
-                        <p>Seamless integration of live streams, allowing users to watch and engage with content directly on the platform.</p>
+                        <p>Seamless integration of live streams, allowing users to watch and engage with content
+                            directly on the platform.</p>
                     </div>
                     <div class="col-md-6 mb-4">
                         <img src="../images/final2.png" alt="Final Product 2" class="img-fluid">
                         <h5 class="mt-3">Personalized Playlists</h5>
-                        <p>The platform allows users to easily create, save, and reorder playlists based on their favorite videos and content categories.</p>
+                        <p>The platform allows users to easily create, save, and reorder playlists based on their
+                            favorite videos and content categories.</p>
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
     </div>
 
     <!-- Bottom Navigation -->
@@ -232,12 +508,12 @@
                 <span class="d-block small">Mobile App</span>
             </a>
             <a href="project3.html" class="nav-item text-center">
-                <img src="../images/design-system.svg" style="width: 28px;" alt="Design System Icon">
-                <span class="d-block small">Design System</span>
+                <img src="../images/sbctv.svg" style="width: 28px;" alt="Design System Icon">
+                <span class="d-block small">Video Platform</span>
             </a>
             <a href="project4.html" class="nav-item text-center">
-                <img src="../images/debug.svg" style="width: 28px;" alt="Debug Icon">
-                <span class="d-block small">Debug</span>
+                <img src="../images/design-system.svg" style="width: 28px;" alt="Debug Icon">
+                <span class="d-block small">Design System</span>
             </a>
         </div>
     </nav>
@@ -245,4 +521,5 @@
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>

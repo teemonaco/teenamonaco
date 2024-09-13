@@ -457,11 +457,11 @@ a.process-item {
     background-color:#f5f2eb!important
 }
 
-#navbar-project-1, .logo-row {
+#navbar-project-1, #navbar-project-2,  .logo-row {
     padding: 0px 4px!important;
 }
 
-#navbar-project-1, #navbar-project-video {
+#navbar-project-1, #navbar-project-video, #navbar-project-2 {
     display: flex;
     justify-content: center;
     width: 100%;
