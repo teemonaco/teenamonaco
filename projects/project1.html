@@ -1,36 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Before and After: Checkout Flow Redesign</title>
-        <link rel="stylesheet" href="../css/styles.css">
-        <!-- Bootstrap CSS -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
-        <!-- Inter Font -->
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
-    </head>
-    <body>
-        <!--header-->
-        <header class="tm-bg-color header">
-            <div class="logo-row container d-flex justify-content-between">
-                <img src="../images/logo.svg" width="150px" alt="Teena Monaco Logo">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before and After: Checkout Flow Redesign</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Inter Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="tm-bg-color header p-0">
+        <nav class="tm-bg-color top-nav">
+            <div class=" container d-flex justify-content-between">
+                <a href="../projects/project1.html" class="nav-item text-center justify-content-center">
+                    <img src="../images/logo.svg" alt="Teena Monaco Logo">
+                </a>
                 <div class="header-icons d-flex">
-                    <a href="https://linkedin.com/in/teemonaco" target="_blank" class="contact-icon">
-                        <img src="../images/linkedin.svg" width="36px">
+                    <!-- <a href="https://linkedin.com/in/teemonaco" target="_blank" class="contact-icon">
+                            <img src="images/linkedin.svg" alt="LinkedIn Icon" width="30px">
+                        </a>
+                        <a href="mailto:teemonaco@gmail.com" class="contact-icon">
+                            <img src="images/email.svg" width="30px">
+                        </a>
+                        <a href="tel:914-527-3509" class="contact-icon">
+                            <img src="images/phone.svg" width="30px">
+                        </a> -->
+
+                    <a href="projects/project1.html" class="nav-item text-center">
+                        <img src="../images/checkout.svg" style="width: 22px;" alt="Checkout Redesign Icon">
+                        <span class="d-block small">Redesign</span>
                     </a>
-                    <a href="mailto:teemonaco@gmail.com" class="contact-icon">
-                        <img src="../images/email.svg" width="36px">
+                    <a href="projects/project2.html" class="nav-item text-center">
+                        <img src="../images/mobile-app.svg" style="width: 22px;" alt="Mobile App Icon">
+                        <span class="d-block small">Mobile App</span>
                     </a>
-                    <a href="tel:914-527-3509" class="contact-icon">
-                        <img src="../images/phone.svg" width="36px">
+                    <a href="projects/project3.html" class="nav-item text-center">
+                        <img src="../images/design-system.svg" style="width: 22px;" alt="Design System Icon">
+                        <span class="d-block small">Design System</span>
                     </a>
+                    <a href="projects/project4.html" class="nav-item text-center">
+                        <img src="../images/video-platform.svg" style="width: 22px;" alt="Debug Icon">
+                        <span class="d-block small">Video Platform</span>
+                    </a>
+
+
                 </div>
-            </div>
-            <div id="checkout-nav" class="container-fluid nav-row">
-                <nav id="navbar-project-1" class="container">
-                        <div class="col-m-6 summary"> <img src="../images/cart-nav.svg"  width="18px" height="18px">Checkout Redesign</div>
-                        <div class="col-m-4 toc">
+        </nav>
+
+    </header>
+    <section>
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+                <div class="d-flex justify-content-center col-md-4">
+                    <img src="../images/redesign-hero.png" alt="Checkout Redesign Mockup" class="img-fluid" width="100%"
+                        height="auto">
+                </div>
+                <div class="col-md-6">
+                    <h1>E-Commerce Checkout Redesign</h1>
+                    <p class="about-me-text">
+                        Hi, I'm Teena Monaco, a passionate UI/UX designer and developer with over a decade of
+                        experience. I thrive on creating intuitive, user-friendly designs that bridge the gap between
+                        creativity and functionality. I have worked on a wide range of projects, from e-commerce to
+                        mobile apps, and I'm always eager to tackle new challenges. When I'm not designing, you can find
+                        me exploring the latest trends in technology and improving my coding skills.
+                    </p>
+                                
+                    <div class="d-flex justify-content-between m-2">
                         <a href="#research" class="process-item">
                             <img src="../images/research.svg"  width="18px" height="18px">Research
                         </a>
@@ -44,392 +84,346 @@
                             <img src="../images/results.svg"  width="18px" height="18px">Results
                         </a>
                     </div>
-                </nav>
-            </div> 
-        </header>
-    
-        <!--main content container-->  
-        <div id="main-content">
-        <!--research-->   
-            <section id="research" class="container-fluid ">
-                <div class="container">
-                    <!--heading--> 
-                    <h2 class="text-center mb-4">Research Insights and Data-Driven Decisions</h2>
-                    <p class="text-center mb-4">
-                        Throughout the checkout redesign process, I used tools like GA4 and Matomo to gather and analyze data on user behavior. The insights helped pinpoint major friction points and areas for improvement.
-                    </p>
-                    <!--skills-->      
-                    <div class="text-center mb-4">
-                        <span class="badge bg-secondary">GA4</span>
-                        <span class="badge bg-secondary">Matomo</span>
-                        <span class="badge bg-secondary">Sizzy</span>
-                        <span class="badge bg-secondary">HelpScout</span>
-                        <span class="badge bg-secondary">Zapier</span>
-                        <span class="badge bg-secondary">Google Search Console</span>
-                        <span class="badge bg-secondary">BrowserStack</span>
-                        <span class="badge bg-secondary">User Research</span>
-                        <span class="badge bg-secondary">Device Research</span>
-                        <span class="badge bg-secondary">Troubleshooting</span>
-                        <span class="badge bg-secondary">Stack Overflow</span>
-                        <span class="badge bg-secondary">Ecommerce Conversion UX (Coursera)</span>
-                        <span class="badge bg-secondary">Figma Conference</span>
-                        <span class="badge bg-secondary">Expo for User Research</span>
-                        <span class="badge bg-secondary">WCAC</span>
-                    </div>    
+                    
                 </div>
-                <div class="container">
-                    <!--Analytics -->
-                    <div class="row g-4">
-                        <div class="row g-4">
-                            <!-- Anomalies Detected Card -->
-                            <div class="col-md-6 d-flex align-items-stretch">
-                                <div class="card w-100">
-                                    <img src="../images/anomalies-detected.png" alt="Anomalies Detected in Cart Error Events" class="img-fluid">
-                                    <div class="card-body">
-                                        <h5 class="mt-3 ">Anomalies Detected</h5>
-                                        <p class="card-text">Event anomalies helped identify cart errors, allowing us to address and fix specific pain points within the checkout flow.</p>
-                                    </div>
-                                </div>
-                            </div>                   
-                            <!-- Users by Device Category Card -->
-                            <div class="col-md-6 d-flex align-items-stretch">
-                                <div class="card w-100">
-                                    <img src="../images/device-category.png" alt="Users by Device Category" class="img-fluid">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Users by Device Category</h5>
-                                        <p class="card-text">
-                                            Device usage data revealed a significant portion of users accessed the site via mobile, highlighting the need for mobile-optimized design.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    <!-- Row 1 -->
-                        <div class="row g-4 ">
-                            <!-- Cart Page Insights Card -->
-                            <div class="col-md-6 d-flex align-items-stretch">
-                                <div class="card w-100 mb-4 ">
-                                    <img src="../images/research-cart.png" alt="Research Cart Data" class="img-fluid">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Cart Page Insights</h5>
-                                        <p class="card-text">Device categories and completion rates revealed high abandonment rates, especially on mobile devices.</p>
-                                    </div>
-                                </div>
-                            </div>              
-                            <!-- Shipping Page Insights Card -->
-                            <div class="col-md-6 d-flex align-items-stretch">
-                                <div class="card w-100">
-                                    <img src="../images/research-ship.png" alt="Research Shipping Data" class="img-fluid">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Shipping Page Insights</h5>
-                                        <p class="card-text">Abandonment rates and time spent at this stage indicated confusion with shipping form fields and lack of auto-complete functionality.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    <!-- Row 2 -->             
-                        <div class="row g-4">
-                            <!-- Address Change Insights Card -->
-                            <div class="col-md-6 d-flex align-items-stretch">
-                                <div class="card w-100">
-                                    <img src="../images/research-ship-2.png" alt="Research Shipping Data 2" class="img-fluid">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Address Change Insights</h5>
-                                        <p class="card-text">Further analysis of shipping data revealed pain points with address changes, resulting in long elapsed times.</p>
-                                    </div>
-                                </div>
-                            </div>                   
-                            <!-- Payment Page Insights Card -->
-                            <div class="col-md-6 d-flex align-items-stretch">
-                                <div class="card w-100">
-                                    <img src="../images/research-payment.png" alt="Research Payment Data" class="img-fluid">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Payment Page Insights</h5>
-                                        <p class="card-text">Payment options and methods analysis revealed high abandonment rates, leading to the integration of Apple Pay and PayPal.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        <!--journey-->  
-            <section id="journey" class="container-fluid user-journey-section">
-                <div class="container">
-                    <h2 class="text-center mb-4">User Journey Mapping</h2>
-                    <p class="text-center mb-4">
-                        User journey mapping is a vital part of understanding how users interact with the checkout flow. By mapping out every touchpoint and potential obstacle, we were able to visualize the user's path through the checkout process. This helped highlight friction areas, confusion points, and opportunities for optimization, ultimately leading to a smoother and more intuitive checkout experience.
-                    </p>
-                        <div class="col-md-12 mb-4">
-                            <h4 class="mb-2">Mobile User Experience</h4>
-                            <img src="../images/user_mapping_image.png" alt="User Journey Mapping" class="img-fluid journey">
-                        </div>
-                        <div class="col-md-12 mb-4">
-                            <h4 class="mb-2">Desktop User Experience</h4>
-                            <img src="../images/user_mapping_image_2.png" alt="User Journey Mapping" class="img-fluid journey">
-                        </div>
-                    </div>
-            </section>  
-        <!--design iterations-->  
-            <section id="design-iterations" class="container">
-                <h2 class="text-center mt-4 mb-4">Design Iterations</h2>
-                <p class="text-center">
-                    Design iterations played a crucial role in refining the checkout process. Based on feedback from developers, product owners, and customer service, we continuously iterated on the design to address pain points and improve usability. Below are some of the major iterations, highlighting the areas of improvement based on internal and external feedback.
-                </p>
-                <div class="project-card mt-5">
-                    <div class="row col-md-12">
-                        <div class="col-md-6 project-card">
-                            <div class="card">
-                                <div class="card-body">
-                                <img src="../images/design_iteration_image_1.png" alt="Design Iteration 1" class="img-fluid iteration">
-                                <h5 class="mt-3"> New Shipping Address Page</h5>
-                                <p>This iteration focused on major customer friction points related to the shipping form. Pink notes indicate feedback from developers regarding functionality, while yellow notes highlight pending decisions from the product owner regarding exit points in the shipping stage.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 project-card">
-                            <div class="card">
-                                <div class="card-body">
-                                <img src="../images/design_iteration_image_2.png" alt="Design Iteration 2" class="img-fluid iteration">
-                                <h5 class="mt-3"> Payment Page (Signed In)</h5>
-                                <p>This version addresses friction areas related to power users with multiple saved cards. Feedback from customer service was incorporated, focusing on common inquiries, and final decisions were made on how to handle specific errors.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        <!--before after-->
-        <div class="container-fluid user-journey-section">
-            <section id="before-after" class="container">
-            <!--heading--> 
-                <h2 class="text-center mb-3 mt-4">Before and After: Checkout Flow Redesign</h2>
-                <p class="text-center">Showcasing the improvements made to the e-commerce checkout process, focusing on user experience, accessibility, and performance.</p>
-            <!--skills--> 
-                <div class="text-center mb-4">
-                    <span class="badge bg-secondary">Figma</span>
-                    <span class="badge bg-secondary">WCAC</span>
-                    <span class="badge bg-secondary">Wireframing</span>
-                    <span class="badge bg-secondary">Design Iterations</span>
-                    <span class="badge bg-secondary">Prototyping</span>
-                    <span class="badge bg-secondary">Handoff Prep</span>
-                    <span class="badge bg-secondary">UX Design</span>
-                    <span class="badge bg-secondary">User Journey Mapping</span>
-                    <span class="badge bg-secondary">Demoing</span>
-                </div>
-            <!--start page examples-->
-                <!--empty cart pages-->
-                <div class="project-card">
-                    <div class="row col-md-12">
-                        <div class="mb-4 col-md-6 ">
-                            <div class="card">
-                                <div class="card-header before">
-                                    Empty Cart Page - Before
-                                </div>
-                                <div class="card-body">
-                                        <img src="../images/before-empty-cart.png" alt="Before Cart Page" class="img-fluid">
-                                        <!-- <h5>Before: Empty Cart Page</h5> -->
-                                        <p>The original empty cart page had low contrast and minimal calls to action, which caused confusion among users, especially when it came to understanding what to do next. The design lacked clarity and direction for out-of-stock items and had a bland visual appeal, resulting in missed opportunities for users to continue shopping.
-                                        </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="mb-4 col-md-6">
-                            <div class="card">
-                                <div class="card-header">
-                                Empty Cart Page - After
-                                </div>
-                                <div class="card-body">
-                                    <img src="../images/after-empty-cart.png" alt="After Cart Page" class="img-fluid">
-                                    <!-- <h5>After: Empty Cart Page </h5> -->
-                                    <p class="mt-2"> The redesigned empty cart page improves clarity with higher contrast and a more prominent call to action, encouraging users to continue shopping. The out-of-stock items are clearly presented, and the new visual appeal engages users more effectively, offering a much clearer path forward, reducing confusion and increasing the likelihood of re-engagement.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!--cart pages-->        
-                <div class="project-card">
-                    <div class="row col-md-12">
-                        <div class="mb-4 col-md-6">
-                            <div class="card">
-                                <div class="card-header before">
-                                    Cart Page - Before
-                                </div>
-                                <div class="card-body">
-                                        <img src="../images/before-cart-page.png" alt="Before Cart Page" class="img-fluid">
-                                        <!-- <h5>Before: Cart Page</h5> -->
-                                        <p class="mt-2">The original cart page featured a cluttered and outdated design with poor visual hierarchy. Key elements like out-of-stock items and call-to-action buttons were not clearly visible, which frustrated users and led to abandoned carts. Additionally, the design was not responsive, creating inconsistencies across devices, especially on mobile.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="mb-4 col-md-6">
-                            <div class="card">
-                                <div class="card-header">
-                                    Cart Page - After
-                                </div>
-                                <div class="card-body">
-                                    <img src="../images/after-cart-page.png" alt="After Cart Page" class="img-fluid">
-                                    <!-- <h5>After: Cart Page </h5> -->
-                                    <p class="mt-2">The updated cart page features a clean and organized design, with improved visual hierarchy that highlights important elements like out-of-stock notifications and call-to-action buttons. The responsive design ensures consistency across devices, making it easier for users to navigate and complete their purchases, significantly reducing cart abandonment.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!--shipping form pages--> 
-                <div class="project-card">
-                    <div class="row col-md-12">
-                        <div class="mb-4 col-md-6">
-                            <div class="card">
-                                <div class="card-header before">
-                                    Shipping Page - Before
-                                </div>
-                                <div class="card-body">
-                                        <img src="../images/before-shipping-page.png" alt="Before Cart Page" class="img-fluid">
-                                        <!-- <h5>Before: Cart Page</h5> -->
-                                        <p>The original order confirmation page lacked clear communication regarding order details and next steps. It had a cluttered layout with low contrast, making it difficult for users to find important information like order number, estimated delivery, and contact details. This created uncertainty and lowered user satisfaction after completing a purchase.
-                                        </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="mb-4 col-md-6">
-                            <div class="card">
-                                <div class="card-header">
-                                    Shipping Page - Before
-                                </div>
-                                <div class="card-body">
-                                    <img src="../images/after-shipping-page.png" alt="After Cart Page" class="img-fluid">
-                                    <!-- <h5>After: Cart Page </h5> -->
-                                    <p>The redesigned order confirmation page features a cleaner layout with higher contrast, making key information like order number, estimated delivery, and contact details easily accessible. The streamlined design provides users with clear next steps and boosts confidence in their purchase, leading to higher satisfaction and fewer support inquiries.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>       
-
-                <!--ship confirm pages-->        
-                <div class="project-card">
-                    <div class="row col-md-12">
-                        <div class="mb-4 col-md-6">
-                            <div class="card">
-                                <div class="card-header before">
-                                    Shipping Confirmation Page - Before
-                                </div>
-                                <div class="card-body">
-                                        <img src="../images/before-shipping-confirm.png" alt="Before Cart Page" class="img-fluid">
-                                        <!-- <h5>Before: Cart Page</h5> -->
-                                        <p>The original order confirmation page lacked clear communication regarding order details and next steps. It had a cluttered layout with low contrast, making it difficult for users to find important information like order number, estimated delivery, and contact details. This created uncertainty and lowered user satisfaction after completing a purchase.
-                                        </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="mb-4 col-md-6">
-                            <div class="card">
-                                <div class="card-header">
-                                    Shipping Confirmation Page - After
-                                </div>
-                                <div class="card-body">
-                                    <img src="../images/after-shipping-confirm.png" alt="After Cart Page" class="img-fluid">
-                                    <!-- <h5>After: Cart Page </h5> -->
-                                    <p>The redesigned order confirmation page features a cleaner layout with higher contrast, making key information like order number, estimated delivery, and contact details easily accessible. The streamlined design provides users with clear next steps and boosts confidence in their purchase, leading to higher satisfaction and fewer support inquiries.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!--payment pages-->        
-                <div class="project-card">
-                    <div class="row col-md-12">
-                        <div class="mb-4 col-md-6">
-                            <div class="card">
-                                <div class="card-header before">
-                                    Payment Page - Before
-                                </div>
-                                <div class="card-body">
-                                        <img src="../images/before-payment-page.png" alt="Before Cart Page" class="img-fluid">
-                                        <!-- <h5>Before: Cart Page</h5> -->
-                                        <p>The old payment page had limited payment options and did not offer modern choices like Apple Pay or PayPal, leading to higher cart abandonment rates. The design was not intuitive, with users often getting confused about the steps needed to complete the payment process, especially on mobile devices.
-                                        </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="mb-4 col-md-6">
-                            <div class="card">
-                                <div class="card-header">
-                                    Payment Page - After
-                                </div>
-                                <div class="card-body">
-                                    <img src="../images/after-payment-page.png" alt="After Cart Page" class="img-fluid">
-                                    <!-- <h5>After: Cart Page </h5> -->
-                                    <p>The enhanced payment page now offers multiple modern payment options, including Apple Pay and PayPal, catering to user preferences and reducing friction. The overall design is more intuitive, guiding users through the payment process with clearer instructions and better mobile responsiveness, leading to a smoother checkout experience.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!--receipt pages-->        
-                <div clas="project-card">
-                    <div class="row col-md-12">
-                        <div class="mb-4 col-md-6">
-                            <div class="card">
-                                <div class="card-header before">
-                                    Order Confirmation Page  - Before
-                                </div>
-                                <div class="card-body">
-                                        <img src="../images/before-order-confirmation.png" alt="Before Cart Page" class="img-fluid">
-                                        <!-- <h5>Before: Cart Page</h5> -->
-                                        <p>The original order confirmation page lacked clear communication regarding order details and next steps. It had a cluttered layout with low contrast, making it difficult for users to find important information like order number, estimated delivery, and contact details. This created uncertainty and lowered user satisfaction after completing a purchase.
-                                        </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="mb-4 col-md-6">
-                            <div class="card">
-                                <div class="card-header">
-                                    Order Confirmation Page  - After
-                                </div>
-                                <div class="card-body">
-                                    <img src="../images/after-order-confirmation.png" alt="After Cart Page" class="img-fluid">
-                                    <!-- <h5>After: Cart Page </h5> -->
-                                    <p> The redesigned order confirmation page features a cleaner layout with higher contrast, making key information like order number, estimated delivery, and contact details easily accessible. The streamlined design provides users with clear next steps and boosts confidence in their purchase, leading to higher satisfaction and fewer support inquiries.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            <!--end page examples-->
-            </section>
-        </div>
-        </div>
-
-        <!--nav-->
-        <nav class="tm-bg-color bottom-nav">
-            <div class="container d-flex justify-content-between">
-                <a href="../index.html" class="nav-item text-center">
-                    <img src="../images/home.svg" style="width: 28px;" alt="Home Icon">
-                    <span class="d-block small">Home</span>
-                </a>
-                <a href="project1.html" class="nav-item text-center">
-                    <img src="../images/checkout.svg" style="width: 28px;" alt="Checkout Redesign Icon">
-                    <span class="d-block small">Redesign</span>
-                </a>
-                <a href="project2.html" class="nav-item text-center">
-                    <img src="../images/mobile-app.svg" style="width: 28px;" alt="Mobile App Icon">
-                    <span class="d-block small">Mobile App</span>
-                </a>
-                <a href="project3.html" class="nav-item text-center">
-                    <img src="../images/sbctv.svg" style="width: 28px;" alt="Design System Icon">
-                    <span class="d-block small">Video Platform</span>
-                </a>
-                <a href="project4.html" class="nav-item text-center">
-                    <img src="../images/design-system.svg" style="width: 28px;" alt="Debug Icon">
-                    <span class="d-block small">Design System</span>
-                </a>
             </div>
+        </div>
+        </div>
+    </section>
+    <section class="featured container-fluid">
+
+        <div id="checkout-research" class="container">
+            <h2>Research Insights and Data-Driven Decisions</h2>
+            <p>Throughout the checkout redesign process, I used tools like GA4 and Matomo to gather and
+                analyze data on user behavior. The insights helped pinpoint major friction points and areas for
+                improvement.</p>
+                <div class="mb-4">
+                    <span class="badge m-1">GA4</span>
+                    <span class="badge m-1">Matomo</span>
+                    <span class="badge m-1">Sizzy</span>
+                    <span class="badge m-1">HelpScout</span>
+                    <span class="badge m-1 ">Zapier</span>
+                    <span class="badge m-1 ">Google Search Console</span>
+                    <span class="badge m-1 ">BrowserStack</span>
+                    <span class="badge m-1 ">User Research</span>
+                    <span class="badge m-1 ">Device Research</span>
+                    <span class="badge m-1 ">Troubleshooting</span>
+                    <span class="badge m-1">Stack Overflow</span>
+                    <span class="badge m-1 ">Ecommerce Conversion UX (Coursera)</span>
+                    <span class="badge m-1 ">Figma Conference</span>
+                    <span class="badge m-1 ">Expo for User Research</span>
+                    <span class="badge m-1">WCAC</span>
+                </div>
+            <div class="row">
+                <article class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="../images/anomalies-detected.png" class="img-fluid" alt="Checkout Redesign">
+                        <div class="card-body">
+                            <h5>Anomalies Detected</h5>
+                            <p>Event anomalies helped identify cart errors, allowing us to address and fix specific pain
+                                points within the checkout flow.</p>
+
+                        </div>
+                    </div>
+                </article>
+                <article class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="../images/device-category.png" class="img-fluid" alt="Mobile App Design">
+                        <div class="card-body">
+                            <h5>Users by Device Category</h5>
+                            <p>Device usage data revealed a significant portion of users accessed the site via mobile,
+                                highlighting the need for mobile-optimized design.</p>
+
+                        </div>
+                    </div>
+                </article>
+                <article class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="../images/research-cart.png" class="img-fluid" alt="Design System">
+                        <div class="card-body">
+                            <h5>Cart Page Insights</h5>
+                            <p>Device categories and completion rates revealed high abandonment rates, especially on
+                                mobile devices.</p>
+                        </div>
+                    </div>
+                </article>
+                <article class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="../images/research-ship.png" class="img-fluid" alt="Design System">
+                        <div class="card-body">
+                            <h5>Shipping Page Insights</h5>
+                            <p>Abandonment rates and time spent at this stage indicated confusion with shipping form
+                                fields and lack of auto-complete functionality.</p>
+                        </div>
+                    </div>
+                </article>
+                <article class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="../images/research-ship-2.png" class="img-fluid" alt="Design System">
+                        <div class="card-body">
+                            <h5>Address Change Insights</h5>
+                            <p>Further analysis of shipping data revealed pain points with address changes, resulting in
+                                long elapsed times.</p>
+
+                        </div>
+                    </div>
+                </article>
+                <article class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="../images/research-payment.png" class="img-fluid" alt="Design System">
+                        <div class="card-body">
+                            <h5>Payment Page Insights</h5>
+                            <p>Payment options and methods analysis revealed high abandonment rates, leading to the
+                                integration of Apple Pay and PayPal.</p>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section id="mapping" class="container-fluid">
+        <div class="container">
+            <h2 class="mb-4">User Journey Mapping</h2>
+            <div class="row">
+                <p class="mb-4">
+                    User journey mapping is a vital part of understanding how users interact with the checkout flow. By
+                    mapping out every touchpoint and potential obstacle, we were able to visualize the user's path
+                    through the checkout process. This helped highlight friction areas, confusion points, and
+                    opportunities for optimization, ultimately leading to a smoother and more intuitive checkout
+                    experience.
+                </p>
+                <article class="col-md-6">
+                    <div class="card p-4">
+                        <h4 class="mb-2">Mobile User Experience</h4>
+                        <img src="../images/user_mapping_image.png" alt="User Journey Mapping" class="img-fluid">
+                    </div>
+                </article>
+                <article class="col-md-6">
+                    <div class="card p-4">
+                        <h4 class="mb-2">Desktop User Experience</h4>
+                        <img src="../images/user_mapping_image_2.png" alt="User Journey Mapping" class="img-fluid">
+                    </div>
+                </article>
+            </div>
+    </section>
+    <section class="featured container-fluid">
+        <div class="container">
+            <h2>Design Iterations
+            </h2>
+            <p class="mb-4">The Design iterations played a crucial role in refining the checkout process. Based on
+                feedback from developers, product owners, and customer service, we continuously iterated on the design
+                to address pain points and improve usability. Below are some of the major iterations, highlighting the
+                areas of improvement based on internal and external feedback.</p>
+            <div class="row">
+                <article class="col-md-6 mb-4">
+                    <div class="card">
+
+                        <div class="card-body">
+                            <h5>New Shipping Address Page</h5>
+
+                            <img src="../images/design_iteration_image_1.png" alt="Design Iteration 1"
+                                class="img-fluid p-4">
+                            <p>This iteration focused on major customer friction points related to the shipping form.
+                                Pink notes indicate feedback from developers regarding functionality, while yellow notes
+                                highlight pending decisions from the product owner regarding exit points in the shipping
+                                stage.</p>
+                        </div>
+                    </div>
+                </article>
+                <article class="col-md-6 mb-4">
+                    <div class="card">
+
+                        <div class="card-body">
+                            <h5>Payment Page (Signed In)</h5>
+                            <img src="../images/design_iteration_image_2.png" alt="Design Iteration 1"
+                                class="img-fluid p-4">
+                            <p>This version addresses friction areas related to power users with multiple saved cards.
+                                Feedback from customer service was incorporated, focusing on common inquiries, and final
+                                decisions were made on how to handle specific errors.</p>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section id="comparison" class="container-fluid">
+        <div class="container">
+            <h2>Before and After: Checkout Flow Redesign
+            </h2>
+            <p class="mb-4">Showcasing the improvements made to the e-commerce checkout process, focusing on user experience, accessibility, and performance.
+            </p>
+            <div class="row">
+                <article class="col-md-6 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5>Old Empty Cart Design</h5>
+                            <img src="../images/before-empty-cart.png" alt="Design Iteration 1" class="img-fluid ">
+                            <p>The original empty cart page had low contrast and minimal calls to action, which caused
+                                confusion among users, especially when it came to understanding what to do next. The
+                                design lacked clarity and direction for out-of-stock items and had a bland visual
+                                appeal, resulting in missed opportunities for users to continue shopping.</p>
+                        </div>
+                    </div>
+                </article>
+                <article class="col-md-6 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5>New Empty Cart Design</h5>
+                            <img src="../images/after-empty-cart.png" alt="Design Iteration 1" class="img-fluid ">
+                            <p>The redesigned empty cart page improves clarity with higher contrast and a more prominent
+                                call to action, encouraging users to continue shopping. The out-of-stock items are
+                                clearly presented, and the new visual appeal engages users more effectively, offering a
+                                much clearer path forward, reducing confusion and increasing the likelihood of
+                                re-engagement.</p>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <div class="row">
+                <article class="col-md-6 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5>Old Cart Design</h5>
+                            <img src="../images/before-cart-page.png" alt="Design Iteration 1" class="img-fluid ">
+                            <p>The original cart page featured a cluttered and outdated design with poor visual hierarchy. Key elements like out-of-stock items and call-to-action buttons were not clearly visible, which frustrated users and led to abandoned carts. Additionally, the design was not responsive, creating inconsistencies across devices, especially on mobile.</p>
+                        </div>
+                    </div>
+                </article>
+                <article class="col-md-6 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5>New Cart Design</h5>
+                            <img src="../images/after-cart-page.png" alt="Design Iteration 1" class="img-fluid ">
+                            <p>The updated cart page features a clean and organized design, with improved visual hierarchy that highlights important elements like out-of-stock notifications and call-to-action buttons. The responsive design ensures consistency across devices, making it easier for users to navigate and complete their purchases, significantly reducing cart abandonment.</p>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <div class="row">
+                <article class="col-md-6 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5>Old Shipping Form Design</h5>
+                            <img src="../images/before-shipping-page.png" alt="Design Iteration 1" class="img-fluid ">
+                            <p>The original cart page featured a cluttered and outdated design with poor visual hierarchy. Key elements like out-of-stock items and call-to-action buttons were not clearly visible, which frustrated users and led to abandoned carts. Additionally, the design was not responsive, creating inconsistencies across devices, especially on mobile.</p>
+                        </div>
+                    </div>
+                </article>
+                <article class="col-md-6 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5>New Shipping Form Design</h5>
+                            <img src="../images/after-shipping-page.png" alt="Design Iteration 1" class="img-fluid ">
+                            <p>The updated cart page features a clean and organized design, with improved visual hierarchy that highlights important elements like out-of-stock notifications and call-to-action buttons. The responsive design ensures consistency across devices, making it easier for users to navigate and complete their purchases, significantly reducing cart abandonment.</p>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <div class="row">
+                <article class="col-md-6 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5>Old Shipping Confirmation Design</h5>
+                            <img src="../images/before-shipping-confirm.png" alt="Design Iteration 1" class="img-fluid ">
+                            <p>The original order confirmation page lacked clear communication regarding order details and next steps. It had a cluttered layout with low contrast, making it difficult for users to find important information like order number, estimated delivery, and contact details. This created uncertainty and lowered user satisfaction after completing a purchase.</p>
+                        </div>
+                    </div>
+                </article>
+                <article class="col-md-6 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5>New Shipping Confirmation Design</h5>
+                            <img src="../images/after-shipping-confirm.png" alt="Design Iteration 1" class="img-fluid ">
+                            <p>The redesigned order confirmation page features a cleaner layout with higher contrast, making key information like order number, estimated delivery, and contact details easily accessible. The streamlined design provides users with clear next steps and boosts confidence in their purchase, leading to higher satisfaction and fewer support inquiries.</p>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <div class="row">
+                <article class="col-md-6 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5>Old Payment Design</h5>
+                            <img src="../images/before-payment-page.png" alt="Design Iteration 1" class="img-fluid ">
+                            <p>The old payment page had limited payment options and did not offer modern choices like Apple Pay or PayPal, leading to higher cart abandonment rates. The design was not intuitive, with users often getting confused about the steps needed to complete the payment process, especially on mobile devices.</p>
+                        </div>
+                    </div>
+                </article>
+                <article class="col-md-6 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5>New Payment Design</h5>
+                            <img src="../images/after-payment-page.png" alt="Design Iteration 1" class="img-fluid ">
+                            <p>The enhanced payment page now offers multiple modern payment options, including Apple Pay and PayPal, catering to user preferences and reducing friction. The overall design is more intuitive, guiding users through the payment process with clearer instructions and better mobile responsiveness, leading to a smoother checkout experience.</p>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <div class="row">
+                <article class="col-md-6 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5>Old Payment Design</h5>
+                            <img src="../images/before-order-confirmation.png" alt="Design Iteration 1" class="img-fluid ">
+                            <p>The original order confirmation page lacked clear communication regarding order details and next steps. It had a cluttered layout with low contrast, making it difficult for users to find important information like order number, estimated delivery, and contact details. This created uncertainty and lowered user satisfaction after completing a purchase.</p>
+                        </div>
+                    </div>
+                </article>
+                <article class="col-md-6 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5>New Payment Design</h5>
+                            <img src="../images/after-order-confirmation.png" alt="Design Iteration 1" class="img-fluid ">
+                            <p>The redesigned order confirmation page features a cleaner layout with higher contrast, making key information like order number, estimated delivery, and contact details easily accessible. The streamlined design provides users with clear next steps and boosts confidence in their purchase, leading to higher satisfaction and fewer support inquiries.</p>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+        <nav id="mobile-nav" class="tm-bg-color top-nav" style="display:none;">
+            <div class=" container d-flex justify-content-between">
+                <a href="../projects/project1.html" class="nav-item text-center justify-content-center">
+                    <img src="../images/logo.svg" alt="Teena Monaco Logo">
+                </a>
+                <div class="header-icons d-flex">
+                    <!-- <a href="https://linkedin.com/in/teemonaco" target="_blank" class="contact-icon">
+                            <img src="images/linkedin.svg" alt="LinkedIn Icon" width="30px">
+                        </a>
+                        <a href="mailto:teemonaco@gmail.com" class="contact-icon">
+                            <img src="images/email.svg" width="30px">
+                        </a>
+                        <a href="tel:914-527-3509" class="contact-icon">
+                            <img src="images/phone.svg" width="30px">
+                        </a> -->
+
+                    <a href="projects/project1.html" class="nav-item text-center">
+                        <img src="../images/checkout.svg" style="width: 22px;" alt="Checkout Redesign Icon">
+                        <span class="d-block small">Redesign</span>
+                    </a>
+                    <a href="projects/project2.html" class="nav-item text-center">
+                        <img src="../images/mobile-app.svg" style="width: 22px;" alt="Mobile App Icon">
+                        <span class="d-block small">Mobile App</span>
+                    </a>
+                    <a href="projects/project3.html" class="nav-item text-center">
+                        <img src="../images/design-system.svg" style="width: 22px;" alt="Design System Icon">
+                        <span class="d-block small">Design System</span>
+                    </a>
+                    <a href="projects/project4.html" class="nav-item text-center">
+                        <img src="../images/video-platform.svg" style="width: 22px;" alt="Debug Icon">
+                        <span class="d-block small">Video Platform</span>
+                    </a>
+
+
+                </div>
         </nav>
-        
+
+
     <!-- Bootstrap JS -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
-    </body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
 </html>
