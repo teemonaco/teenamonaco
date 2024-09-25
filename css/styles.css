@@ -45,19 +45,7 @@ a.contact-icon {
     display: flex;
 }
 
-.header-icons {
-    gap: 20px;
-    justify-content: flex-end;
-    flex: 2;
-}
 
-.header-icons .nav-item {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 6px;
-    padding: 8px;
-}
 
 
 
@@ -307,11 +295,6 @@ a.process-item {
     background-color:#f5f2eb!important
 }
 
-.header-icons {
-    gap: 4px;
-    max-width: 70%;
-}
-
 .stat-card {
     height: 100%;
     display: flex;
@@ -362,14 +345,63 @@ a.process-item {
     --card-bg-color: #FFFFFF; /* Pure white for content cards */
     --text-color: #2B2D42; /* Darker gray for text */
     --bs-border-color: #dee2e6;
-    --bs-badge-font-weight: 400;
     --bs-card-height: 100%;
+    --bs-nav-link-color: #2B2D42;
+    --bs-nav-link-hover-color: #3770FF;
 }
 
+.impact-badge {
+    font-size: 1rem!important;
+    font-weight: 500;
+    border-radius: 0px!important;
+    border-radius: 4px!important;
+    color: #020617;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    line-height: 110%;
+    padding: 20px;
+    background-color: #f8fafc!important;
+    width: 100%;
+    border: 1px solid #e2e8f0;
+}
 
-html {
-    scroll-padding-top: 160px!important; 
-    scroll-padding-bottom: 160px!important;
+div.issue-list {
+    background-color: #f8fafc!important;
+    padding: 10px 20px;
+}
+
+.overview .nav-item {
+    background-color: #fff;
+    margin-right: 8px;
+    border: 1px solid #ccc;
+}
+
+.overview .nav-item .nav-link {
+    padding: 4px 8px!important;
+    display: inline-flex;
+    font-size: .875rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.overview .nav-link.active {
+    color: #3770FF;
+    background-color: #eff1fc;
+    border: 1px solid #3770FF;
+}
+.overview .nav-link:focus, .nav-link:hover {
+    color: #3770FF;
+    background-color: #eff1fc;
+    border: 1px solid #3770FF;
+}
+
+/* global styles */
+
+main {
+    top: 40px;
+    position: relative;
 }
 
 body {
@@ -397,7 +429,9 @@ section {
 
 section.about-me {
     align-items: center;
-padding-bottom: 0px;
+padding-bottom: 0px!important;
+padding-top: 0px!important;
+
 }
 
 .card {
@@ -446,6 +480,13 @@ header {
     margin-bottom: 30px;
 }
 
+div.header-icons {
+    display: flex;
+    font-size: 1rem;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
 .top-nav {
     background-color: #eaeffb; /* Soft light blue */
     position: fixed;
@@ -454,22 +495,47 @@ header {
     z-index: 1000;
 }
 
-.top-nav a img {
-    transition: filter 0.3s;
-    max-width: 180px!important;
+a.header.nav-link {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    padding: 8px;
 }
 
-.top-nav a img:hover {
-    filter: none; /* Removing grayscale on hover */
-    color: #5E84E2; /* Light blue for active state */
-}
-
-.top-nav a {
+.header-icons a {
     text-decoration: none;
     color: #4E4B66;
     font-weight: 400;
-    font-size: .8rem!important; /* Adjust to fit your needs */
+    line-height: 120%;
+    font-size: .875rem!important; /* Adjust to fit your needs */
 }
+
+a.header.nav-link:hover {
+    border: none!important;
+    outline: none!important;
+    color: #4E4B66!important;
+    background-color: #4e4b6618!important;
+    border-color: #eaeffb!important;
+}
+
+
+.header-icon-nav {
+    justify-content: flex-end;
+    display: flex;
+    flex: 2;
+}
+
+.header-icons .nav-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 6px;
+}
+
+
+
 
 .top-nav a.nav-logo.nav-item:hover {
     background-color: #F5F8FF!important;
@@ -504,18 +570,20 @@ img.program-logo, img.company-logo {
     background-color: #ffffff;
 }
 
-.impactful-stats {
-    background-color: #ffffff;
-    border-radius: 10px;
-    padding: 10px!important;
-    border: 1px solid var(--bs-border-color);
-    box-sizing: border-box;
+div.impactful-stats.card {
+    border-radius: 6px;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 10px;
+    border: 1px solid var(--bs-border-color);
+    background-color: #ffffff;
+    padding: 20px;
+    height: 100%;
 }
+
+
 
 .charts.img-fluid {
     padding-top: 20px;
@@ -542,13 +610,6 @@ buttons
 
 }
 
-span.badge {
-    font-weight: 400;
-    font-family: 'Inter', sans-serif!important;
-    background-color: var(--primary-color)!important; /* Softer hover effect */
-    color:#fff;
-}
-
 #checkout-research .card , #mapping .card, #comparison .card{
     height: 100%;
 }
@@ -558,8 +619,8 @@ div.social-icons {
 }
 
 @media only screen and (max-width: 768px) {
-    div.header-icons.d-flex {
-        display: none!important;;
+    div.header-icon-nav {
+        display: none!important;
     }
 
     div.social-icons {

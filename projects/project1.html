@@ -10,49 +10,434 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Inter Font -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 
 <body>
-
-    <header class="tm-bg-color header p-0">
-        <nav class="tm-bg-color top-nav">
-            <div class=" container d-flex justify-content-between">
-                <a href="../projects/project1.html" class="nav-item text-center justify-content-center">
-                    <img src="../images/logo.svg" alt="Teena Monaco Logo">
+    <nav class="tm-bg-color top-nav">
+        <div class=" container d-flex justify-content-between p-0">
+            <a href="../projects/project1.html" class="nav-logo nav-item text-center align-items-center">
+                <img src="../images/logo.svg" alt="Teena Monaco Logo" width="160">
+            </a>
+            <div class="social-icons">
+                <a href="https://linkedin.com/in/teemonaco" target="_blank" class="contact-icon">
+                    <img src="../images/linkedin.svg" alt="LinkedIn Icon" width="26px">
                 </a>
-                <div class="header-icons d-flex">
-                    <!-- <a href="https://linkedin.com/in/teemonaco" target="_blank" class="contact-icon">
-                            <img src="images/linkedin.svg" alt="LinkedIn Icon" width="30px">
+                <a href="mailto:teemonaco@gmail.com" class="contact-icon">
+                    <img src="../images/email.svg" width="26px">
+                </a>
+                <a href="tel:914-527-3509" class="contact-icon">
+                    <img src="../images/phone.svg" width="26px">
+                </a>
+            </div>
+            <div class="header-icon-nav">
+                <ul class="header-icons top-menu nav">
+                    <li class="nav-item">
+                        <a class="header nav-link" href="projects/project2.html">
+                            <img src="../images/checkout.svg" style="width: 22px;" alt="Checkout Redesign Icon">
+                            Redesign
                         </a>
-                        <a href="mailto:teemonaco@gmail.com" class="contact-icon">
-                            <img src="images/email.svg" width="30px">
+                    </li>
+                    <li class="nav-item">
+                        <a class="header nav-link" href="projects/project2.html">
+                            <img src="../images/mobile-app.svg" style="width: 22px;" alt="Checkout Redesign Icon">
+                            Mobile App
                         </a>
-                        <a href="tel:914-527-3509" class="contact-icon">
-                            <img src="images/phone.svg" width="30px">
-                        </a> -->
+                    </li>
+                    <li class="nav-item">
+                        <a class="header nav-link" href="projects/project3.html">
+                            <img src="../images/design-system.svg" style="width: 22px;" alt="Checkout Redesign Icon">
+                            Design System
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="header nav-link" href="projects/project4.html">
+                            <img src="../images/video-platform.svg" style="width: 22px;" alt="Checkout Redesign Icon">
+                            Video Platform
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main>
+    <!--about me-->
+    <section class="overview">
+        <div class="container">
 
-                    <a href="projects/project1.html" class="nav-item text-center">
-                        <img src="../images/checkout.svg" style="width: 22px;" alt="Checkout Redesign Icon">
-                        <span class="d-block small">Redesign</span>
-                    </a>
-                    <a href="projects/project2.html" class="nav-item text-center">
-                        <img src="../images/mobile-app.svg" style="width: 22px;" alt="Mobile App Icon">
-                        <span class="d-block small">Mobile App</span>
-                    </a>
-                    <a href="projects/project3.html" class="nav-item text-center">
-                        <img src="../images/design-system.svg" style="width: 22px;" alt="Design System Icon">
-                        <span class="d-block small">Design System</span>
-                    </a>
-                    <a href="projects/project4.html" class="nav-item text-center">
-                        <img src="../images/video-platform.svg" style="width: 22px;" alt="Debug Icon">
-                        <span class="d-block small">Video Platform</span>
-                    </a>
+            <div class="row align-items-center justify-content-center">
+                <!-- <div class="d-flex justify-content-center col-md-4">
+                    <img src="../images/redesign-hero.png" alt="Checkout Redesign Mockup" width="100%" height="auto"
+                        class="img-fluid">
+                </div> -->
+                <div class="overview col-md-12 p-3">
+                    <h1>E-Commerce Checkout Redesign</h1>
+                    
+                    
+                    <p class="about-me-text">
+                        The high-traffic e-commerce platform, catering primarily to women aged 55+, had not undergone a redesign in nearly 20 years. The outdated design failed to meet WCAG AA accessibility guidelines, which were crucial for the core demographic. Additionally, the site was not responsive, and research surfaced the importance of mobile-friendly updates for improving user engagement and accessibility.</p>
+                        <p class="about-me-text">
+                        We introduced Pay in 4 with PayPal and Apple Pay to streamline the checkout flow, aiming for a faster, more efficient user experience that aligned with modern payment preferences.</p>
+                        <div class="header-icons">
+                            <ul class="nav mb-3 mt-3">
+                                <li class="nav-item">
+                                <a class="nav-link" href="#">Research</a>
+                                </li>
+                                <li class="nav-item">
+                                <a class="nav-link" href="#">Ideation</a>
+                                </li>
+                                <li class="nav-item">
+                                <a class="nav-link" href="#">Wireframes</a>
+                                </li>
+                                <li class="nav-item">
+                                <a class="nav-link" href="#">Prototypes</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Final Screens</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="social-icons">
+                            <a href="https://linkedin.com/in/teemonaco" target="_blank" class="contact-icon">
+                                <img src="images/linkedin.svg" alt="LinkedIn Icon" width="30px">
+                            </a>
+                            <a href="mailto:teemonaco@gmail.com" class="contact-icon">
+                                <img src="images/email.svg" width="30px">
+                            </a>
+                            <a href="tel:914-527-3509" class="contact-icon">
+                                <img src="images/phone.svg" width="30px">
+                            </a> 
+                        </div>
+                    </div>
+                    
+            </div>
+        </div>
 
-
+    </section>
+    <!--projects-->
+    <section class="featured">
+        <div class="container">
+            <h2 class="mb-4">Research Insights and Data-Driven Decisions</h2>
+            <p>Throughout the checkout redesign process, I utilized tools like GA4 and Matomo to gather and analyze data on user behavior. The insights helped pinpoint major friction points and areas for improvement, particularly regarding abandonment rates and anomalies detected across the checkout flow.</p>
+            <p class="mb-4">This prompted a deeper investigation into specific page-level performance, with a focus on understanding why users were abandoning their carts at such high rates during key stages like shipping, billing, and confirmation.</p>
+    
+            <div class="row">
+                <div class="col-md-6 mb-2">
+                    <div class="impactful-stats card">
+                        <h5>Anomallies Detected</h5> 
+                        <img src="../images/redesign-chart-2.svg" alt="57% of Users" class="img-fluid">
+                        <p>The graph shows a significant spike in cart errors, which are events we track through GA4. However, the error patterns were inconsistent and didn't align with specific events, such as days when we stream live videos or experience high traffic. This raised questions about device and browser compatibility, particularly considering our core demographic of women aged 55+. I also considered the possibility of issues with accessibility, unclear language or instructions, and potential flaws in the user journey. This led me to question whether we were using best practices for accessibility and usability, especially without a formal framework in place.</p>
+                    </div>
                 </div>
-        </nav>
+                <div class="col-md-6 mb-2">
+                    <div class="impactful-stats card">
+                        <h5>Abandonment Rate by Page</h5> 
+                        <img src="../images/redesign-chart-3.svg" alt="57% of Users" class="img-fluid">
+                        <p>To further investigate where users were facing challenges, I examined the abandonment rate by page. This bar graph highlights that the most significant drop-offs occurred during the "My Cart" and "Billing" stages of the checkout process, on both mobile and desktop. With this information, I prioritized these two pages for improvements, as they represented the most crucial friction points in the checkout journey. Addressing these could have a major impact on reducing cart abandonment and improving overall conversion rates.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- <section class="featured container-fluid">
 
-    </header>
+        <div class="container">
+            <h2>Featured Projects</h2>
+            <p class="mb-4">Take a look at some of the work I've done, from mobile app designs to complete redesigns of
+                e-commerce systems.</p>
+            <div class="row">
+                <article class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="images/checkout-thumbnail.png" class="img-fluid" alt="Checkout Redesign"> 
+                        <div class="card-body">
+                            <h5>Checkout Redesign</h5>
+                            <p>A comprehensive redesign of an e-commerce checkout process, enhancing user experience,
+                                usability, and driving higher conversion rates.</p>
+                            <a href="projects/project1.html" class="btn view-project">View Project</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="images/mobile-thumbnail.png" class="img-fluid" alt="Mobile App Design"> 
+                        <div class="card-body">
+                            <h5>Mobile App Design</h5>
+                            <p>Designing a mobile application with an intuitive interface, focusing on seamless user
+                                experience and innovative functionalities.</p>
+                            <a href="projects/project2.html" class="btn view-project">View Project</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="col-md-4 mb-4">
+                    <div class="card">
+                       <img src="images/design-system-thumbnail.png" class="img-fluid" alt="Design System"> 
+                        <div class="card-body">
+                            <h5>Design System</h5>
+                            <p>Developing a scalable and reusable design system that integrates with Figma, improving
+                                developer handoffs and code consistency.</p>
+                            <a href="projects/project3.html" class="btn view-project">View Project</a>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section> -->
+    <!--tools-->
+    <section class="container">
+                <h2 class="mb-4">Findings</h2>
+                <p class="mb-4">The design and development process requires a variety of specialized tools to ensure efficiency,
+                    collaboration, and precision. These programs, including Figma, Adobe XD, InVision, BrowserStack, and
+                    GA4, form the backbone of a successful UX workflow. From wireframing and prototyping to
+                    cross-browser testing and analytics, each tool plays a critical role in crafting intuitive and
+                    user-centered digital experiences.</p>
+                    <div class="row">
+
+                        <article class="col-md-6 mb-4">
+                            <div class="card">
+                                <div class="impact-badge">
+                                    <div>Poor Accessibility for Core Demographic</div>
+                                    <i class="fa-regular fa-circle-xmark fa-lg"></i>                                
+                                </div>
+                                <div class="card-body">
+                                    <div>
+                                        <h5 class="mb-3">Cart Item Messages</h5>
+                                        <img src="../images/cart-messages.svg" class="img-fluid" alt="Checkout Redesign">
+                                         <p class="mt-3 small mb-0">Cart item product messages are essential for guiding users through critical decisions during the checkout process. 
+                                         </p>
+                                    </div>                                 
+                                </div>
+                                <div class="issue-list">
+                                    <div class="d-flex align-items-start gap-2 mt-3">
+                                        <img src="../images/x.svg" width="14px" alt="Checkout Redesign" class="mt-1">
+                                        <div>
+                                            <h6 class="mb-1">Failing Minimum AA Contrast Levels</h6>
+                                            <p class="small">The low contrast makes these messages hard to read, especially for users with visual impairments.</p> 
+                                        </div> 
+                                    </div>  
+                                    <div class="d-flex align-items-start gap-2 mt-3">
+                                        <img src="../images/x.svg" width="14px" alt="Checkout Redesign" class="mt-1">
+                                        <div>
+                                            <h6 class="mb-1">Fails as Perceivable</h6>
+                                            <p class="small">Users may not notice important warnings or instructions due to poor design visibility.</p> 
+                                        </div> 
+                                    </div>   
+                                    <div class="d-flex align-items-start gap-2 mt-3">
+                                        <img src="../images/x.svg" width="14px" alt="Checkout Redesign" class="mt-1">
+                                        <div>
+                                            <h6 class="mb-1">Serious Impact to Users</h6>
+                                            <p class="small">Without clear visibility, users are unable to take the necessary actions, leading to frustration and potential cart abandonment.</p> 
+                                        </div> 
+                                    </div>    
+                                </div>
+                            </div>
+                        </article>
+                        <article class="col-md-6 mb-4">
+                            <div class="card">
+                                <div class="impact-badge">
+                                    <div>Confusing Navigation/Instructions</div>
+                                    <i class="fa-regular fa-circle-xmark fa-lg"></i>                                
+                                </div>
+                                <div class="card-body">
+                                    <div>
+                                        <h5 class="mb-3">Cart Item Messages</h5>
+                                        <img src="../images/error-1.svg" class="img-fluid" alt="Checkout Redesign">
+                
+                                         <p class="mt-3 small mb-0">Cart item product messages are essential for guiding users through critical decisions during the checkout process. 
+                                         </p>
+                                    </div>                                 
+                                </div>
+                                <div class="issue-list">
+                                    <div class="d-flex align-items-start gap-2 mt-3">
+                                        <img src="../images/x.svg" width="14px" alt="Checkout Redesign" class="mt-1">
+                                        <div>
+                                            <h6 class="mb-1">Failing Minimum AA Contrast Levels</h6>
+                                            <p class="small">The low contrast makes these messages hard to read, especially for users with visual impairments.</p> 
+                                        </div> 
+                                    </div>  
+                                    <div class="d-flex align-items-start gap-2 mt-3">
+                                        <img src="../images/x.svg" width="14px" alt="Checkout Redesign" class="mt-1">
+                                        <div>
+                                            <h6 class="mb-1">Fails as Perceivable</h6>
+                                            <p class="small">Users may not notice important warnings or instructions due to poor design visibility.</p> 
+                                        </div> 
+                                    </div>   
+                                    <div class="d-flex align-items-start gap-2 mt-3">
+                                        <img src="../images/x.svg" width="14px" alt="Checkout Redesign" class="mt-1">
+                                        <div>
+                                            <h6 class="mb-1">Serious Impact to Users</h6>
+                                            <p class="small">Without clear visibility, users are unable to take the necessary actions, leading to frustration and potential cart abandonment.</p> 
+                                        </div> 
+                                    </div>    
+                                </div>
+                            </div>
+                        </article>
+                        <!-- <article class="col-md-4 mb-4">
+                            <div class="card">
+                                <img src="../images/cart-text-fail.svg" class="img-fluid" alt="Checkout Redesign">
+                                <div class="card-body">
+                                    <h5>Anomalies Detected</h5>
+                                    <p>Event anomalies helped identify cart errors, allowing us to address and fix specific pain
+                                        points within the checkout flow.</p>
+        
+                                </div>
+                            </div>
+                        </article> -->
+                    </div>
+                    <!-- <div class="row justify-content-center">
+                        <div class="col-md-8 mb-2">                                     
+                 
+                                    <h5 >Information Architecture/Contrast </h5>
+                                    <p>The Fix button must be clicked to resolve this error and continue with the checkout.</p><p>The warning message next to an error message is confusing on what action should be taken.</p><p>All key elements fail the minimum AA contrast level requirements</p>
+                                
+                        </div>
+                        <div class="col-md-4 mb-2">
+                            <div class="impactful-stats card">
+                                <h5 >Failing WCAG AA requirements</h5>
+                
+                                <img src="../images/cart-contrast-3.svg" alt="57% of Users" class="img-fluid">
+                    
+                                <img src="../images/cart-contrast-5.svg" alt="57% of Users" class="img-fluid">
+                                <img src="../images/cart-contrast-6.svg" alt="57% of Users" class="img-fluid">
+                                <img src="../images/cart-contrast-7.svg" alt="57% of Users" class="img-fluid">
+
+                            </div>
+                            
+                        </div>
+                    </div> -->
+                    <!-- <div class="row justify-content-center">
+                        <h5 class="mb-4">Old Design</h5>
+                        <div class="col-md-6 mb-2">
+                            <img src="../images/cart-contrast-issues-1.svg" class="mb-4" alt="57% of Users" class="img-fluid">
+                        </div>
+                        <div class="col-md-6 mb-2">
+                            <img src="../images/cart-contrast-issues-2.svg" class="mb-4" alt="57% of Users" class="img-fluid">
+                        </div>
+                    </div>
+                  <div class="row">
+                        <div class="col-md-6 mb-2">
+                            <h5 class="mb-4">Key Elements Fail Minimuim AA Contrast Requirements</h5>
+                            <div class="d-flex">
+                            <img src="../images/cart-contrast-2.svg" alt="57% of Users" class="img-fluid">
+                            <img src="../images/cart-contrast-3.svg" alt="57% of Users" class="img-fluid">
+                  
+                                <img src="../images/cart-contrast-5.svg" alt="57% of Users" class="img-fluid">
+                                <div style="padding: 3px; color: #909090; font-weight: 400; font-size: 18px; line-height: 100%; width: fit-content;">Product Title Text</div>             <img src="../images/cart-contrast-6.svg" alt="57% of Users" class="img-fluid">
+                                <img src="../images/cart-contrast-7.svg" alt="57% of Users" class="img-fluid">
+                                <div style="display: flex; flex-direction: column; justify-content: flex-end; align-items: flex-end; width: fit-content; gap: 0px;">
+                                    <div style="padding: 3px; color: #909090; text-decoration: line-through; font-weight: 400; font-size: 18px; line-height: 100%;;">$13.99</div> 
+                                    <div style="padding: 3px; color: #666; font-weight: 400; font-size: 16px;">$24.99</div> 
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-2">
+                            <h5 class="mb-4">Key Elements Fail Minimuim AA Contrast Requirements</h5>
+                            <div class="d-flex">
+                            <img src="../images/cart-contrast-2.svg" alt="57% of Users" class="img-fluid">
+                            <img src="../images/cart-contrast-3.svg" alt="57% of Users" class="img-fluid">
+                  
+                                <img src="../images/cart-contrast-5.svg" alt="57% of Users" class="img-fluid">
+                                <div style="padding: 3px; color: #909090; font-weight: 400; font-size: 18px; line-height: 100%; width: fit-content;">Product Title Text</div>             <img src="../images/cart-contrast-6.svg" alt="57% of Users" class="img-fluid">
+                                <img src="../images/cart-contrast-7.svg" alt="57% of Users" class="img-fluid">
+                                <div style="display: flex; flex-direction: column; justify-content: flex-end; align-items: flex-end; width: fit-content; gap: 0px;">
+                                    <div style="padding: 3px; color: #909090; text-decoration: line-through; font-weight: 400; font-size: 18px; line-height: 100%;;">$13.99</div> 
+                                    <div style="padding: 3px; color: #666; font-weight: 400; font-size: 16px;">$24.99</div> 
+                                </div>
+                            </div>
+                        </div>
+                  </div> -->
+            </div>
+    </section>
+    <!--stats-->
+    <section class="featured">
+        <div class="container">
+            <h2 class="mb-4">Why UX Design Matters</h2>
+            <p class="mb-4">User experience (UX) is the backbone of successful digital products. With 88% of online customers less likely to return to a website after a bad experience, a smooth, efficient, and enjoyable interaction with your site is critical to retaining users. Research shows that users expect fast load times, with the majority willing to wait only 6-10 seconds for a page to load before abandoning the site. Optimizing UX not only improves user satisfaction but also drives higher engagement, conversion rates, and long-term business success.</p>
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <div class="impactful-stats">
+                    <!-- <p class="text-center"><strong>57% of Users</strong></p> -->
+                    <img src="images/chart-1.svg" alt="57% of Users" class="img-fluid" >
+         
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="impactful-stats">
+                        <!-- <p class="text-center"><strong>73% of people over 50</strong></p> -->
+                        <img src="images/chart-2.svg" alt="57% of Users" class="img-fluid">
+                       
+                    </div>
+                </div>
+                
+            
+            </div> 
+        </div>
+    </section>
+    <!--companies I have designed for-->
+    <section class="container-fluid">
+        <div id="programsCarousel" class="container carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <h2 class="mb-4">Brands I've Crafted Digital Experiences For</h2>
+                <p class="mb-4">From healthcare giants to financial powerhouses, I have collaborated with a diverse array of companies to deliver user-centric, impactful designs. My work spans across industries, addressing the unique needs of each business and their users, always focused on delivering intuitive and efficient solutions.</p>
+                
+                <div class="carousel-item active">
+                    <div class="d-flex align-items-center justify-content-between">
+                        <img src="images/teva.png" alt="Program Icon" width="140px" class="company-logo">
+                        <img src="images/ucb.png" alt="Program Icon" width="140px" class="company-logo">
+                        <img src="images/grant.png" alt="Program Icon" width="140px" class="company-logo">
+                        <img src="images/aarp.png" alt="Program Icon" width="140px" class="company-logo">
+                        <img src="images/astrazeneca.png" alt="Program Icon" width="140px" class="company-logo">
+                        <img src="images/takeda.png" class="company-logo" alt="Program Icon" width="140px">
+                        <img src="images/johnson.png" alt="Program Icon" class="company-logo" width="140px">
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="d-flex align-items-center justify-content-between">
+                        <img src="images/accenture.png" alt="Program Icon" class="company-logo" width="140px">
+                        <img src="images/deloitte.png" alt="Program Icon" class="company-logo" width="140px">
+                        <img src="images/regeneron.png" alt="Program Icon" class="company-logo" width="140px">
+                        <img src="images/sage.png" alt="Program Icon" class="company-logo" width="140px">
+                        <img src="images/biogen.png" alt="Program Icon" class="company-logo" width="140px">
+                        <img src="images/novo.png" alt="Program Icon" class="company-logo" width="140px">
+                        <img src="images/karney.png" alt="Program Icon" class="company-logo" width="140px">
+                    </div>
+                </div>
+            </div>
+    </section>
+    </main>
+    <footer>
+        <nav class="tm-bg-color bottom-nav">
+            <div class=" container d-flex justify-content-between p-0">
+                <a href="projects/project1.html" class="nav-item text-center">
+                    <img src="images/checkout.svg" style="width: 22px;" alt="Checkout Redesign Icon">
+                    <span class="d-block small">Redesign</span>
+                </a>
+                <a href="projects/project2.html" class="nav-item text-center">
+                    <img src="images/mobile-app.svg" style="width: 22px;" alt="Mobile App Icon">
+                    <span class="d-block small">Mobile App</span>
+                </a>
+                <a href="projects/project3.html" class="nav-item text-center">
+                    <img src="images/design-system.svg" style="width: 22px;" alt="Design System Icon">
+                    <span class="d-block small">Design System</span>
+                </a>
+                <a href="projects/project4.html" class="nav-item text-center">
+                    <img src="images/video-platform.svg" style="width: 22px;" alt="Debug Icon">
+                    <span class="d-block small">Video Platform</span>
+                </a>
+            </div>
+        </nav>
+        <div class="container-fluid featured p-4 text-center">
+            Copyright © 2024 Teena Monaco 
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/scripts.js"></script>
+</body>
+
+<body>
     <section>
         <div class="container">
             <div class="row align-items-center justify-content-between">
@@ -98,21 +483,21 @@
                 analyze data on user behavior. The insights helped pinpoint major friction points and areas for
                 improvement.</p>
                 <div class="mb-4">
-                    <span class="badge m-1">GA4</span>
-                    <span class="badge m-1">Matomo</span>
-                    <span class="badge m-1">Sizzy</span>
-                    <span class="badge m-1">HelpScout</span>
-                    <span class="badge m-1 ">Zapier</span>
-                    <span class="badge m-1 ">Google Search Console</span>
-                    <span class="badge m-1 ">BrowserStack</span>
-                    <span class="badge m-1 ">User Research</span>
-                    <span class="badge m-1 ">Device Research</span>
-                    <span class="badge m-1 ">Troubleshooting</span>
-                    <span class="badge m-1">Stack Overflow</span>
-                    <span class="badge m-1 ">Ecommerce Conversion UX (Coursera)</span>
-                    <span class="badge m-1 ">Figma Conference</span>
-                    <span class="badge m-1 ">Expo for User Research</span>
-                    <span class="badge m-1">WCAC</span>
+                    <span class="badge">GA4</span>
+                    <span class="badge">Matomo</span>
+                    <span class="badge">Sizzy</span>
+                    <span class="badge">HelpScout</span>
+                    <span class="badge ">Zapier</span>
+                    <span class="badge ">Google Search Console</span>
+                    <span class="badge ">BrowserStack</span>
+                    <span class="badge ">User Research</span>
+                    <span class="badge ">Device Research</span>
+                    <span class="badge ">Troubleshooting</span>
+                    <span class="badge">Stack Overflow</span>
+                    <span class="badge ">Ecommerce Conversion UX (Coursera)</span>
+                    <span class="badge ">Figma Conference</span>
+                    <span class="badge ">Expo for User Research</span>
+                    <span class="badge">WCAC</span>
                 </div>
             <div class="row">
                 <article class="col-md-4 mb-4">
@@ -422,7 +807,6 @@
         </nav>
 
 
-    <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 

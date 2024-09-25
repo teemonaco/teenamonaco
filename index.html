@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/styles.css">
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 
 <body>
@@ -27,181 +28,215 @@
                     <img src="images/phone.svg" width="26px">
                 </a>
             </div>
-            <div class="header-icons d-flex">
-                <a href="projects/project1.html" class="nav-item text-center">
-                    <img src="images/checkout.svg" style="width: 22px;" alt="Checkout Redesign Icon">
-                    <span class="d-block">Redesign</span>
-                </a>
-                <a href="projects/project2.html" class="nav-item text-center">
-                    <img src="images/mobile-app.svg" style="width: 22px;" alt="Mobile App Icon">
-                    <span class="d-block">Mobile App</span>
-                </a>
-                <a href="projects/project3.html" class="nav-item text-center">
-                    <img src="images/design-system.svg" style="width: 22px;" alt="Design System Icon">
-                    <span class="d-block">Design System</span>
-                </a>
-                <a href="projects/project4.html" class="nav-item text-center">
-                    <img src="images/video-platform.svg" style="width: 22px;" alt="Debug Icon">
-                    <span class="d-block">Video Platform</span>
-                </a>
+            <div class="header-icon-nav">
+                <ul class="header-icons top-menu nav">
+                    <li class="nav-item">
+                        <a class="header nav-link" href="projects/project2.html">
+                            <img src="images/checkout.svg" style="width: 22px;" alt="Checkout Redesign Icon">
+                            Redesign
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="header nav-link" href="projects/project2.html">
+                            <img src="images/mobile-app.svg" style="width: 22px;" alt="Checkout Redesign Icon">
+                            Mobile App
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="header nav-link" href="projects/project3.html">
+                            <img src="images/design-system.svg" style="width: 22px;" alt="Checkout Redesign Icon">
+                            Design System
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="header nav-link" href="projects/project4.html">
+                            <img src="images/video-platform.svg" style="width: 22px;" alt="Checkout Redesign Icon">
+                            Video Platform
+                        </a>
+                    </li>
+                </ul>
             </div>
         </div>
     </nav>
-    <!--about me-->
-    <section class="about-me">
-        <div class="container">
+    <main>
+        <!--about me-->
+        <section class="about-me">
+            <div class="container">
 
-            <div class="row align-items-center justify-content-center">
-                <div class="d-flex justify-content-center col-md-4">
-                    <img src="images/about-me.png" alt="Teena Monaco Portrait" width="100%" height="auto"
-                        class="img-fluid profile">
-                </div>
-                <div class="about-col col-md-6 p-3">
-                    <h1>Welcome to My Portfolio</h1>
-                    <p class="about-me-text">
-                        With over a decade of experience in user-centric design and development across e-commerce and B2B tech, I bring a unique blend of empathy and technical expertise, enriched by my background in nursing. This combination empowers me to create intuitive, impactful, and accessible digital experiences.
-                    </p>
-                    <a href="projects/project1.html" class="btn">Learn More</a>
-                </div>
-            </div>
-        </div>
-
-    </section>
-    <!--projects-->
-    <section class="featured container-fluid">
-
-        <div class="container">
-            <h2>Featured Projects</h2>
-            <p class="mb-4">Take a look at some of the work I've done, from mobile app designs to complete redesigns of
-                e-commerce systems.</p>
-            <div class="row">
-                <article class="col-md-4 mb-4">
-                    <div class="card">
-                        <img src="images/checkout-thumbnail.png" class="img-fluid" alt="Checkout Redesign"> 
-                        <div class="card-body">
-                            <h5>Checkout Redesign</h5>
-                            <p>A comprehensive redesign of an e-commerce checkout process, enhancing user experience,
-                                usability, and driving higher conversion rates.</p>
-                            <a href="projects/project1.html" class="btn view-project">View Project</a>
-                        </div>
+                <div class="row align-items-center justify-content-center">
+                    <div class="d-flex justify-content-center col-md-4">
+                        <a href="teenamonaco/index.html" ><img src="images/about-me.png" alt="Teena Monaco Portrait" width="100%" height="auto"
+                            class="img-fluid profile"></a>
                     </div>
-                </article>
-                <article class="col-md-4 mb-4">
-                    <div class="card">
-                        <img src="images/mobile-thumbnail.png" class="img-fluid" alt="Mobile App Design"> 
-                        <div class="card-body">
-                            <h5>Mobile App Design</h5>
-                            <p>Designing a mobile application with an intuitive interface, focusing on seamless user
-                                experience and innovative functionalities.</p>
-                            <a href="projects/project2.html" class="btn view-project">View Project</a>
-                        </div>
-                    </div>
-                </article>
-                <article class="col-md-4 mb-4">
-                    <div class="card">
-                       <img src="images/design-system-thumbnail.png" class="img-fluid" alt="Design System"> 
-                        <div class="card-body">
-                            <h5>Design System</h5>
-                            <p>Developing a scalable and reusable design system that integrates with Figma, improving
-                                developer handoffs and code consistency.</p>
-                            <a href="projects/project3.html" class="btn view-project">View Project</a>
-                        </div>
-                    </div>
-                </article>
-
-            </div>
-        </div>
-    </section>
-    <!--tools-->
-    <section class="container">
-        <div id="programsCarousel" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <h2 class="mb-4">Tools That Power My UX Workflow</h2>
-                <p class="mb-4">The design and development process requires a variety of specialized tools to ensure efficiency,
-                    collaboration, and precision. These programs, including Figma, Adobe XD, InVision, BrowserStack, and
-                    GA4, form the backbone of a successful UX workflow. From wireframing and prototyping to
-                    cross-browser testing and analytics, each tool plays a critical role in crafting intuitive and
-                    user-centered digital experiences.</p>
-                <div class="carousel-item active">
-                    <div class="d-flex align-items-center justify-content-between">
-                        <img src="images/figma.png" alt="Program Icon" width="140px" class="program-logo">
-                        <img src="images/xd.png" alt="Program Icon" width="140px" class="program-logo">
-                        <img src="images/invision.png" alt="Program Icon" width="140px" class="program-logo">
-                        <img src="images/miro.png" alt="Program Icon" width="140px" class="program-logo">
-                        <img src="images/jira.png" alt="Program Icon" width="140px" class="program-logo">
-                        <img src="images/browserstack.png" class="program-logo" alt="Program Icon" width="140px">
-                        <img src="images/bitbucket.png" alt="Program Icon" class="program-logo" width="140px">
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="d-flex align-items-center justify-content-between">
-                        <img src="images/git.png" alt="Program Icon" class="program-logo" width="140px">
-                        <img src="images/trello.png" alt="Program Icon" class="program-logo" width="140px">
-                        <img src="images/ga4.png" alt="Program Icon" class="program-logo" width="140px">
-                        <img src="images/looker.png" alt="Program Icon" class="program-logo" width="140px">
-                        <img src="images/matomo.png" alt="Program Icon" class="program-logo" width="140px">
-                        <img src="images/sizzy.png" alt="Program Icon" class="program-logo" width="140px">
-                        <img src="images/eclipse.png" alt="Program Icon" class="program-logo" width="140px">
+                    <div class="about-col col-md-6 p-3">
+                        <h1>Welcome to My Portfolio</h1>
+                        <p class="about-me-text">
+                            With over a decade of experience in user-centric design and development across e-commerce
+                            and B2B tech, I bring a unique blend of empathy and technical expertise, enriched by my
+                            background in nursing. This combination empowers me to create intuitive, impactful, and
+                            accessible digital experiences.
+                        </p>
+                        <a href="projects/project1.html" class="btn">Learn More</a>
                     </div>
                 </div>
             </div>
-    </section>
-    <!--stats-->
-    <section class="featured">
-        <div class="container">
-            <h2 class="mb-4">Why UX Design Matters</h2>
-            <p class="mb-4">User experience (UX) is the backbone of successful digital products. With 88% of online customers less likely to return to a website after a bad experience, a smooth, efficient, and enjoyable interaction with your site is critical to retaining users. Research shows that users expect fast load times, with the majority willing to wait only 6-10 seconds for a page to load before abandoning the site. Optimizing UX not only improves user satisfaction but also drives higher engagement, conversion rates, and long-term business success.</p>
-            <div class="row">
-                <div class="col-md-6 mb-4">
-                    <div class="impactful-stats">
-                    <!-- <p class="text-center"><strong>57% of Users</strong></p> -->
-                    <img src="images/chart-1.svg" alt="57% of Users" class="img-fluid" >
-         
+
+        </section>
+        <!--projects-->
+        <section class="featured container-fluid">
+
+            <div class="container">
+                <h2>Featured Projects</h2>
+                <p class="mb-4">Take a look at some of the work I've done, from mobile app designs to complete redesigns
+                    of
+                    e-commerce systems.</p>
+                <div class="row">
+                    <article class="col-md-4 mb-4">
+                        <div class="card">
+                            <img src="images/checkout-thumbnail.png" class="img-fluid" alt="Checkout Redesign">
+                            <div class="card-body">
+                                <h5>Checkout Redesign</h5>
+                                <p>A comprehensive redesign of an e-commerce checkout process, enhancing user
+                                    experience,
+                                    usability, and driving higher conversion rates.</p>
+                                <a href="projects/project1.html" class="btn view-project">View Project</a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="col-md-4 mb-4">
+                        <div class="card">
+                            <img src="images/mobile-thumbnail.png" class="img-fluid" alt="Mobile App Design">
+                            <div class="card-body">
+                                <h5>Mobile App Design</h5>
+                                <p>Designing a mobile application with an intuitive interface, focusing on seamless user
+                                    experience and innovative functionalities.</p>
+                                <a href="projects/project2.html" class="btn view-project">View Project</a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="col-md-4 mb-4">
+                        <div class="card">
+                            <img src="images/design-system-thumbnail.png" class="img-fluid" alt="Design System">
+                            <div class="card-body">
+                                <h5>Design System</h5>
+                                <p>Developing a scalable and reusable design system that integrates with Figma,
+                                    improving
+                                    developer handoffs and code consistency.</p>
+                                <a href="projects/project3.html" class="btn view-project">View Project</a>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+        <!--tools-->
+        <section class="container">
+            <div id="programsCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <h2 class="mb-4">Tools That Power My UX Workflow</h2>
+                    <p class="mb-4">The design and development process requires a variety of specialized tools to ensure
+                        efficiency,
+                        collaboration, and precision. These programs, including Figma, Adobe XD, InVision, BrowserStack,
+                        and
+                        GA4, form the backbone of a successful UX workflow. From wireframing and prototyping to
+                        cross-browser testing and analytics, each tool plays a critical role in crafting intuitive and
+                        user-centered digital experiences.</p>
+                    <div class="carousel-item active">
+                        <div class="d-flex align-items-center justify-content-between">
+                            <img src="images/figma.png" alt="Program Icon" width="140px" class="program-logo">
+                            <img src="images/xd.png" alt="Program Icon" width="140px" class="program-logo">
+                            <img src="images/invision.png" alt="Program Icon" width="140px" class="program-logo">
+                            <img src="images/miro.png" alt="Program Icon" width="140px" class="program-logo">
+                            <img src="images/jira.png" alt="Program Icon" width="140px" class="program-logo">
+                            <img src="images/browserstack.png" class="program-logo" alt="Program Icon" width="140px">
+                            <img src="images/bitbucket.png" alt="Program Icon" class="program-logo" width="140px">
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="d-flex align-items-center justify-content-between">
+                            <img src="images/git.png" alt="Program Icon" class="program-logo" width="140px">
+                            <img src="images/trello.png" alt="Program Icon" class="program-logo" width="140px">
+                            <img src="images/ga4.png" alt="Program Icon" class="program-logo" width="140px">
+                            <img src="images/looker.png" alt="Program Icon" class="program-logo" width="140px">
+                            <img src="images/matomo.png" alt="Program Icon" class="program-logo" width="140px">
+                            <img src="images/sizzy.png" alt="Program Icon" class="program-logo" width="140px">
+                            <img src="images/eclipse.png" alt="Program Icon" class="program-logo" width="140px">
+                        </div>
                     </div>
                 </div>
-                <div class="col-md-6 mb-4">
-                    <div class="impactful-stats">
-                        <!-- <p class="text-center"><strong>73% of people over 50</strong></p> -->
-                        <img src="images/chart-2.svg" alt="57% of Users" class="img-fluid">
-                       
+        </section>
+        <!--stats-->
+        <section class="featured">
+            <div class="container">
+                <h2 class="mb-4">Why UX Design Matters</h2>
+                <p class="mb-4">User experience (UX) is the backbone of successful digital products. With 88% of online
+                    customers less likely to return to a website after a bad experience, a smooth, efficient, and
+                    enjoyable interaction with your site is critical to retaining users. Research shows that users
+                    expect fast load times, with the majority willing to wait only 6-10 seconds for a page to load
+                    before abandoning the site. Optimizing UX not only improves user satisfaction but also drives higher
+                    engagement, conversion rates, and long-term business success.</p>
+                <div class="row">
+                    <div class="col-md-4 mb-4">
+                        <div class="impactful-stats">
+                            <!-- <p class="text-center"><strong>57% of Users</strong></p> -->
+                            <img src="images/chart-1.svg" alt="57% of Users" class="img-fluid">
+
+                        </div>
                     </div>
-                </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="impactful-stats">
+                            <!-- <p class="text-center"><strong>73% of people over 50</strong></p> -->
+                            <img src="images/chart-2.svg" alt="57% of Users" class="img-fluid">
+
+                        </div>
+                    </div>
                 
-            
-            </div> 
-        </div>
-    </section>
-    <!--companies I have designed for-->
-    <section class="container-fluid">
-        <div id="programsCarousel" class="container carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <h2 class="mb-4">Brands I've Crafted Digital Experiences For</h2>
-                <p class="mb-4">From healthcare giants to financial powerhouses, I have collaborated with a diverse array of companies to deliver user-centric, impactful designs. My work spans across industries, addressing the unique needs of each business and their users, always focused on delivering intuitive and efficient solutions.</p>
-                
-                <div class="carousel-item active">
-                    <div class="d-flex align-items-center justify-content-between">
-                        <img src="images/teva.png" alt="Program Icon" width="140px" class="company-logo">
-                        <img src="images/ucb.png" alt="Program Icon" width="140px" class="company-logo">
-                        <img src="images/grant.png" alt="Program Icon" width="140px" class="company-logo">
-                        <img src="images/aarp.png" alt="Program Icon" width="140px" class="company-logo">
-                        <img src="images/astrazeneca.png" alt="Program Icon" width="140px" class="company-logo">
-                        <img src="images/takeda.png" class="company-logo" alt="Program Icon" width="140px">
-                        <img src="images/johnson.png" alt="Program Icon" class="company-logo" width="140px">
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="d-flex align-items-center justify-content-between">
-                        <img src="images/accenture.png" alt="Program Icon" class="company-logo" width="140px">
-                        <img src="images/deloitte.png" alt="Program Icon" class="company-logo" width="140px">
-                        <img src="images/regeneron.png" alt="Program Icon" class="company-logo" width="140px">
-                        <img src="images/sage.png" alt="Program Icon" class="company-logo" width="140px">
-                        <img src="images/biogen.png" alt="Program Icon" class="company-logo" width="140px">
-                        <img src="images/novo.png" alt="Program Icon" class="company-logo" width="140px">
-                        <img src="images/karney.png" alt="Program Icon" class="company-logo" width="140px">
+                    <div class="col-md-4 mb-4">
+                        <div class="impactful-stats">
+                            <!-- <p class="text-center"><strong>73% of people over 50</strong></p> -->
+                            <img src="images/chart-3.svg" alt="57% of Users" class="img-fluid">
+
+                        </div>
                     </div>
                 </div>
             </div>
-    </section>
+        </section>
+        <!--companies I have designed for-->
+        <section class="container-fluid">
+            <div id="programsCarousel" class="container carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <h2 class="mb-4">Brands I've Crafted Digital Experiences For</h2>
+                    <p class="mb-4">From healthcare giants to financial powerhouses, I have collaborated with a diverse
+                        array of companies to deliver user-centric, impactful designs. My work spans across industries,
+                        addressing the unique needs of each business and their users, always focused on delivering
+                        intuitive and efficient solutions.</p>
+
+                    <div class="carousel-item active">
+                        <div class="d-flex align-items-center justify-content-between">
+                            <img src="images/teva.png" alt="Program Icon" width="140px" class="company-logo">
+                            <img src="images/ucb.png" alt="Program Icon" width="140px" class="company-logo">
+                            <img src="images/grant.png" alt="Program Icon" width="140px" class="company-logo">
+                            <img src="images/aarp.png" alt="Program Icon" width="140px" class="company-logo">
+                            <img src="images/astrazeneca.png" alt="Program Icon" width="140px" class="company-logo">
+                            <img src="images/takeda.png" class="company-logo" alt="Program Icon" width="140px">
+                            <img src="images/johnson.png" alt="Program Icon" class="company-logo" width="140px">
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="d-flex align-items-center justify-content-between">
+                            <img src="images/accenture.png" alt="Program Icon" class="company-logo" width="140px">
+                            <img src="images/deloitte.png" alt="Program Icon" class="company-logo" width="140px">
+                            <img src="images/regeneron.png" alt="Program Icon" class="company-logo" width="140px">
+                            <img src="images/sage.png" alt="Program Icon" class="company-logo" width="140px">
+                            <img src="images/biogen.png" alt="Program Icon" class="company-logo" width="140px">
+                            <img src="images/novo.png" alt="Program Icon" class="company-logo" width="140px">
+                            <img src="images/karney.png" alt="Program Icon" class="company-logo" width="140px">
+                        </div>
+                    </div>
+                </div>
+        </section>
+    </main>
     <footer>
         <nav class="tm-bg-color bottom-nav">
             <div class=" container d-flex justify-content-between p-0">
@@ -224,7 +259,7 @@
             </div>
         </nav>
         <div class="container-fluid featured p-4 text-center">
-            Copyright © 2024 Teena Monaco 
+            Copyright © 2024 Teena Monaco
         </div>
     </footer>
 
