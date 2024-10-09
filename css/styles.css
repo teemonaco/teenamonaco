@@ -668,25 +668,7 @@ div.contrast-issues.card {
     padding-top: 20px;
 }
 
-/******
-buttons
-******/
 
-.btn {
-    background-color: var(--highlight-color)!important;
-    color: #fff!important;
-    border-radius: 20px; /* Rounded button style */
-}
-
-.btn.view-project {
-    margin-top: auto;
-}
-
-.btn.view-project:hover {
-    background-color: var(--primary-color)!important; /* Softer hover effect */
-   
-
-}
 
 #checkout-research .card , #mapping .card, #comparison .card{
     height: 100%;
@@ -811,6 +793,140 @@ max-width: 300px!important;
 }
 
 
+/* featured cards */ 
+
+.featured-card {
+    position: relative;
+    padding: 28px;
+font-family: 'Inter', sans-serif;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0px 0px 14px 0px rgba(192, 192, 192, 0.2);
+    transition: 1s all;
+    overflow: hidden;
+    height: 100%;
+}
+
+  .featured-card::after {
+    content: "";
+    position: absolute;
+    bottom: -30%;
+    right: -30%;
+    width: 120px;
+    height: 120px;
+    filter: blur(70px);
+    border-radius: 50%;
+    transition: width 1s, height 1s;
+  }
+
+  .featured-card::before {
+    content: "";
+    position: absolute;
+    bottom: -160%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 0;
+    height: 0;
+    background: #8b5cf6;
+    filter: blur(70px);
+    border-radius: 50%;
+    transition: width 1s, height 1s;
+  }
+  .featured-card:hover::before {
+    bottom: -230%;
+    width: 1000px;
+    height: 1000px;
+    filter: blur(1px);
+  }
+  .featured-containers {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+justify-content: space-between;
+height: 100%;  
+}
+  .icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 56px;
+    height: 56px;
+    border-radius: 6px;
+    background: #ddd6fe;
+    margin-bottom: 10px;
+  }
+  .featured-card:hover .icon {
+    background: #7c3aed;
+    transition: 1s all;
+  }
+  .featured-card:hover .icon svg,
+  .featured-card:hover .linkMore svg {
+    filter: brightness(0) invert(1);
+    transition: 1s all;
+  }
+
+  .featured-containers div.featured-title {
+    color: #171d29;
+    font-size: 20px;
+    line-height: 130%;
+    font-style: normal;
+    font-weight: 500;
+    white-space: wrap;
+    transition: 1s all;
+    margin-top: 0px!important;
+  }
+
+  
+  .featured-containers div.featured-subtitle {
+    color: #7e8882;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    transition: 1s all;
+    margin-bottom: auto!important;
+    margin-top: auto!important;
 
 
+  }
+  .featured-containers div.linkMore {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 0.8rem;
+    color: #072713;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 22px;
+    text-decoration: none;
+    transition: 1s all;
+  }
+  .featured-card:hover .featured-containers div.featured-title,
+  .featured-card:hover .featured-containers div.featured-subtitle,
+  .featured-card:hover .featured-containers .linkMore {
+    color: #fff!important;
+    transition: 1s all!important;
+  }
 
+/******
+buttons
+******/
+
+a.btn {
+    background-color: #7c3aed!important;
+    border-color: #7c3aed!important;
+    color: #fff!important;
+    border-radius: 6px!important; /* Rounded button style */
+    padding: 8px 20px!important;;
+}
+
+.btn.view-project {
+    margin-top: auto;
+}
+
+.btn.view-project:hover {
+    background-color: var(--primary-color)!important; /* Softer hover effect */
+   
+
+}
