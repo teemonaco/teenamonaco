@@ -1,11 +1,66 @@
+:root {
+    box-sizing: border-box;
+    --primary-color: #5E84E2; /* Light Blue */
+    --highlight-color: #3770FF; /* Darker Blue for buttons */
+    --background-color: #F5F8FF; /* Soft light blue background */
+    --card-bg-color: #FFFFFF; /* Pure white for content cards */
+    --text-color: #2B2D42; /* Darker gray for text */
+    --bs-border-color: #dee2e6;
+    --bs-card-height: 100%;
+    --bs-nav-link-color: #2B2D42;
+    --bs-nav-link-hover-color: #3770FF;
+    --bs-badge-color: #F8FAFC!important;
+}
 
+span.badge.badge-primary {
+    /* background-color: #e5ebf1!important; */
+    color:  #2B2D42;
+    font-family: 'Inter', sans-serif!important;
+    font-weight: 500!important;
+    padding: 0px!important;
+}
 
+span.badge.badge-primary i::before {
+    color: #81878f;
+    margin-right: 4px;
+    font-size: .9rem!important;
+}
 
+img.img-fluid.chart {
+    padding: 24px;
+    align-self: center;
+}
+
+div.research.card p.small {
+    margin-bottom: 0px!important;
+}
+
+#research .card-body {
+    gap: 6px;
+}
  
  .strength, .comp-label {
     font-weight: 500;
  }
 
+ /* .card-header {
+    background-color: #cad2e7!important;
+ }
+ .card-header {
+    font-size: .95rem;
+    text-decoration: none!important;
+    color: #000000;
+    font-weight: 600;
+    text-align: center;
+    background-color:#f5f2eb!important;
+    border-color: #f5f2eb!important;
+} */
+
+
+.design-change.text-muted {
+    font-size: 1rem;
+    font-weight: 500;
+}
 
 .checkout-header {
     display: flex;
@@ -57,15 +112,6 @@ img.infopro {
 
 
 
-.card-header {
-    font-size: .95rem;
-    text-decoration: none!important;
-    color: #000000;
-    font-weight: 600;
-    text-align: center;
-    background-color:#f5f2eb!important;
-    border-color: #f5f2eb!important;
-}
 
 .card-header.before {
     background-color:#e9e6de!important;
@@ -337,18 +383,7 @@ a.process-item {
 
 /**************************/
 
-* {
-    box-sizing: border-box;
-    --primary-color: #5E84E2; /* Light Blue */
-    --highlight-color: #3770FF; /* Darker Blue for buttons */
-    --background-color: #F5F8FF; /* Soft light blue background */
-    --card-bg-color: #FFFFFF; /* Pure white for content cards */
-    --text-color: #2B2D42; /* Darker gray for text */
-    --bs-border-color: #dee2e6;
-    --bs-card-height: 100%;
-    --bs-nav-link-color: #2B2D42;
-    --bs-nav-link-hover-color: #3770FF;
-}
+
 
 .impact-badge {
     font-size: 1rem!important;
@@ -407,6 +442,31 @@ main {
 body {
     font-family: 'Inter', sans-serif;
     background-color: var(--background-color);
+}
+
+.overview-links {
+    list-style: none;
+    padding: 0;
+    display: inline-flex;
+    gap: auto;
+    width: 100%;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 40px;
+}
+
+.overview-links li {
+    margin-bottom: 0px;
+    display: inline-flex;
+}
+
+.overview-links a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+.overview-links a:hover {
+    color: #0056b3;
 }
 
 h1 {
@@ -578,18 +638,14 @@ img.program-logo, img.company-logo {
     background-color: #ffffff;
 }
 
-div.impactful-stats.card {
+.stats {
     border-radius: 6px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    gap: 10px;
+   
     border: 1px solid var(--bs-border-color);
     background-color: #ffffff;
     padding: 20px;
-    height: 100%;
 }
+
 
 div.contrast-issues.card {
     border-radius: 6px;
@@ -603,11 +659,14 @@ div.contrast-issues.card {
     padding: 20px;
 }
 
+.badge.issue {
+    background-color: #ff3737;
+    color: #ffffff;
+}
 
 .charts.img-fluid {
     padding-top: 20px;
 }
-
 
 /******
 buttons
@@ -699,3 +758,59 @@ max-width: 300px!important;
     }
 
 }
+
+.before-title {
+    font-size: 1.25rem; /* Increase the font size */
+    font-weight: 600; /* Make it bolder */
+    color: #ff2020; /* Use a green color to signify success */
+}
+
+.before-icon {
+    background-color: #ff2020; /* Green background for pass icon */
+    color: white; /* White text/icon for contrast */
+    padding: 0.5rem;
+    border-radius: 50%;
+}
+
+.before-card {
+    border: 2px solid #ff2020; /* Green border */
+    box-shadow: 0px 4px 8px rgba(128, 0, 0, 0.3); /* Subtle green shadow */
+    background-color: #e6ffe6; /* Slightly tinted green background */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.before-card:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+    box-shadow: 0px 8px 16px #80000080;
+}
+
+
+.after-card {
+    border: 2px solid #28a745; /* Green border */
+    box-shadow: 0px 4px 8px rgba(0, 128, 0, 0.3); /* Subtle green shadow */
+    background-color: #e6ffe6; /* Slightly tinted green background */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.after-card:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+    box-shadow: 0px 8px 16px rgba(0, 128, 0, 0.5);
+}
+
+.after-title {
+    font-size: 1.25rem; /* Increase the font size */
+    font-weight: 600; /* Make it bolder */
+    color: #28a745; /* Use a green color to signify success */
+}
+
+.after-icon {
+    background-color: #28a745; /* Green background for pass icon */
+    color: white; /* White text/icon for contrast */
+    padding: 0.5rem;
+    border-radius: 50%;
+}
+
+
+
+
+
