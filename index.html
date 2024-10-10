@@ -13,10 +13,12 @@
     <style>
         #first_impression {
             width: 100% !important;
-            height: auto !important; /* Let height adjust proportionally */
+            height: auto !important;
+            /* Let height adjust proportionally */
         }
 
-        #first_impression text, #second_impression text {
+        #first_impression text,
+        #second_impression text {
             font-size: 14px !important;
             text-align: center !important;
             width: 100% !important;
@@ -42,20 +44,24 @@
     <div id="header"></div>
 
     <!--swap out-->
-    <main>
+    <main id="main-content">
         <!--about me-->
         <section class="about-me featured">
             <div class="container">
                 <div class="row align-items-center justify-content-center">
                     <div class="d-flex justify-content-center col-md-4">
                         <a href="teenamonaco/index.html">
-                            <img src="images/about-me.png" alt="Teena Monaco Portrait" width="100%" height="auto" class="img-fluid profile">
+                            <img src="images/about-me.png" alt="Teena Monaco Portrait" width="100%" height="auto"
+                                class="img-fluid profile">
                         </a>
                     </div>
                     <div class="about-col col-md-6 p-3">
                         <h1>Welcome to My Portfolio</h1>
                         <p class="about-me-text">
-                            With over a decade of experience in user-centric design and development across e-commerce and B2B tech, I bring a unique blend of empathy and technical expertise, enriched by my background in nursing. This combination empowers me to create intuitive, impactful, and accessible digital experiences.
+                            With over a decade of experience in user-centric design and development across e-commerce
+                            and B2B tech, I bring a unique blend of empathy and technical expertise, enriched by my
+                            background in nursing. This combination empowers me to create intuitive, impactful, and
+                            accessible digital experiences.
                         </p>
                         <a href="projects/project1.html" class="btn">Learn More</a>
                     </div>
@@ -63,89 +69,41 @@
             </div>
         </section>
 
-        <!--projects-->
-        <!-- <section class="featured container-fluid">
-
-            <div class="container">
-                <h2>Featured Projects</h2>
-                <p class="mb-4">Take a look at some of the work I've done, from mobile app designs to complete redesigns
-                    of
-                    e-commerce systems.</p>
-                <div class="row">
-                    <article class="col-md-4 mb-4">
-                        <div class="card">
-                            <img src="images/checkout-thumbnail.png" class="img-fluid" alt="Checkout Redesign">
-                            <div class="card-body">
-                                <h5>Checkout Redesign</h5>
-                                <p>A comprehensive redesign of an e-commerce checkout process, enhancing user
-                                    experience,
-                                    usability, and driving higher conversion rates.</p>
-                                <a href="projects/project1.html" class="btn view-project">View Project</a>
-                            </div>
+        <!--tools-->
+        <section class="container ">
+            <div id="programsCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <h2 class="mb-4">Tools That Power My UX Workflow</h2>
+                    <p class="mb-4">The design and development process requires a variety of specialized tools to ensure
+                        efficiency, collaboration, and precision. These programs, including Figma, Adobe XD, InVision,
+                        BrowserStack, and GA4, form the backbone of a successful UX workflow. From wireframing and
+                        prototyping to cross-browser testing and analytics, each tool plays a critical role in crafting
+                        intuitive and user-centered digital experiences.</p>
+                    <div class="carousel-item active">
+                        <div class="d-flex align-items-center justify-content-between">
+                            <img src="images/figma.png" alt="Program Icon" width="140px" class="program-logo">
+                            <img src="images/xd.png" alt="Program Icon" width="140px" class="program-logo">
+                            <img src="images/invision.png" alt="Program Icon" width="140px" class="program-logo">
+                            <img src="images/miro.png" alt="Program Icon" width="140px" class="program-logo">
+                            <img src="images/jira.png" alt="Program Icon" width="140px" class="program-logo">
+                            <img src="images/browserstack.png" class="program-logo" alt="Program Icon" width="140px">
+                            <img src="images/bitbucket.png" alt="Program Icon" class="program-logo" width="140px">
                         </div>
-                    </article>
-                    <article class="col-md-4 mb-4">
-                        <div class="card">
-                            <img src="images/mobile-thumbnail.png" class="img-fluid" alt="Mobile App Design">
-                            <div class="card-body">
-                                <h5>Mobile App Design</h5>
-                                <p>Designing a mobile application with an intuitive interface, focusing on seamless user
-                                    experience and innovative functionalities.</p>
-                                <a href="projects/project2.html" class="btn view-project">View Project</a>
-                            </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="d-flex align-items-center justify-content-between">
+                            <img src="images/git.png" alt="Program Icon" class="program-logo" width="140px">
+                            <img src="images/trello.png" alt="Program Icon" class="program-logo" width="140px">
+                            <img src="images/ga4.png" alt="Program Icon" class="program-logo" width="140px">
+                            <img src="images/looker.png" alt="Program Icon" class="program-logo" width="140px">
+                            <img src="images/matomo.png" alt="Program Icon" class="program-logo" width="140px">
+                            <img src="images/sizzy.png" alt="Program Icon" class="program-logo" width="140px">
+                            <img src="images/eclipse.png" alt="Program Icon" class="program-logo" width="140px">
                         </div>
-                    </article>
-                    <article class="col-md-4 mb-4">
-                        <div class="card">
-                            <img src="images/design-system-thumbnail.png" class="img-fluid" alt="Design System">
-                            <div class="card-body">
-                                <h5>Design System</h5>
-                                <p>Developing a scalable and reusable design system that integrates with Figma,
-                                    improving
-                                    developer handoffs and code consistency.</p>
-                                <a href="projects/project3.html" class="btn view-project">View Project</a>
-                            </div>
-                        </div>
-                    </article>
-
+                    </div>
                 </div>
             </div>
-        </section> -->
-
-                        <!--tools-->
-                        <section class="container ">
-                            <div id="programsCarousel" class="carousel slide" data-bs-ride="carousel">
-                                <div class="carousel-inner">
-                                    <h2 class="mb-4">Tools That Power My UX Workflow</h2>
-                                    <p class="mb-4">The design and development process requires a variety of specialized tools to ensure efficiency, collaboration, and precision. These programs, including Figma, Adobe XD, InVision, BrowserStack, and GA4, form the backbone of a successful UX workflow. From wireframing and prototyping to cross-browser testing and analytics, each tool plays a critical role in crafting intuitive and user-centered digital experiences.</p>
-                                    <div class="carousel-item active">
-                                        <div class="d-flex align-items-center justify-content-between">
-                                            <img src="images/figma.png" alt="Program Icon" width="140px" class="program-logo">
-                                            <img src="images/xd.png" alt="Program Icon" width="140px" class="program-logo">
-                                            <img src="images/invision.png" alt="Program Icon" width="140px" class="program-logo">
-                                            <img src="images/miro.png" alt="Program Icon" width="140px" class="program-logo">
-                                            <img src="images/jira.png" alt="Program Icon" width="140px" class="program-logo">
-                                            <img src="images/browserstack.png" class="program-logo" alt="Program Icon" width="140px">
-                                            <img src="images/bitbucket.png" alt="Program Icon" class="program-logo" width="140px">
-                                        </div>
-                                    </div>
-                                    <div class="carousel-item">
-                                        <div class="d-flex align-items-center justify-content-between">
-                                            <img src="images/git.png" alt="Program Icon" class="program-logo" width="140px">
-                                            <img src="images/trello.png" alt="Program Icon" class="program-logo" width="140px">
-                                            <img src="images/ga4.png" alt="Program Icon" class="program-logo" width="140px">
-                                            <img src="images/looker.png" alt="Program Icon" class="program-logo" width="140px">
-                                            <img src="images/matomo.png" alt="Program Icon" class="program-logo" width="140px">
-                                            <img src="images/sizzy.png" alt="Program Icon" class="program-logo" width="140px">
-                                            <img src="images/eclipse.png" alt="Program Icon" class="program-logo" width="140px">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
-
-
-
+        </section>
 
         <!--projects-->
         <section class="featured container-fluid">
@@ -157,276 +115,183 @@
                     e-commerce systems.</p>
                 <div class="row">
                     <article class="col-md-4 mb-4">
-                        <div class="featured-card">
+                        <div class="featured-card" onclick="loadContent('projects/project1.html')">
                             <div class="featured-containers">
                                 <div class="icon">
-                                    <svg 
-                                    width="41" 
-                                    height="40" 
-                                    viewBox="0 0 41 40" 
-                                    fill="#8B5CF6" 
-                                    xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M8.11792 7.98828H9.85229C10.8367 7.98828 11.6804 8.59766 12.0085 9.48828H32.6335C33.6179 9.48828 34.321 10.4258 34.0867 11.3633L32.1179 19.2383C31.7898 20.5508 30.571 21.4883 29.2117 21.4883H14.4929L14.821 23.3164C14.9617 24.0195 15.6179 24.4883 16.321 24.4883H30.6179C30.9929 24.4883 31.3679 24.8633 31.3679 25.2383C31.3679 25.6602 30.9929 25.9883 30.6179 25.9883H16.321C14.8679 25.9883 13.6492 25.0039 13.3679 23.5977L10.6023 10.0977C10.5554 9.76953 10.2273 9.48828 9.85229 9.48828H8.11792C7.69604 9.48828 7.36792 9.16016 7.36792 8.73828C7.36792 8.36328 7.69604 7.98828 8.11792 7.98828ZM12.3367 10.9883L14.1648 19.9883H29.2117C29.9148 19.9883 30.5242 19.5195 30.6648 18.8633L32.6335 10.9883H12.3367ZM15.2429 29.3633C15.2429 30.0195 15.7117 30.4883 16.3679 30.4883C16.9773 30.4883 17.4929 30.0195 17.4929 29.3633C17.4929 28.7539 16.9773 28.2383 16.3679 28.2383C15.7117 28.2383 15.2429 28.7539 15.2429 29.3633ZM18.9929 29.3633C18.9929 30.3477 18.4773 31.1914 17.6804 31.6602C16.8367 32.1289 15.8523 32.1289 15.0554 31.6602C14.2117 31.1914 13.7429 30.3477 13.7429 29.3633C13.7429 28.4258 14.2117 27.582 15.0554 27.1133C15.8523 26.6445 16.8367 26.6445 17.6804 27.1133C18.4773 27.582 18.9929 28.4258 18.9929 29.3633ZM28.3679 28.2383C27.7117 28.2383 27.2429 28.7539 27.2429 29.3633C27.2429 30.0195 27.7117 30.4883 28.3679 30.4883C28.9773 30.4883 29.4929 30.0195 29.4929 29.3633C29.4929 28.7539 28.9773 28.2383 28.3679 28.2383ZM28.3679 31.9883C27.3835 31.9883 26.5398 31.5195 26.071 30.6758C25.6023 29.8789 25.6023 28.8945 26.071 28.0508C26.5398 27.2539 27.3835 26.7383 28.3679 26.7383C29.3054 26.7383 30.1492 27.2539 30.6179 28.0508C31.0867 28.8945 31.0867 29.8789 30.6179 30.6758C30.1492 31.5195 29.3054 31.9883 28.3679 31.9883Z"/>
+                                    <svg width="41" height="40" viewBox="0 0 41 40" fill="#8B5CF6"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M8.11792 7.98828H9.85229C10.8367 7.98828 11.6804 8.59766 12.0085 9.48828H32.6335C33.6179 9.48828 34.321 10.4258 34.0867 11.3633L32.1179 19.2383C31.7898 20.5508 30.571 21.4883 29.2117 21.4883H14.4929L14.821 23.3164C14.9617 24.0195 15.6179 24.4883 16.321 24.4883H30.6179C30.9929 24.4883 31.3679 24.8633 31.3679 25.2383C31.3679 25.6602 30.9929 25.9883 30.6179 25.9883H16.321C14.8679 25.9883 13.6492 25.0039 13.3679 23.5977L10.6023 10.0977C10.5554 9.76953 10.2273 9.48828 9.85229 9.48828H8.11792C7.69604 9.48828 7.36792 9.16016 7.36792 8.73828C7.36792 8.36328 7.69604 7.98828 8.11792 7.98828ZM12.3367 10.9883L14.1648 19.9883H29.2117C29.9148 19.9883 30.5242 19.5195 30.6648 18.8633L32.6335 10.9883H12.3367ZM15.2429 29.3633C15.2429 30.0195 15.7117 30.4883 16.3679 30.4883C16.9773 30.4883 17.4929 30.0195 17.4929 29.3633C17.4929 28.7539 16.9773 28.2383 16.3679 28.2383C15.7117 28.2383 15.2429 28.7539 15.2429 29.3633ZM18.9929 29.3633C18.9929 30.3477 18.4773 31.1914 17.6804 31.6602C16.8367 32.1289 15.8523 32.1289 15.0554 31.6602C14.2117 31.1914 13.7429 30.3477 13.7429 29.3633C13.7429 28.4258 14.2117 27.582 15.0554 27.1133C15.8523 26.6445 16.8367 26.6445 17.6804 27.1133C18.4773 27.582 18.9929 28.4258 18.9929 29.3633ZM28.3679 28.2383C27.7117 28.2383 27.2429 28.7539 27.2429 29.3633C27.2429 30.0195 27.7117 30.4883 28.3679 30.4883C28.9773 30.4883 29.4929 30.0195 29.4929 29.3633C29.4929 28.7539 28.9773 28.2383 28.3679 28.2383ZM28.3679 31.9883C27.3835 31.9883 26.5398 31.5195 26.071 30.6758C25.6023 29.8789 25.6023 28.8945 26.071 28.0508C26.5398 27.2539 27.3835 26.7383 28.3679 26.7383C29.3054 26.7383 30.1492 27.2539 30.6179 28.0508C31.0867 28.8945 31.0867 29.8789 30.6179 30.6758C30.1492 31.5195 29.3054 31.9883 28.3679 31.9883Z" />
                                     </svg>
                                 </div>
-                                  <div class="featured-title my-3">Streamlined E-Commerce Checkout Redesign</div>
-                                  <div class="featured-subtitle">
+                                <div class="featured-title my-3">Streamlined E-Commerce Checkout Redesign</div>
+                                <div class="featured-subtitle">
                                     Optimizing user flow, accessibility and conversion rates.
-                                  </div>
-                                  <div class="linkMore mt-3">
+                                </div>
+                                <div class="linkMore mt-3">
                                     Learn More
-                                    <svg
-                                      xmlns="http://www.w3.org/2000/svg"
-                                      fill="none"
-                                      viewBox="0 0 19 20"
-                                      height="20"
-                                      width="19"
-                                    >
-                                      <path
-                                        stroke="#072713"
-                                        fill="#072713"
-                                        d="M3 9.09985C3 9.23792 2.88807 9.34985 2.75 9.34985C2.61193 9.34985 2.5 9.23792 2.5 9.09985C2.5 8.96178 2.61193 8.84985 2.75 8.84985C2.88807 8.84985 3 8.96178 3 9.09985Z"
-                                      ></path>
-                                      <path
-                                        stroke="#072713"
-                                        fill="#072713"
-                                        d="M9.25 2.84985C9.25 2.98792 9.13807 3.09985 9 3.09985C8.86193 3.09985 8.75 2.98792 8.75 2.84985C8.75 2.71178 8.86193 2.59985 9 2.59985C9.13807 2.59985 9.25 2.71178 9.25 2.84985Z"
-                                      ></path>
-                                      <path
-                                        fill="#072713"
-                                        d="M2.75 3.59985C3.16421 3.59985 3.5 3.26407 3.5 2.84985C3.5 2.43564 3.16421 2.09985 2.75 2.09985C2.33579 2.09985 2 2.43564 2 2.84985C2 3.26407 2.33579 3.59985 2.75 3.59985Z"
-                                      ></path>
-                                      <path
-                                        fill="#072713"
-                                        d="M2.75 6.72485C3.16421 6.72485 3.5 6.38907 3.5 5.97485C3.5 5.56064 3.16421 5.22485 2.75 5.22485C2.33579 5.22485 2 5.56064 2 5.97485C2 6.38907 2.33579 6.72485 2.75 6.72485Z"
-                                      ></path>
-                                      <path
-                                        fill="#072713"
-                                        d="M2.75 12.9749C3.16421 12.9749 3.5 12.6391 3.5 12.2249C3.5 11.8106 3.16421 11.4749 2.75 11.4749C2.33579 11.4749 2 11.8106 2 12.2249C2 12.6391 2.33579 12.9749 2.75 12.9749Z"
-                                      ></path>
-                                      <path
-                                        fill="#072713"
-                                        d="M2.75 16.0999C3.16421 16.0999 3.5 15.7641 3.5 15.3499C3.5 14.9356 3.16421 14.5999 2.75 14.5999C2.33579 14.5999 2 14.9356 2 15.3499C2 15.7641 2.33579 16.0999 2.75 16.0999Z"
-                                      ></path>
-                                      <path
-                                        fill="#072713"
-                                        d="M15.25 3.59985C15.6642 3.59985 16 3.26407 16 2.84985C16 2.43564 15.6642 2.09985 15.25 2.09985C14.8358 2.09985 14.5 2.43564 14.5 2.84985C14.5 3.26407 14.8358 3.59985 15.25 3.59985Z"
-                                      ></path>
-                                      <path
-                                        fill="#072713"
-                                        d="M15.25 6.72485C15.6642 6.72485 16 6.38907 16 5.97485C16 5.56064 15.6642 5.22485 15.25 5.22485C14.8358 5.22485 14.5 5.56064 14.5 5.97485C14.5 6.38907 14.8358 6.72485 15.25 6.72485Z"
-                                      ></path>
-                                      <path
-                                        fill="#072713"
-                                        d="M12.125 3.59985C12.5392 3.59985 12.875 3.26407 12.875 2.84985C12.875 2.43564 12.5392 2.09985 12.125 2.09985C11.7108 2.09985 11.375 2.43564 11.375 2.84985C11.375 3.26407 11.7108 3.59985 12.125 3.59985Z"
-                                      ></path>
-                                      <path
-                                        fill="#072713"
-                                        d="M5.875 3.59985C6.28921 3.59985 6.625 3.26407 6.625 2.84985C6.625 2.43564 6.28921 2.09985 5.875 2.09985C5.46079 2.09985 5.125 2.43564 5.125 2.84985C5.125 3.26407 5.46079 3.59985 5.875 3.59985Z"
-                                      ></path>
-                                      <path
-                                        fill="#072713"
-                                        d="M5.875 16.0999C6.28921 16.0999 6.625 15.7641 6.625 15.3499C6.625 14.9356 6.28921 14.5999 5.875 14.5999C5.46079 14.5999 5.125 14.9356 5.125 15.3499C5.125 15.7641 5.46079 16.0999 5.875 16.0999Z"
-                                      ></path>
-                                      <path
-                                        stroke-linejoin="round"
-                                        stroke-linecap="round"
-                                        stroke-width="1.5"
-                                        stroke="#072713"
-                                        d="M9.25 15.3499V9.34985H15.25"
-                                      ></path>
-                                      <path
-                                        stroke-linejoin="round"
-                                        stroke-linecap="round"
-                                        stroke-width="1.5"
-                                        stroke="#072713"
-                                        d="M9.25 9.34985L15.25 15.3499"
-                                      ></path>
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 19 20" height="20"
+                                        width="19">
+                                        <path stroke="#072713" fill="#072713"
+                                            d="M3 9.09985C3 9.23792 2.88807 9.34985 2.75 9.34985C2.61193 9.34985 2.5 9.23792 2.5 9.09985C2.5 8.96178 2.61193 8.84985 2.75 8.84985C2.88807 8.84985 3 8.96178 3 9.09985Z">
+                                        </path>
+                                        <path stroke="#072713" fill="#072713"
+                                            d="M9.25 2.84985C9.25 2.98792 9.13807 3.09985 9 3.09985C8.86193 3.09985 8.75 2.98792 8.75 2.84985C8.75 2.71178 8.86193 2.59985 9 2.59985C9.13807 2.59985 9.25 2.71178 9.25 2.84985Z">
+                                        </path>
+                                        <path fill="#072713"
+                                            d="M2.75 3.59985C3.16421 3.59985 3.5 3.26407 3.5 2.84985C3.5 2.43564 3.16421 2.09985 2.75 2.09985C2.33579 2.09985 2 2.43564 2 2.84985C2 3.26407 2.33579 3.59985 2.75 3.59985Z">
+                                        </path>
+                                        <path fill="#072713"
+                                            d="M2.75 6.72485C3.16421 6.72485 3.5 6.38907 3.5 5.97485C3.5 5.56064 3.16421 5.22485 2.75 5.22485C2.33579 5.22485 2 5.56064 2 5.97485C2 6.38907 2.33579 6.72485 2.75 6.72485Z">
+                                        </path>
+                                        <path fill="#072713"
+                                            d="M2.75 12.9749C3.16421 12.9749 3.5 12.6391 3.5 12.2249C3.5 11.8106 3.16421 11.4749 2.75 11.4749C2.33579 11.4749 2 11.8106 2 12.2249C2 12.6391 2.33579 12.9749 2.75 12.9749Z">
+                                        </path>
+                                        <path fill="#072713"
+                                            d="M2.75 16.0999C3.16421 16.0999 3.5 15.7641 3.5 15.3499C3.5 14.9356 3.16421 14.5999 2.75 14.5999C2.33579 14.5999 2 14.9356 2 15.3499C2 15.7641 2.33579 16.0999 2.75 16.0999Z">
+                                        </path>
+                                        <path fill="#072713"
+                                            d="M15.25 3.59985C15.6642 3.59985 16 3.26407 16 2.84985C16 2.43564 15.6642 2.09985 15.25 2.09985C14.8358 2.09985 14.5 2.43564 14.5 2.84985C14.5 3.26407 14.8358 3.59985 15.25 3.59985Z">
+                                        </path>
+                                        <path fill="#072713"
+                                            d="M15.25 6.72485C15.6642 6.72485 16 6.38907 16 5.97485C16 5.56064 15.6642 5.22485 15.25 5.22485C14.8358 5.22485 14.5 5.56064 14.5 5.97485C14.5 6.38907 14.8358 6.72485 15.25 6.72485Z">
+                                        </path>
+                                        <path fill="#072713"
+                                            d="M12.125 3.59985C12.5392 3.59985 12.875 3.26407 12.875 2.84985C12.875 2.43564 12.5392 2.09985 12.125 2.09985C11.7108 2.09985 11.375 2.43564 11.375 2.84985C11.375 3.26407 11.7108 3.59985 12.125 3.59985Z">
+                                        </path>
+                                        <path fill="#072713"
+                                            d="M5.875 3.59985C6.28921 3.59985 6.625 3.26407 6.625 2.84985C6.625 2.43564 6.28921 2.09985 5.875 2.09985C5.46079 2.09985 5.125 2.43564 5.125 2.84985C5.125 3.26407 5.46079 3.59985 5.875 3.59985Z">
+                                        </path>
+                                        <path fill="#072713"
+                                            d="M5.875 16.0999C6.28921 16.0999 6.625 15.7641 6.625 15.3499C6.625 14.9356 6.28921 14.5999 5.875 14.5999C5.46079 14.5999 5.125 14.9356 5.125 15.3499C5.125 15.7641 5.46079 16.0999 5.875 16.0999Z">
+                                        </path>
+                                        <path stroke-linejoin="round" stroke-linecap="round" stroke-width="1.5"
+                                            stroke="#072713" d="M9.25 15.3499V9.34985H15.25"></path>
+                                        <path stroke-linejoin="round" stroke-linecap="round" stroke-width="1.5"
+                                            stroke="#072713" d="M9.25 9.34985L15.25 15.3499"></path>
                                     </svg>
-                                  </div>
+                                </div>
                             </div>
                         </div>
                     </article>
                     <article class="col-md-4 mb-4">
-                        <div class="featured-card">
+                        <div class="featured-card" onclick="loadContent('projects/project2.html')">
                             <div class="featured-containers">
                                 <div class="icon">
-                                    <svg 
-                                    width="41" 
-                                    height="40" 
-                                    viewBox="0 0 41 40" 
-                                    fill="#8B5CF6" 
-                                    xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M10.25 12.5C9.40625 12.5 8.75 13.2031 8.75 14V26C8.75 26.8438 9.40625 27.5 10.25 27.5H22.25C23.0469 27.5 23.75 26.8438 23.75 26V14C23.75 13.2031 23.0469 12.5 22.25 12.5H10.25ZM7.25 14C7.25 12.3594 8.5625 11 10.25 11H22.25C23.8906 11 25.25 12.3594 25.25 14V16.25V23.7969V26C25.25 27.6875 23.8906 29 22.25 29H10.25C8.5625 29 7.25 27.6875 7.25 26V14ZM31.5781 27.3125L26.75 24.6406V22.9062L32.2812 26C32.3281 26 32.375 26.0469 32.4219 26.0469C32.6094 26.0469 32.75 25.9062 32.75 25.7188V14.3281C32.75 14.1406 32.6094 14 32.4219 14C32.375 14 32.3281 14.0469 32.2812 14.0469L26.75 17.1406V15.4062L31.5781 12.7344C31.8594 12.5938 32.1406 12.5 32.4219 12.5C33.4062 12.5 34.25 13.3438 34.25 14.3281V25.7188C34.25 26.7031 33.4062 27.5 32.4219 27.5C32.1406 27.5 31.8594 27.4531 31.5781 27.3125Z" />
-                                        </svg>   
-                                  </div>
-                                  <div class="featured-title my-3">Engaging Video Platform with Shopping Integration</div>
-                                  <div class="featured-subtitle">
+                                    <svg width="41" height="40" viewBox="0 0 41 40" fill="#8B5CF6"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M10.25 12.5C9.40625 12.5 8.75 13.2031 8.75 14V26C8.75 26.8438 9.40625 27.5 10.25 27.5H22.25C23.0469 27.5 23.75 26.8438 23.75 26V14C23.75 13.2031 23.0469 12.5 22.25 12.5H10.25ZM7.25 14C7.25 12.3594 8.5625 11 10.25 11H22.25C23.8906 11 25.25 12.3594 25.25 14V16.25V23.7969V26C25.25 27.6875 23.8906 29 22.25 29H10.25C8.5625 29 7.25 27.6875 7.25 26V14ZM31.5781 27.3125L26.75 24.6406V22.9062L32.2812 26C32.3281 26 32.375 26.0469 32.4219 26.0469C32.6094 26.0469 32.75 25.9062 32.75 25.7188V14.3281C32.75 14.1406 32.6094 14 32.4219 14C32.375 14 32.3281 14.0469 32.2812 14.0469L26.75 17.1406V15.4062L31.5781 12.7344C31.8594 12.5938 32.1406 12.5 32.4219 12.5C33.4062 12.5 34.25 13.3438 34.25 14.3281V25.7188C34.25 26.7031 33.4062 27.5 32.4219 27.5C32.1406 27.5 31.8594 27.4531 31.5781 27.3125Z" />
+                                    </svg>
+                                </div>
+                                <div class="featured-title my-3">Engaging Video Platform with Shopping Integration</div>
+                                <div class="featured-subtitle">
                                     Designed to boost session times and conversions.
-                                  </div>
-                                  <div class="linkMore mt-3">
+                                </div>
+                                <div class="linkMore mt-3">
                                     Learn More
-                                    <svg
-                                      xmlns="http://www.w3.org/2000/svg"
-                                      fill="none"
-                                      viewBox="0 0 19 20"
-                                      height="20"
-                                      width="19"
-                                    >
-                                      <path
-                                        stroke="#072713"
-                                        fill="#072713"
-                                        d="M3 9.09985C3 9.23792 2.88807 9.34985 2.75 9.34985C2.61193 9.34985 2.5 9.23792 2.5 9.09985C2.5 8.96178 2.61193 8.84985 2.75 8.84985C2.88807 8.84985 3 8.96178 3 9.09985Z"
-                                      ></path>
-                                      <path
-                                        stroke="#072713"
-                                        fill="#072713"
-                                        d="M9.25 2.84985C9.25 2.98792 9.13807 3.09985 9 3.09985C8.86193 3.09985 8.75 2.98792 8.75 2.84985C8.75 2.71178 8.86193 2.59985 9 2.59985C9.13807 2.59985 9.25 2.71178 9.25 2.84985Z"
-                                      ></path>
-                                      <path
-                                        fill="#072713"
-                                        d="M2.75 3.59985C3.16421 3.59985 3.5 3.26407 3.5 2.84985C3.5 2.43564 3.16421 2.09985 2.75 2.09985C2.33579 2.09985 2 2.43564 2 2.84985C2 3.26407 2.33579 3.59985 2.75 3.59985Z"
-                                      ></path>
-                                      <path
-                                        fill="#072713"
-                                        d="M2.75 6.72485C3.16421 6.72485 3.5 6.38907 3.5 5.97485C3.5 5.56064 3.16421 5.22485 2.75 5.22485C2.33579 5.22485 2 5.56064 2 5.97485C2 6.38907 2.33579 6.72485 2.75 6.72485Z"
-                                      ></path>
-                                      <path
-                                        fill="#072713"
-                                        d="M2.75 12.9749C3.16421 12.9749 3.5 12.6391 3.5 12.2249C3.5 11.8106 3.16421 11.4749 2.75 11.4749C2.33579 11.4749 2 11.8106 2 12.2249C2 12.6391 2.33579 12.9749 2.75 12.9749Z"
-                                      ></path>
-                                      <path
-                                        fill="#072713"
-                                        d="M2.75 16.0999C3.16421 16.0999 3.5 15.7641 3.5 15.3499C3.5 14.9356 3.16421 14.5999 2.75 14.5999C2.33579 14.5999 2 14.9356 2 15.3499C2 15.7641 2.33579 16.0999 2.75 16.0999Z"
-                                      ></path>
-                                      <path
-                                        fill="#072713"
-                                        d="M15.25 3.59985C15.6642 3.59985 16 3.26407 16 2.84985C16 2.43564 15.6642 2.09985 15.25 2.09985C14.8358 2.09985 14.5 2.43564 14.5 2.84985C14.5 3.26407 14.8358 3.59985 15.25 3.59985Z"
-                                      ></path>
-                                      <path
-                                        fill="#072713"
-                                        d="M15.25 6.72485C15.6642 6.72485 16 6.38907 16 5.97485C16 5.56064 15.6642 5.22485 15.25 5.22485C14.8358 5.22485 14.5 5.56064 14.5 5.97485C14.5 6.38907 14.8358 6.72485 15.25 6.72485Z"
-                                      ></path>
-                                      <path
-                                        fill="#072713"
-                                        d="M12.125 3.59985C12.5392 3.59985 12.875 3.26407 12.875 2.84985C12.875 2.43564 12.5392 2.09985 12.125 2.09985C11.7108 2.09985 11.375 2.43564 11.375 2.84985C11.375 3.26407 11.7108 3.59985 12.125 3.59985Z"
-                                      ></path>
-                                      <path
-                                        fill="#072713"
-                                        d="M5.875 3.59985C6.28921 3.59985 6.625 3.26407 6.625 2.84985C6.625 2.43564 6.28921 2.09985 5.875 2.09985C5.46079 2.09985 5.125 2.43564 5.125 2.84985C5.125 3.26407 5.46079 3.59985 5.875 3.59985Z"
-                                      ></path>
-                                      <path
-                                        fill="#072713"
-                                        d="M5.875 16.0999C6.28921 16.0999 6.625 15.7641 6.625 15.3499C6.625 14.9356 6.28921 14.5999 5.875 14.5999C5.46079 14.5999 5.125 14.9356 5.125 15.3499C5.125 15.7641 5.46079 16.0999 5.875 16.0999Z"
-                                      ></path>
-                                      <path
-                                        stroke-linejoin="round"
-                                        stroke-linecap="round"
-                                        stroke-width="1.5"
-                                        stroke="#072713"
-                                        d="M9.25 15.3499V9.34985H15.25"
-                                      ></path>
-                                      <path
-                                        stroke-linejoin="round"
-                                        stroke-linecap="round"
-                                        stroke-width="1.5"
-                                        stroke="#072713"
-                                        d="M9.25 9.34985L15.25 15.3499"
-                                      ></path>
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 19 20" height="20"
+                                        width="19">
+                                        <path stroke="#072713" fill="#072713"
+                                            d="M3 9.09985C3 9.23792 2.88807 9.34985 2.75 9.34985C2.61193 9.34985 2.5 9.23792 2.5 9.09985C2.5 8.96178 2.61193 8.84985 2.75 8.84985C2.88807 8.84985 3 8.96178 3 9.09985Z">
+                                        </path>
+                                        <path stroke="#072713" fill="#072713"
+                                            d="M9.25 2.84985C9.25 2.98792 9.13807 3.09985 9 3.09985C8.86193 3.09985 8.75 2.98792 8.75 2.84985C8.75 2.71178 8.86193 2.59985 9 2.59985C9.13807 2.59985 9.25 2.71178 9.25 2.84985Z">
+                                        </path>
+                                        <path fill="#072713"
+                                            d="M2.75 3.59985C3.16421 3.59985 3.5 3.26407 3.5 2.84985C3.5 2.43564 3.16421 2.09985 2.75 2.09985C2.33579 2.09985 2 2.43564 2 2.84985C2 3.26407 2.33579 3.59985 2.75 3.59985Z">
+                                        </path>
+                                        <path fill="#072713"
+                                            d="M2.75 6.72485C3.16421 6.72485 3.5 6.38907 3.5 5.97485C3.5 5.56064 3.16421 5.22485 2.75 5.22485C2.33579 5.22485 2 5.56064 2 5.97485C2 6.38907 2.33579 6.72485 2.75 6.72485Z">
+                                        </path>
+                                        <path fill="#072713"
+                                            d="M2.75 12.9749C3.16421 12.9749 3.5 12.6391 3.5 12.2249C3.5 11.8106 3.16421 11.4749 2.75 11.4749C2.33579 11.4749 2 11.8106 2 12.2249C2 12.6391 2.33579 12.9749 2.75 12.9749Z">
+                                        </path>
+                                        <path fill="#072713"
+                                            d="M2.75 16.0999C3.16421 16.0999 3.5 15.7641 3.5 15.3499C3.5 14.9356 3.16421 14.5999 2.75 14.5999C2.33579 14.5999 2 14.9356 2 15.3499C2 15.7641 2.33579 16.0999 2.75 16.0999Z">
+                                        </path>
+                                        <path fill="#072713"
+                                            d="M15.25 3.59985C15.6642 3.59985 16 3.26407 16 2.84985C16 2.43564 15.6642 2.09985 15.25 2.09985C14.8358 2.09985 14.5 2.43564 14.5 2.84985C14.5 3.26407 14.8358 3.59985 15.25 3.59985Z">
+                                        </path>
+                                        <path fill="#072713"
+                                            d="M15.25 6.72485C15.6642 6.72485 16 6.38907 16 5.97485C16 5.56064 15.6642 5.22485 15.25 5.22485C14.8358 5.22485 14.5 5.56064 14.5 5.97485C14.5 6.38907 14.8358 6.72485 15.25 6.72485Z">
+                                        </path>
+                                        <path fill="#072713"
+                                            d="M12.125 3.59985C12.5392 3.59985 12.875 3.26407 12.875 2.84985C12.875 2.43564 12.5392 2.09985 12.125 2.09985C11.7108 2.09985 11.375 2.43564 11.375 2.84985C11.375 3.26407 11.7108 3.59985 12.125 3.59985Z">
+                                        </path>
+                                        <path fill="#072713"
+                                            d="M5.875 3.59985C6.28921 3.59985 6.625 3.26407 6.625 2.84985C6.625 2.43564 6.28921 2.09985 5.875 2.09985C5.46079 2.09985 5.125 2.43564 5.125 2.84985C5.125 3.26407 5.46079 3.59985 5.875 3.59985Z">
+                                        </path>
+                                        <path fill="#072713"
+                                            d="M5.875 16.0999C6.28921 16.0999 6.625 15.7641 6.625 15.3499C6.625 14.9356 6.28921 14.5999 5.875 14.5999C5.46079 14.5999 5.125 14.9356 5.125 15.3499C5.125 15.7641 5.46079 16.0999 5.875 16.0999Z">
+                                        </path>
+                                        <path stroke-linejoin="round" stroke-linecap="round" stroke-width="1.5"
+                                            stroke="#072713" d="M9.25 15.3499V9.34985H15.25"></path>
+                                        <path stroke-linejoin="round" stroke-linecap="round" stroke-width="1.5"
+                                            stroke="#072713" d="M9.25 9.34985L15.25 15.3499"></path>
                                     </svg>
-                                  </div>
+                                </div>
                             </div>
                         </div>
                     </article>
                     <article class="col-md-4 mb-4">
-                        <div class="featured-card">
+                        <div class="featured-card" onclick="loadContent('projects/project3.html')">
                             <div class="featured-containers">
                                 <div class="icon">
-                                    <svg
-                                    width="41" 
-                                    height="40" 
-                                    viewBox="0 0 41 40" 
-                                    fill="#8B5CF6" 
-                                    xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M24.1445 9.06442C24.6602 9.19333 24.9609 9.79489 24.7891 10.3535L18.6016 30.291C18.4727 30.8066 17.8711 31.1074 17.3125 30.9355C16.7969 30.7636 16.4961 30.205 16.668 29.6465L22.8555 9.70895C23.0273 9.19333 23.5859 8.89255 24.1445 9.06442ZM27.1953 14.1347C27.582 13.705 28.2266 13.705 28.6562 14.0918L34.1562 19.248C34.3711 19.4199 34.5 19.7207 34.5 19.9785C34.5 20.2793 34.3711 20.5371 34.1562 20.7519L28.6562 25.9082C28.2266 26.2949 27.582 26.2519 27.1953 25.8652C26.8086 25.4355 26.8086 24.791 27.2383 24.4043L31.9219 19.9785L27.2383 15.5957C26.8086 15.209 26.8086 14.5644 27.1953 14.1347ZM14.2617 14.1347C14.6484 14.5644 14.6484 15.209 14.2188 15.5957L9.53516 19.9785L14.2188 24.4043C14.6484 24.791 14.6484 25.4355 14.2617 25.8652C13.875 26.2949 13.2305 26.2949 12.8008 25.9082L7.30078 20.7519C7.08594 20.5371 7 20.2793 7 19.9785C7 19.7207 7.08594 19.4199 7.30078 19.248L12.8008 14.0918C13.2305 13.705 13.875 13.705 14.2617 14.1347Z"/>
-                                        </svg>
-                                       
-                                  </div>
-                                  <div class="featured-title my-3">Custom Code Library & Developer Handoff Dashboard</div>
-                                  <div class="featured-subtitle">
+                                    <svg width="41" height="40" viewBox="0 0 41 40" fill="#8B5CF6"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M24.1445 9.06442C24.6602 9.19333 24.9609 9.79489 24.7891 10.3535L18.6016 30.291C18.4727 30.8066 17.8711 31.1074 17.3125 30.9355C16.7969 30.7636 16.4961 30.205 16.668 29.6465L22.8555 9.70895C23.0273 9.19333 23.5859 8.89255 24.1445 9.06442ZM27.1953 14.1347C27.582 13.705 28.2266 13.705 28.6562 14.0918L34.1562 19.248C34.3711 19.4199 34.5 19.7207 34.5 19.9785C34.5 20.2793 34.3711 20.5371 34.1562 20.7519L28.6562 25.9082C28.2266 26.2949 27.582 26.2519 27.1953 25.8652C26.8086 25.4355 26.8086 24.791 27.2383 24.4043L31.9219 19.9785L27.2383 15.5957C26.8086 15.209 26.8086 14.5644 27.1953 14.1347ZM14.2617 14.1347C14.6484 14.5644 14.6484 15.209 14.2188 15.5957L9.53516 19.9785L14.2188 24.4043C14.6484 24.791 14.6484 25.4355 14.2617 25.8652C13.875 26.2949 13.2305 26.2949 12.8008 25.9082L7.30078 20.7519C7.08594 20.5371 7 20.2793 7 19.9785C7 19.7207 7.08594 19.4199 7.30078 19.248L12.8008 14.0918C13.2305 13.705 13.875 13.705 14.2617 14.1347Z" />
+                                    </svg>
+
+                                </div>
+                                <div class="featured-title my-3">Custom Code Library & Developer Handoff Dashboard</div>
+                                <div class="featured-subtitle">
                                     Features reusable components with code previews.
-                                  </div>
-                                  <div class="linkMore mt-3">
+                                </div>
+                                <div class="linkMore mt-3">
                                     Learn More
-                                    <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    fill="none"
-                                    viewBox="0 0 19 20"
-                                    height="20"
-                                    width="19"
-                                  >
-                                    <path
-                                      stroke="#072713"
-                                      fill="#072713"
-                                      d="M3 9.09985C3 9.23792 2.88807 9.34985 2.75 9.34985C2.61193 9.34985 2.5 9.23792 2.5 9.09985C2.5 8.96178 2.61193 8.84985 2.75 8.84985C2.88807 8.84985 3 8.96178 3 9.09985Z"
-                                    ></path>
-                                    <path
-                                      stroke="#072713"
-                                      fill="#072713"
-                                      d="M9.25 2.84985C9.25 2.98792 9.13807 3.09985 9 3.09985C8.86193 3.09985 8.75 2.98792 8.75 2.84985C8.75 2.71178 8.86193 2.59985 9 2.59985C9.13807 2.59985 9.25 2.71178 9.25 2.84985Z"
-                                    ></path>
-                                    <path
-                                      fill="#072713"
-                                      d="M2.75 3.59985C3.16421 3.59985 3.5 3.26407 3.5 2.84985C3.5 2.43564 3.16421 2.09985 2.75 2.09985C2.33579 2.09985 2 2.43564 2 2.84985C2 3.26407 2.33579 3.59985 2.75 3.59985Z"
-                                    ></path>
-                                    <path
-                                      fill="#072713"
-                                      d="M2.75 6.72485C3.16421 6.72485 3.5 6.38907 3.5 5.97485C3.5 5.56064 3.16421 5.22485 2.75 5.22485C2.33579 5.22485 2 5.56064 2 5.97485C2 6.38907 2.33579 6.72485 2.75 6.72485Z"
-                                    ></path>
-                                    <path
-                                      fill="#072713"
-                                      d="M2.75 12.9749C3.16421 12.9749 3.5 12.6391 3.5 12.2249C3.5 11.8106 3.16421 11.4749 2.75 11.4749C2.33579 11.4749 2 11.8106 2 12.2249C2 12.6391 2.33579 12.9749 2.75 12.9749Z"
-                                    ></path>
-                                    <path
-                                      fill="#072713"
-                                      d="M2.75 16.0999C3.16421 16.0999 3.5 15.7641 3.5 15.3499C3.5 14.9356 3.16421 14.5999 2.75 14.5999C2.33579 14.5999 2 14.9356 2 15.3499C2 15.7641 2.33579 16.0999 2.75 16.0999Z"
-                                    ></path>
-                                    <path
-                                      fill="#072713"
-                                      d="M15.25 3.59985C15.6642 3.59985 16 3.26407 16 2.84985C16 2.43564 15.6642 2.09985 15.25 2.09985C14.8358 2.09985 14.5 2.43564 14.5 2.84985C14.5 3.26407 14.8358 3.59985 15.25 3.59985Z"
-                                    ></path>
-                                    <path
-                                      fill="#072713"
-                                      d="M15.25 6.72485C15.6642 6.72485 16 6.38907 16 5.97485C16 5.56064 15.6642 5.22485 15.25 5.22485C14.8358 5.22485 14.5 5.56064 14.5 5.97485C14.5 6.38907 14.8358 6.72485 15.25 6.72485Z"
-                                    ></path>
-                                    <path
-                                      fill="#072713"
-                                      d="M12.125 3.59985C12.5392 3.59985 12.875 3.26407 12.875 2.84985C12.875 2.43564 12.5392 2.09985 12.125 2.09985C11.7108 2.09985 11.375 2.43564 11.375 2.84985C11.375 3.26407 11.7108 3.59985 12.125 3.59985Z"
-                                    ></path>
-                                    <path
-                                      fill="#072713"
-                                      d="M5.875 3.59985C6.28921 3.59985 6.625 3.26407 6.625 2.84985C6.625 2.43564 6.28921 2.09985 5.875 2.09985C5.46079 2.09985 5.125 2.43564 5.125 2.84985C5.125 3.26407 5.46079 3.59985 5.875 3.59985Z"
-                                    ></path>
-                                    <path
-                                      fill="#072713"
-                                      d="M5.875 16.0999C6.28921 16.0999 6.625 15.7641 6.625 15.3499C6.625 14.9356 6.28921 14.5999 5.875 14.5999C5.46079 14.5999 5.125 14.9356 5.125 15.3499C5.125 15.7641 5.46079 16.0999 5.875 16.0999Z"
-                                    ></path>
-                                    <path
-                                      stroke-linejoin="round"
-                                      stroke-linecap="round"
-                                      stroke-width="1.5"
-                                      stroke="#072713"
-                                      d="M9.25 15.3499V9.34985H15.25"
-                                    ></path>
-                                    <path
-                                      stroke-linejoin="round"
-                                      stroke-linecap="round"
-                                      stroke-width="1.5"
-                                      stroke="#072713"
-                                      d="M9.25 9.34985L15.25 15.3499"
-                                    ></path>
-                                  </svg>
-                                  </div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 19 20" height="20"
+                                        width="19">
+                                        <path stroke="#072713" fill="#072713"
+                                            d="M3 9.09985C3 9.23792 2.88807 9.34985 2.75 9.34985C2.61193 9.34985 2.5 9.23792 2.5 9.09985C2.5 8.96178 2.61193 8.84985 2.75 8.84985C2.88807 8.84985 3 8.96178 3 9.09985Z">
+                                        </path>
+                                        <path stroke="#072713" fill="#072713"
+                                            d="M9.25 2.84985C9.25 2.98792 9.13807 3.09985 9 3.09985C8.86193 3.09985 8.75 2.98792 8.75 2.84985C8.75 2.71178 8.86193 2.59985 9 2.59985C9.13807 2.59985 9.25 2.71178 9.25 2.84985Z">
+                                        </path>
+                                        <path fill="#072713"
+                                            d="M2.75 3.59985C3.16421 3.59985 3.5 3.26407 3.5 2.84985C3.5 2.43564 3.16421 2.09985 2.75 2.09985C2.33579 2.09985 2 2.43564 2 2.84985C2 3.26407 2.33579 3.59985 2.75 3.59985Z">
+                                        </path>
+                                        <path fill="#072713"
+                                            d="M2.75 6.72485C3.16421 6.72485 3.5 6.38907 3.5 5.97485C3.5 5.56064 3.16421 5.22485 2.75 5.22485C2.33579 5.22485 2 5.56064 2 5.97485C2 6.38907 2.33579 6.72485 2.75 6.72485Z">
+                                        </path>
+                                        <path fill="#072713"
+                                            d="M2.75 12.9749C3.16421 12.9749 3.5 12.6391 3.5 12.2249C3.5 11.8106 3.16421 11.4749 2.75 11.4749C2.33579 11.4749 2 11.8106 2 12.2249C2 12.6391 2.33579 12.9749 2.75 12.9749Z">
+                                        </path>
+                                        <path fill="#072713"
+                                            d="M2.75 16.0999C3.16421 16.0999 3.5 15.7641 3.5 15.3499C3.5 14.9356 3.16421 14.5999 2.75 14.5999C2.33579 14.5999 2 14.9356 2 15.3499C2 15.7641 2.33579 16.0999 2.75 16.0999Z">
+                                        </path>
+                                        <path fill="#072713"
+                                            d="M15.25 3.59985C15.6642 3.59985 16 3.26407 16 2.84985C16 2.43564 15.6642 2.09985 15.25 2.09985C14.8358 2.09985 14.5 2.43564 14.5 2.84985C14.5 3.26407 14.8358 3.59985 15.25 3.59985Z">
+                                        </path>
+                                        <path fill="#072713"
+                                            d="M15.25 6.72485C15.6642 6.72485 16 6.38907 16 5.97485C16 5.56064 15.6642 5.22485 15.25 5.22485C14.8358 5.22485 14.5 5.56064 14.5 5.97485C14.5 6.38907 14.8358 6.72485 15.25 6.72485Z">
+                                        </path>
+                                        <path fill="#072713"
+                                            d="M12.125 3.59985C12.5392 3.59985 12.875 3.26407 12.875 2.84985C12.875 2.43564 12.5392 2.09985 12.125 2.09985C11.7108 2.09985 11.375 2.43564 11.375 2.84985C11.375 3.26407 11.7108 3.59985 12.125 3.59985Z">
+                                        </path>
+                                        <path fill="#072713"
+                                            d="M5.875 3.59985C6.28921 3.59985 6.625 3.26407 6.625 2.84985C6.625 2.43564 6.28921 2.09985 5.875 2.09985C5.46079 2.09985 5.125 2.43564 5.125 2.84985C5.125 3.26407 5.46079 3.59985 5.875 3.59985Z">
+                                        </path>
+                                        <path fill="#072713"
+                                            d="M5.875 16.0999C6.28921 16.0999 6.625 15.7641 6.625 15.3499C6.625 14.9356 6.28921 14.5999 5.875 14.5999C5.46079 14.5999 5.125 14.9356 5.125 15.3499C5.125 15.7641 5.46079 16.0999 5.875 16.0999Z">
+                                        </path>
+                                        <path stroke-linejoin="round" stroke-linecap="round" stroke-width="1.5"
+                                            stroke="#072713" d="M9.25 15.3499V9.34985H15.25"></path>
+                                        <path stroke-linejoin="round" stroke-linecap="round" stroke-width="1.5"
+                                            stroke="#072713" d="M9.25 9.34985L15.25 15.3499"></path>
+                                    </svg>
+                                </div>
                             </div>
                         </div>
                     </article>
@@ -469,34 +334,6 @@
                     </div>
                 </div>
         </section>
-
-        <!-- <section>
-            <div class="container">
-                <h2 class="mb-4">Why UX Design Matters</h2>
-                <p class="mb-4">User experience (UX) is the backbone of successful digital products. With 88% of online
-                    customers less likely to return to a website after a bad experience, a smooth, efficient, and
-                    enjoyable interaction with your site is critical to retaining users. Research shows that users
-                    expect fast load times, with the majority willing to wait only 6-10 seconds for a page to load
-                    before abandoning the site. Optimizing UX not only improves user satisfaction but also drives higher
-                    engagement, conversion rates, and long-term business success.</p>
-                    <div class="row">
-                        <article class="col-md-6 mb-4 position-relative">
-                            <div class="card" style="position: relative;">
-                                <div id="first_impression"></div>
-                                <div id="center_text"></div> 
-                            </div>
-                        </article>
-                        <article class="col-md-6 mb-4">
-                            <div class="card">
-                                <div id="second_impression"></div>
-                                <div id="center_text"></div> 
-                            </div>
-                        </article>
-                    </div>     
-            </div>
-        </section>
-        -->
-
     </main>
 
     <div id="footer"></div>
@@ -511,97 +348,109 @@
         $('#footer').load('./templates/footer.html');
     </script>
 
-<script type="text/javascript">
-    google.charts.load('current', { 'packages': ['corechart'] });
-    google.charts.setOnLoadCallback(drawChart);
-
-    function drawChart() {
-        var data = google.visualization.arrayToDataTable([
-            ['First Impression', 'Percentage'],
-            ['Influenced by Design', 94],
-            ['Other Factors', 6]
-        ]);
-
-        var options = {
-            pieHole: 0.8,
-            pieStartAngle: 35,          
-            slices: {
-                0: { color: '#8a2aff' },
-                1: { color: '#e5e7eb' },
-            },
-            title: '94% of website first impressions are design-related',
-            legend: 'none',  // Hide the legend
-            pieSliceText: 'none',  // Hide the slice labels
-            tooltip: { 
-                isHtml: true 
-            } // Enables rich HTML tooltips
-        };
-
-        var chart = new google.visualization.PieChart(document.getElementById('first_impression'));
-        chart.draw(data, options);
-
-        // Position the 94% text in the center of the chart
-        var centerText = document.getElementById('center_text');
-        centerText.innerHTML = '94%';
-        centerText.style.position = 'absolute';
-        centerText.style.top = '50%';
-        centerText.style.left = '50%';
-        centerText.style.transform = 'translate(-50%, -50%)';
-        centerText.style.fontSize = '24px';
-        centerText.style.color = '#8a2aff';
-        centerText.style.fontFamily = 'Inter';
-        centerText.style.fontWeight = 'bold';
+<script>
+    function loadContent(filePath) {
+        fetch(filePath)
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('main-content').innerHTML = data;
+            })
+            .catch(error => console.error('Error loading content:', error));
     }
-
-    window.addEventListener('resize', drawChart);
-</script>
-<script type="text/javascript">
-    google.charts.load('current', { 'packages': ['corechart'] });
-    google.charts.setOnLoadCallback(drawChart);
-
-    function drawChart() {
-        var data = google.visualization.arrayToDataTable([
-            ['First Impression', 'Percentage'],
-            ['Influenced by Design', 94],
-            ['Other Factors', 6]
-        ]);
-
-        var options = {
-            pieHole: 0.8,
-            pieStartAngle: 35,          
-            slices: {
-                0: { color: '#8a2aff' },
-                1: { color: '#e5e7eb' },
-            },
-            title: '94% of website first impressions are design-related',
-            legend: 'none',  // Hide the legend
-            pieSliceText: 'none',  // Hide the slice labels
-            tooltip: { 
-                isHtml: true 
-            } // Enables rich HTML tooltips
-        };
-
-        var chart = new google.visualization.PieChart(document.getElementById('second_impression'));
-        chart.draw(data, options);
-
-        // Position the 94% text in the center of the chart
-        var centerText = document.getElementById('center_text');
-        centerText.innerHTML = '94%';
-        centerText.style.position = 'absolute';
-        centerText.style.top = '50%';
-        centerText.style.left = '50%';
-        centerText.style.transform = 'translate(-50%, -50%)';
-        centerText.style.fontSize = '24px';
-        centerText.style.color = '#8a2aff';
-        centerText.style.fontFamily = 'Inter';
-        centerText.style.fontWeight = 'bold';
-    }
-
-    window.addEventListener('resize', drawChart);
 </script>
 
 
-<!-- <script type="text/javascript">
+    <script type="text/javascript">
+        google.charts.load('current', { 'packages': ['corechart'] });
+        google.charts.setOnLoadCallback(drawChart);
+
+        function drawChart() {
+            var data = google.visualization.arrayToDataTable([
+                ['First Impression', 'Percentage'],
+                ['Influenced by Design', 94],
+                ['Other Factors', 6]
+            ]);
+
+            var options = {
+                pieHole: 0.8,
+                pieStartAngle: 35,
+                slices: {
+                    0: { color: '#8a2aff' },
+                    1: { color: '#e5e7eb' },
+                },
+                title: '94% of website first impressions are design-related',
+                legend: 'none',  // Hide the legend
+                pieSliceText: 'none',  // Hide the slice labels
+                tooltip: {
+                    isHtml: true
+                } // Enables rich HTML tooltips
+            };
+
+            var chart = new google.visualization.PieChart(document.getElementById('first_impression'));
+            chart.draw(data, options);
+
+            // Position the 94% text in the center of the chart
+            var centerText = document.getElementById('center_text');
+            centerText.innerHTML = '94%';
+            centerText.style.position = 'absolute';
+            centerText.style.top = '50%';
+            centerText.style.left = '50%';
+            centerText.style.transform = 'translate(-50%, -50%)';
+            centerText.style.fontSize = '24px';
+            centerText.style.color = '#8a2aff';
+            centerText.style.fontFamily = 'Inter';
+            centerText.style.fontWeight = 'bold';
+        }
+
+        window.addEventListener('resize', drawChart);
+    </script>
+    <script type="text/javascript">
+        google.charts.load('current', { 'packages': ['corechart'] });
+        google.charts.setOnLoadCallback(drawChart);
+
+        function drawChart() {
+            var data = google.visualization.arrayToDataTable([
+                ['First Impression', 'Percentage'],
+                ['Influenced by Design', 94],
+                ['Other Factors', 6]
+            ]);
+
+            var options = {
+                pieHole: 0.8,
+                pieStartAngle: 35,
+                slices: {
+                    0: { color: '#8a2aff' },
+                    1: { color: '#e5e7eb' },
+                },
+                title: '94% of website first impressions are design-related',
+                legend: 'none',  // Hide the legend
+                pieSliceText: 'none',  // Hide the slice labels
+                tooltip: {
+                    isHtml: true
+                } // Enables rich HTML tooltips
+            };
+
+            var chart = new google.visualization.PieChart(document.getElementById('second_impression'));
+            chart.draw(data, options);
+
+            // Position the 94% text in the center of the chart
+            var centerText = document.getElementById('center_text');
+            centerText.innerHTML = '94%';
+            centerText.style.position = 'absolute';
+            centerText.style.top = '50%';
+            centerText.style.left = '50%';
+            centerText.style.transform = 'translate(-50%, -50%)';
+            centerText.style.fontSize = '24px';
+            centerText.style.color = '#8a2aff';
+            centerText.style.fontFamily = 'Inter';
+            centerText.style.fontWeight = 'bold';
+        }
+
+        window.addEventListener('resize', drawChart);
+    </script>
+
+
+    <!-- <script type="text/javascript">
     google.charts.load('current', { 'packages': ['corechart'] });
     google.charts.setOnLoadCallback(drawChart);
 
